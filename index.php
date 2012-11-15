@@ -45,7 +45,7 @@
 		<nav id="mainnav">
 
 			<ul>
-				<li><a href="#" title="XXXXXXXXXXXXXXXX">Startseite</a></li>
+				<li><a href="#" title="XXXXXXXXXXXXXXXX">Start</a></li>
 				<li><a href="#" title="XXXXXXXXXXXXXXXX">Link</a></li>
 				<li><a href="#" title="XXXXXXXXXXXXXXXX">Link</a></li>
 			</ul>

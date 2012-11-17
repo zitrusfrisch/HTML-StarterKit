@@ -5,4 +5,3 @@ Disallow: /fonts/
 Disallow: /images/
 Disallow: /js/
 Disallow: /preview/
-Disallow: /redaxo/

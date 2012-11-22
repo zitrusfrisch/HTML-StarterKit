@@ -48,18 +48,6 @@ input[type=file],
 textarea {  }
 
 
-/* Focus Input Styles */
-
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=search]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=tel]:focus,
-input[type=file]:focus,
-textarea:focus {  }
-
-
 /* Button */
 
 button, .btn { background: #ccc; }

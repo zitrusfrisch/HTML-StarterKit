@@ -76,7 +76,7 @@ th, td { font-family: inherit; color: inherit; text-align: left; vertical-align:
 
 /* Media -------------------------------------- */
 
-img, object, embed { display: block; vertical-align: middle; max-width: 100%; height: auto; }
+img, object, embed { display: block; vertical-align: middle; max-width: 100%; width: auto; /* IE Fix */ height: auto; }
 audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; }
 

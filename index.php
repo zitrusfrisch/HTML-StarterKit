@@ -11,7 +11,10 @@
 
 <meta charset="utf-8">
 <meta name="description" content="XXXXXXXXXXXXXXXX">
+
+<!-- Use Viewport-Metatag for responsive designs only!
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
 
 <!--[if IE]>
 <meta http-equiv="imagetoolbar" content="no">
@@ -31,6 +34,10 @@
 
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Use Respond polyfill for responsive designs only! -->
+<!--[if lt IE 9 ]><script src="js/libs/respond.js"></script><![endif]-->
+
 
 </head>
 

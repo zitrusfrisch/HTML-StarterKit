@@ -4,7 +4,7 @@
 Das zitrusfrisch HTML StarterKit ist eine Vorlage für responsive HTML5 Websites und enthält alles Notwendige für einen reibungslosen Start. Die wichtigsten Dateien im Überblick:
 
 + **index.html**  
-HTML-Rahmen mit Meta-Tags, CSS , jQuery und weiteren Javascripts, sowie und Demo-Inhalte, die mittels DEMO_content.inc.php inkludiert werden.
+HTML-Rahmen mit Meta-Tags, CSS , jQuery und weiteren Javascripts, Demo-Inhalte werden mittels DEMO_content.inc.php inkludiert.
 
 + **CSS/base.css**  
 Basis Stylesheet mit CSS-Reset und weiteren CSS-Grundlagen

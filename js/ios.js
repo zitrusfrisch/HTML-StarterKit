@@ -9,11 +9,11 @@ iOS viewport scaling bug fix | A fix for the iOS orientationchange zoom bug. | h
 Optimized placeholder for iOS6 - Mooki (http://mooki83.tistory.com)
 ================================================================================================================ */
 
-// $(document).ready(function(){$(window).bind("orientationchange.fm_optimizeInput",fm_optimizeInput)});function fm_optimizeInput(){$("input[placeholder],textarea[placeholder]").each(function(){var tmpText=$(this).attr("placeholder");if(tmpText!=""){$(this).attr("placeholder","").attr("placeholder",tmpText)}})}
+$(document).ready(function(){$(window).bind("orientationchange.fm_optimizeInput",fm_optimizeInput)});function fm_optimizeInput(){$("input[placeholder],textarea[placeholder]").each(function(){var tmpText=$(this).attr("placeholder");if(tmpText!=""){$(this).attr("placeholder","").attr("placeholder",tmpText)}})}
 
 
 /* ================================================================================================================
 Hide URL bar in iOS devices
 ================================================================================================================ */
 
-// /mobile/i.test(navigator.userAgent)&&!window.location.hash&&setTimeout(function(){window.scrollTo(0,1)},1000);
+/mobile/i.test(navigator.userAgent)&&!window.location.hash&&setTimeout(function(){window.scrollTo(0,1)},1000);

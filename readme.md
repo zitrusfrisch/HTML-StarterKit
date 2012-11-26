@@ -1,4 +1,4 @@
-# zitrusfrisch HTML-StarterKit v1.01
+# zitrusfrisch HTML-StarterKit v1.02
 
 ## Alles was Du zum Start Deiner responsiven HTML5 Website brauchst
 Das zitrusfrisch HTML-StarterKit ist eine Vorlage für responsive HTML5 Websites und enthält alles Notwendige für einen reibungslosen Start. Die wichtigsten Dateien im Überblick:

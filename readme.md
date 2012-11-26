@@ -43,6 +43,10 @@ Damit ältere Browser bei MediaQueries nicht streiken, dafür sorgt [respond.js]
 
 ## Version-Log
 
+**Version 1.02**
++ jQuery-Update auf Version 1.8.3  
++ Kleinere Bug-Fixes
+
 **Version 1.01**
 + Kleinere Bug-Fixes
 

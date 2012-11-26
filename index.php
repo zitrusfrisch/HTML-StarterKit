@@ -75,10 +75,10 @@
 
 <!-- JavaScript -->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script>
 		if (typeof jQuery == 'undefined') {
-			document.write(unescape("%3Cscript src='/js/libs/jquery-1.8.2.min.js'%3E%3C/script%3E"));
+			document.write(unescape("%3Cscript src='/js/libs/jquery.js'%3E%3C/script%3E"));
 		}
 	</script>
 	<script src="js/functions.js"></script>

@@ -17,9 +17,9 @@ Platz für individuelle Javascripts
 
 **js/ios.js**  
 Mit der iOS.js werden verschiedene Darstellungsfehler im Zusammenhang mit responsiven Designs auf iOS-Devices gefixt:  
-+ [iOS Viewport Scaling Bug](https://gist.github.com/901295)  
-+ [Optimiertes Placeholder Attribut für iOS 6 Devices](http://mooki83.tistory.com)  
-+ [URL-Bar ausblenden](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/)
++ [iOS Viewport Scaling Bug](https://gist.github.com/901295) Verhindert das Verrutschen des Viewports beim Wechsel zwischen Horizontal und Landscape in älteren iOS-Versionen  
++ [Optimiertes Placeholder Attribut für iOS 6 Devices](http://mooki83.tistory.com) Verhindert das Verrutschen des Viewports beim Wechsel zwischen Horizontal und Landscape in iOS6, wenn die Seite Input-Felder mit Placeholder Attribut enthält   
++ [URL-Bar ausblenden](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/) Blendet die Adresszeile des Browsers (vulgo: Mobile Safari) mach den Laden aus.
   
 **js/libs/jquery-1.8.2.min.js**  
 [jQuery](http://jquery.com/) - Der Klassiker! Falls die Remote-Abfrage fehlschlägt, wird dieser lokale Fallback eingebunden.
@@ -29,8 +29,8 @@ Mit der iOS.js werden verschiedene Darstellungsfehler im Zusammenhang mit respon
   
 **js/libs/polyfills.js**  
 Sammlung verschiedener jQuery Plugins, die älteren IE-Versionen aktuelle HTML5- und CSS3-Features "beibringen":  
-+ [jQuery Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder) Simuliert das Placeholder-Attribut für Input-Felder in älteren Browsern mit einem Plugin von Mathias Bynens.  
-+ [Selctivizr](http://selectivizr.com) und [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) Diese Plugins von Keith Clark machen neue CSS-Pseudoklassen, wie nth-child() und nth-of-type auch im IE verfügbar.
++ [jQuery Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder) Simuliert das Placeholder-Attribut für Input-Felder in älteren Browsern mit einem Plugin von Mathias Bynens  
++ [Selctivizr](http://selectivizr.com) und [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) Diese Plugins von Keith Clark machen neue CSS-Pseudoklassen, wie nth-child() und nth-of-type auch im IE verfügbar
   
 **js/libs/respond.js**  
 Damit ältere Browser bei MediaQueries nicht streiken, dafür sorgt [respond.js](http://j.mp/respondjs), ein jQuery Plugin von Scott Jehl.

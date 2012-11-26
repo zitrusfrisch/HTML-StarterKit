@@ -17,7 +17,8 @@ Platz für individuelle Javascripts
 
 **js/ios.js**  
 Mit der iOS.js werden verschiedene Darstellungsfehler im Zusammenhang mit responsiven Designs auf iOS-Devices gefixt:  
-+ [iOS Viewport Scaling Bug](https://gist.github.com/901295) Verhindert das Verrutschen des Viewports beim Wechsel zwischen Horizontal und Landscape in älteren iOS-Versionen  
++ [iOS Viewport Scaling Bug](https://gist.github.com/901295)  
+Verhindert das Verrutschen des Viewports beim Wechsel zwischen Horizontal und Landscape in älteren iOS-Versionen  
 + [Optimiertes Placeholder Attribut für iOS 6 Devices](http://mooki83.tistory.com) Verhindert das Verrutschen des Viewports beim Wechsel zwischen Horizontal und Landscape in iOS6, wenn die Seite Input-Felder mit Placeholder Attribut enthält   
 + [URL-Bar ausblenden](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/) Blendet die Adresszeile des Browsers (vulgo: Mobile Safari) mach den Laden aus.
   

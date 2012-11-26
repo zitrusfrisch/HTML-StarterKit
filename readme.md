@@ -38,3 +38,13 @@ Diese Plugins von Keith Clark machen neue CSS-Pseudoklassen, wie nth-child() und
   
 **js/libs/respond.js**  
 Damit ältere Browser bei MediaQueries nicht streiken, dafür sorgt [respond.js](http://j.mp/respondjs), ein jQuery Plugin von Scott Jehl.
+
+
+## Version-Log
+
+**Version 1.01**
++ Kleinere Bug-Fixes
+
+**Version 1.0**
++ Initial Release
+

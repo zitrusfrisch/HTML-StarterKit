@@ -17,24 +17,20 @@ Platz für individuelle Javascripts
 
 **js/ios.js**  
 Mit der iOS.js werden verschiedene Darstellungsfehler im Zusammenhang mit responsiven Designs auf iOS-Devices gefixt:  
-[iOS Viewport Scaling Bug](https://gist.github.com/901295)  
-[Optimiertes Placeholder Attribut für iOS 6 Devices](http://mooki83.tistory.com)  
--Hide URL-Bar  
++ [iOS Viewport Scaling Bug](https://gist.github.com/901295)  
++ [Optimiertes Placeholder Attribut für iOS 6 Devices](http://mooki83.tistory.com)  
++ [URL-Bar ausblenden](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/)
   
 **js/libs/jquery-1.8.2.min.js**  
-Der Klassiker! Falls die Remote-Abfrage fehlschlägt, wird dieser lokale Fallback eingebunden. Mehr auf http://jquery.com/  
+[jQuery](http://jquery.com/) - Der Klassiker! Falls die Remote-Abfrage fehlschlägt, wird dieser lokale Fallback eingebunden.
   
 **js/libs/modernizr.js**  
-[Modernizr](http://modernizr.com/) ist eine JavaScript Library, die den Browser auf HTML5 und CSS3 Features überprüft. (**Achtung!** Das zitrusfrisch HTML-StarterKit enthält die Development-Version inklusive aller Features.)  
+[Modernizr](http://modernizr.com/) ist eine JavaScript Library, die den Browser auf HTML5 und CSS3 Features überprüft. (**Achtung!** Das zitrusfrisch HTML-StarterKit enthält die Development-Version mit allen Features.)  
   
 **js/libs/polyfills.js**  
-Sammlung verschiedener jQuery Plugins, die älteren IE-Versionen aktuelle HTML5- und CSS3-Features "beibringen": 
-
-*jQuery Placeholder Plugin*  
-Simuliert das Placeholder-Attribut für Input-Felder in älteren Browsern. Mehr auf [https://github.com/mathiasbynens/jquery-placeholder](https://github.com/mathiasbynens/jquery-placeholder)  
-  
-*Selctivizr und Selctivizr-Extended*
-Diese Plugins von Keith Clark machen neue CSS-Pseudoklassen, wie nth-child() und nth-of-type auch im IE verfügbar. Mehr auf [http://selectivizr.com](http://selectivizr.com) und [http://github.com/keithclark/JQuery-Extended-Selectors](http://github.com/keithclark/JQuery-Extended-Selectors)
+Sammlung verschiedener jQuery Plugins, die älteren IE-Versionen aktuelle HTML5- und CSS3-Features "beibringen":  
++ [jQuery Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder) Simuliert das Placeholder-Attribut für Input-Felder in älteren Browsern mit einem Plugin von Mathias Bynens.  
++ [Selctivizr](http://selectivizr.com) und [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) Diese Plugins von Keith Clark machen neue CSS-Pseudoklassen, wie nth-child() und nth-of-type auch im IE verfügbar.
   
 **js/libs/respond.js**  
 Damit ältere Browser bei MediaQueries nicht streiken, dafür sorgt [respond.js](http://j.mp/respondjs), ein jQuery Plugin von Scott Jehl.

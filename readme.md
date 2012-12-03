@@ -1,4 +1,4 @@
-# zitrusfrisch HTML-StarterKit v1.02
+# zitrusfrisch HTML-StarterKit v1.03
 
 ## Alles was Du zum Start Deiner responsiven HTML5 Website brauchst
 Das zitrusfrisch HTML-StarterKit ist eine Vorlage für responsive HTML5 Websites und enthält alles Notwendige für einen reibungslosen Start. Die wichtigsten Dateien im Überblick:
@@ -28,7 +28,7 @@ Blendet die Adresszeile des Mobile Safari Browsers nach dem Laden der Website au
 [jQuery](http://jquery.com/) - Der Klassiker! Falls die Remote-Abfrage fehlschlägt, wird dieser lokale Fallback eingebunden.
   
 **js/libs/modernizr.js**  
-[Modernizr](http://modernizr.com/) ist eine JavaScript Library, die den Browser auf HTML5 und CSS3 Features überprüft. (**Achtung!** Das zitrusfrisch HTML-StarterKit enthält die Development-Version mit allen Features.)  
+[Modernizr](http://modernizr.com/) ist eine JavaScript Library, die den Browser auf HTML5 und CSS3 Features überprüft. **Achtung!** Das zitrusfrisch HTML-StarterKit enthält die Development-Version mit allen Features.)  
   
 **js/libs/polyfills.js**  
 Sammlung verschiedener jQuery Plugins, die älteren IE-Versionen aktuelle HTML5- und CSS3-Features "beibringen":  
@@ -42,6 +42,10 @@ Damit ältere Browser bei MediaQueries nicht streiken, dafür sorgt [respond.js]
 
 
 ## Version-Log
+
+**Version 1.03**
++ Fix für iOS Scanning Bug optimiert  
++ Styling für Search Inputs in Webkit-Browsern aus base.css entfernt
 
 **Version 1.02**
 + jQuery-Update auf Version 1.8.3  

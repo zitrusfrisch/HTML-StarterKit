@@ -44,7 +44,7 @@ Damit ältere Browser bei MediaQueries nicht streiken, dafür sorgt [respond.js]
 ## Version-Log
 
 **Version 1.03**
-+ Fix für iOS Scanning Bug optimiert  
++ Fix für iOS Scaling Bug optimiert  
 + Styling für Search Inputs in Webkit-Browsern aus base.css entfernt
 
 **Version 1.02**

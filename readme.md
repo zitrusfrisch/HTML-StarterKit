@@ -1,4 +1,4 @@
-# zitrusfrisch HTML-StarterKit v1.03
+# zitrusfrisch HTML-StarterKit v1.04
 
 ## Alles was Du zum Start Deiner responsiven HTML5 Website brauchst
 Das zitrusfrisch HTML-StarterKit ist eine Vorlage für responsive HTML5 Websites und enthält alles Notwendige für einen reibungslosen Start. Die wichtigsten Dateien im Überblick:
@@ -37,11 +37,15 @@ Simuliert das Placeholder-Attribut für Input-Felder in älteren Browsern mit ei
 + [Selctivizr](http://selectivizr.com) und [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors)  
 Diese Plugins von Keith Clark machen neue CSS-Pseudoklassen, wie nth-child() und nth-of-type, auch im IE verfügbar
   
-**js/libs/respond.js**  
-Damit ältere Browser bei MediaQueries nicht streiken, dafür sorgt [respond.js](http://j.mp/respondjs), ein jQuery Plugin von Scott Jehl.
+**js/libs/css3-mediaqueries.js**  
+Damit ältere Browser bei MediaQueries nicht streiken, dafür sorgt [css3-mediaqueries.js](http://code.google.com/p/css3-mediaqueries-js/).
 
 
 ## Version-Log
+
+**Version 1.04**
++ Styling für Search Inputs in Webkit-Browsern wieder integriert (s. Version 1.03)  
++ Respond.js durch CSS3-Mediaqueries.js ersetzt
 
 **Version 1.03**
 + Fix für iOS Scaling Bug optimiert  

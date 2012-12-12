@@ -36,7 +36,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <!-- Use Respond polyfill for responsive designs only! -->
-<!--[if lt IE 9 ]><script src="js/libs/respond.js"></script><![endif]-->
+<!--[if lt IE 9 ]><script src="js/libs/css3-mediaqueries.js"></script><![endif]-->
 
 
 </head>

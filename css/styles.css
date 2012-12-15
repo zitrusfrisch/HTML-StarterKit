@@ -70,6 +70,23 @@ figcaption {  }
 img, object, embed {  }
 
 
+/* TABLES --------------------------------------------------------------------------------------- */
+
+table {  }
+
+colgroup {  }
+
+th, td {  }
+
+thead th {  }
+
+tbody th {  }
+tbody td {  }
+tbody td[colspan] { text-align: center; }
+
+tfoot td {  }
+
+
 /* MODUL: HEADER (Masthead) -------------------------------------------------------------------- */
 
 #masthead {  }

@@ -42,7 +42,7 @@
 
 <body>
 
-	<header id="masthead" role="banner">
+	<header id="masthead" class="cf" role="banner">
 
 		<a id="logo" href="/" title="XXXXXXXXXXXXXXXX">
 			<img src="images/logo.png" alt="Logo" />
@@ -66,7 +66,7 @@
 
 	</div><!-- End #main -->
 
-	<footer role="contentinfo">
+	<footer class="cf" role="contentinfo">
 
 		<p>Copyright &copy; <?php print(Date("Y")); ?> <a href="/" title="XXXXXXXXXXXXXXXX">XXXXXXXXXXXXXXXX</a></p>
 

@@ -10,15 +10,7 @@ html { height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -web
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { background: transparent; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; margin: 0; padding: 0; }
 article, aside, dialog, figure, figcaption, footer, header, hgroup, nav, section { display: block; }
 
-/* Typgraphy -------------------------------------- */
-
-ul { list-style: none outside; }
-ul.ul-disc { list-style: disc outside; margin-left: 2em; }
-ul.ul-square { list-style: square outside; margin-left: 2em; }
-ol { list-style: decimal outside; margin-left: 2em; }
-li ul, li ol { margin-bottom: 0; }
-
-nav ul { margin: 0; }
+/* TYPOGRAPHY -------------------------------------- */
 
 strong, b { font-weight: bold; }
 small { font-size: .875em; }
@@ -31,13 +23,24 @@ mark { background: #ffc; padding: 1px 3px; }
 hr { display: block; height: 1px; border: 0 none; border-top: 1px solid #384749; padding: 0; }
 
 
-/* Links -------------------------------------- */
+/* Lists */
+
+ul { list-style: none outside; }
+ul.ul-disc { list-style: disc outside; margin-left: 2em; }
+ul.ul-square { list-style: square outside; margin-left: 2em; }
+ol { list-style: decimal outside; margin-left: 2em; }
+li ul, li ol { margin-bottom: 0; }
+
+nav ul { margin: 0; }
+
+
+/* LINKS -------------------------------------- */
 
 a, :focus { outline: 0; }
 a img { border: 0 none; }
 
 
-/* Forms -------------------------------------- */
+/* FORMS -------------------------------------- */
 
 input, textarea { font-weight: inherit; font-size: inherit; font-family: inherit; color: inherit; vertical-align: baseline; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 select { cursor: pointer; vertical-align: baseline; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -48,56 +51,70 @@ input[type=search],
 input[type=email],
 input[type=url],
 input[type=tel],
+input[type=file],
 textarea { background: #fff; display: inline-block; width: 100%; border: 1px solid #fff; border-radius: 0; -webkit-appearance: none; margin: 0; padding: 4px; }
 
-input[type=file] { display: inline-block; width: 100%; border: 1px solid transparent; border-radius: 0; -webkit-appearance: none; margin: 0; padding: 4px; }
-
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration { -webkit-appearance: none; }
-input[type=search] { -webkit-appearance: textfield; }
-
-input[type="checkbox"], input[type="radio"] { padding: 0; }
+input[type="checkbox"],
+input[type="radio"] { padding: 0; }
 
 textarea { overflow: auto; resize: none; vertical-align: top; resize: vertical; }
 
 button, .btn { background: transparent; font-weight: bold; font-family: inherit; font-size: inherit; color: inherit; text-align: center; display: inline-block; *display: inline; *zoom: 1; vertical-align: baseline; width: auto; overflow: visible; cursor: pointer; border: 0 none; margin: 0; }
 
-::-webkit-input-placeholder { color: #999; }
-:-moz-placeholder { color: #999; }
-:placeholder { color: #999; }
 
-button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner { border: 0; margin: 0; padding: 0; /* Firefox Fix */ }
+/* Placeholder */
+
+::-webkit-input-placeholder { text-overflow: ellipsis; }
+:-moz-placeholder { text-overflow: ellipsis; }
+:placeholder { text-overflow: ellipsis; }
 
 
-/* Tables -------------------------------------- */
+/* Reset search input styling in Webkit */
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration { -webkit-appearance: none; }
+input[type=search] { -webkit-appearance: textfield; }
+
+
+/* Fix button styling in Firefox */
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner { border: 0; margin: 0; padding: 0; }
+
+
+/* TABLES -------------------------------------- */
 
 table { width: 100%; border-spacing: 0; border-collapse: collapse; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-th, td { font-family: inherit; color: inherit; text-align: left; vertical-align: top; }
+th, td { font-family: inherit; font-weight: normal; color: inherit; text-align: center; vertical-align: top; }
 
 
-/* Media -------------------------------------- */
+/* MEDIA -------------------------------------- */
 
 img, object, embed { display: block; vertical-align: middle; max-width: 100%; width: auto; /* IE Fix */ height: auto; }
 audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; }
 
 
-/* Various Helper Classes -------------------------------------- */
+/* HELPER CLASSES -------------------------------------- */
 
 .left { float: left !important; }
 .right { float: right !important; }
 .normal { font-weight: normal !important; }
-.anim { -webkit-backface-visibility: hidden; -webkit-perspective: 1000; -webkit-transform: translate3d(0,0,0); /* speeds up css-animations in safari */ }
+.anim { -webkit-backface-visibility: hidden; -webkit-perspective: 1000; -webkit-transform: translate3d(0,0,0); /* Speeds up CSS animations in Webkit */ }
 .cf:before, .cf:after { content: ""; display: table; }
-.cf:after { clear:both; }
-.cf { zoom: 1; }
-.clear { clear: both; }
+.cf:after, .clear { clear: both; }
 
 a.arrow { font-weight: bold; white-space: nowrap; }
 a.arrow:after { content: ""; display: inline-block; width: 0; height: 0; border-style: solid; border-width: .325em 0 .325em .325em; border-color: transparent transparent transparent #00f; margin-left: .3em; }
 a.arrow:hover:after { border-left-color: #c00; }
 
 
-/* IE 7 Special Treatment -------------------------------------- */
+/* IE 7 SPECIAL TREATMENT -------------------------------------- */
 
 .ie7 img { -ms-interpolation-mode: bicubic; }
 .ie7 legend { margin-left: -7px; }

@@ -57,7 +57,7 @@ Lorem ipsum dolor sit amet
 
 			<h2>Lists</h2>
 
-			<h3>Unordered List</h3>
+			<h3>Unordered List w/o styling</h3>
 
 			<ul>
 				<li>Unordered list item</li>
@@ -65,9 +65,25 @@ Lorem ipsum dolor sit amet
 				<li>Unordered list item</li>
 			</ul>
 
-			<h3>Unordered List with nested items</h3>
+			<h3>Unordered List w/ disc bullets</h3>
 
 			<ul class="ul-disc">
+				<li>Unordered list item</li>
+				<li>Unordered list item</li>
+				<li>Unordered list item</li>
+			</ul>
+
+			<h3>Unordered List w/ square bullets</h3>
+
+			<ul class="ul-square">
+				<li>Unordered list item</li>
+				<li>Unordered list item</li>
+				<li>Unordered list item</li>
+			</ul>
+
+			<h3>Unordered List with nested items</h3>
+
+			<ul class="ul-square">
 				<li>Unordered list item
 					<ul class="ul-square">
 						<li>Nested unordered list item</li>
@@ -104,33 +120,54 @@ Lorem ipsum dolor sit amet
 			<h2>Tables</h2>
 
 			<table>
+
+				<colgroup></colgroup>
+				<colgroup></colgroup>
+				<colgroup></colgroup>
+				<colgroup></colgroup>
+
 				<thead>
 					<tr>
 						<th>Table header one</th>
 						<th>Table header two</th>
+						<th>Table header three</th>
+						<th>Table header four</th>
 					</tr>
 				</thead>
+
+				<tfoot>
+					<tr>
+						<td>Table footer one</td>
+						<td>Table footer two</td>
+						<td>Table footer three</td>
+						<td>Table footer four</td>
+					</tr>
+				</tfoot>
+
 				<tbody>
 					<tr>
+						<th>Table row header one</th>
 						<td>Lorem ipsum dolor sit amet</td>
-						<td>Lorem ipsum dolor sit amet</td>
-					</tr>
-					<tr>
-						<td colspan="2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-					</tr>
-					<tr>
 						<td>Lorem ipsum dolor sit amet</td>
 						<td>Lorem ipsum dolor sit amet</td>
 					</tr>
 					<tr>
+						<td colspan="4">Colspan content</td>
+					</tr>
+					<tr>
+						<th>Table row header three</th>
+						<td>Lorem ipsum dolor sit amet</td>
 						<td>Lorem ipsum dolor sit amet</td>
 						<td>Lorem ipsum dolor sit amet</td>
 					</tr>
 					<tr>
+						<th>Table row header four</th>
+						<td>Lorem ipsum dolor sit amet</td>
 						<td>Lorem ipsum dolor sit amet</td>
 						<td>Lorem ipsum dolor sit amet</td>
 					</tr>
 				</tbody>
+
 			</table>
 
 			<h2>Form elements</h2>
@@ -174,12 +211,12 @@ Lorem ipsum dolor sit amet
 					<p>
 						<label>Select field</label>
 						<select name="XXXXXXXXXXXX">
-							<option value="1">Lorem ipsum dolor</option>
+							<option value="1">Select</option>
 							<option value="2">Lorem ipsum dolor</option>
 							<option value="3">Lorem ipsum dolor</option>
 						</select>
 						<select name="XXXXXXXXXXXX">
-						    <option>Lorem ipsum dolor</option>
+						    <option>Select with optgroups</option>
 						    <optgroup label="Options&hellip;">
 						    	<option>Lorem ipsum dolor</option>
 						    	<option>Lorem ipsum dolor</option>

@@ -25,6 +25,10 @@
 
 <script src="js/libs/modernizr.js"></script>
 
+<!-- Google Fonts -->
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700">
+
 <!-- CSS -->
 
 <link rel="stylesheet" href="css/base.css">

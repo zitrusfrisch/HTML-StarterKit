@@ -13,12 +13,13 @@ article, aside, dialog, figure, figcaption, footer, header, hgroup, nav, section
 /* TYPOGRAPHY -------------------------------------- */
 
 strong, b { font-weight: bold; }
-small { font-size: .875em; }
+small { font-size: .875em; display: inline-block; }
 strike, del { text-decoration: line-through; }
 pre, code, kbd, samp { font-family: Consolas, "Lucida Console", Monaco, monospace; font-size: .875em; }
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-sub { font-size: .75em; line-height: 1; vertical-align: sub; }
-sup { font-size: .875em; line-height: 1; vertical-align: super; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
 mark { background: #ffc; padding: 1px 3px; }
 hr { display: block; height: 1px; border: 0 none; border-top: 1px solid #384749; padding: 0; }
 

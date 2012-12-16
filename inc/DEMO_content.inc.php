@@ -1,7 +1,7 @@
 		<section id="content">
 
 			<figure>
-				<img src="http://lorempixel.com/g/1200/400/" alt="Demo Image" />
+				<img src="http://lorempixel.com/g/1200/600/" alt="Demo Image" />
 			</figure>
 
 			<hr />
@@ -36,7 +36,7 @@
 			<address>
 				Daniel Riemer<br />
 				zitrusfrisch<br />
-				<a href="http://twitter.com/zitrusfrisch">Twitter URL</a>
+				<a href="#">Link</a>
 			</address>
 
 			<hr />

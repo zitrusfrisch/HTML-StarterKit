@@ -5,7 +5,7 @@ S T Y L E S . C S S
 */
 
 html { background: #eee; }
-body { font: normal 100%/1.5 Cambria, Georgia, Times, "Times New Roman", serif; color: #333; text-align: center; max-width: 1000px; margin: 0 auto; }
+body { font: normal 1.125em/1.5 "Gentium Basic", Georgia, Times, "Times New Roman", serif; color: #333; text-align: center; max-width: 64em; margin: 0 auto; padding: 0 5%; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, video { margin-bottom: 1em; }
 
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, address, table, form, hr, figure, au
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
 
-h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; }
+h1, h2, h3 { font-family: "Open Sans", sans-serif; text-rendering: optimizelegibility; }
 
 h1 { font-size: 2.25em; line-height: 1.16667; margin-bottom: .4445em; }
 h2 { font-size: 1.875em; line-height: 1.2; margin-bottom: .5334em; }
@@ -92,7 +92,7 @@ thead th {  }
 
 tbody th {  }
 tbody td {  }
-tbody td[colspan] { text-align: center; }
+tbody td[colspan] {  }
 
 tfoot td {  }
 

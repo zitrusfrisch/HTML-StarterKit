@@ -12,12 +12,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, address, table, form, hr, figure, au
 
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
-h1 {  }
-h2 {  }
-h3 {  }
-h4 {  }
-h5 {  }
-h6 {  }
+
+h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; }
+
+h1 { font-size: 2.25em; line-height: 1.16667; margin-bottom: .4445em; }
+h2 { font-size: 1.875em; line-height: 1.2; margin-bottom: .5334em; }
+h3 { font-size: 1.5em; line-height: 1.25; margin-bottom: .6667em; }
+h4 { font-size: 1em; line-height: 1.5; }
+h5 { font-size: 1em; line-height: 1.5; }
+h6 { font-size: 1em; line-height: 1.5; }
 
 ::-webkit-selection {  }
 ::-moz-selection {  }
@@ -57,9 +60,14 @@ button:active, .btn:active {  }
 
 /* Placeholder */
 
-::-webkit-input-placeholder {  }
-:-moz-placeholder {  }
-:placeholder {  }
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {  }
+input:-moz-placeholder,
+textarea:-moz-placeholder {  }
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {  }
+input:placeholder,
+textarea:placeholder {  }
 
 
 /* MEDIA --------------------------------------------------------------------------------------- */
@@ -68,6 +76,8 @@ figure {  }
 figcaption {  }
 
 img, object, embed {  }
+
+[class^="icon-"], [class*=" icon-"] {  }
 
 
 /* TABLES --------------------------------------------------------------------------------------- */
@@ -254,14 +264,8 @@ img { page-break-inside: avoid; }
 
 /* MODUL: NAVIGATION --------------------------------------------------------------------------- */
 
-nav { display: none; }
-
-
 /* MODUL: MAIN --------------------------------------------------------------------------------- */
 
 /* MODUL: FOOTER (Contentinfo) ----------------------------------------------------------------- */
-
-footer[role=contentinfo] { display: none; }
-
 
 }

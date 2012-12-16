@@ -26,11 +26,12 @@ hr { display: block; height: 1px; border: 0 none; border-top: 1px solid #384749;
 /* Lists */
 
 ul { list-style: none outside; }
-ul.ul-disc { list-style: disc outside; margin-left: 2em; }
-ul.ul-square { list-style: square outside; margin-left: 2em; }
+ul.inline { list-style: none outside; }
+ul.inline > li { display: inline-block; }
+ul.disc { list-style: disc outside; margin-left: 2em; }
+ul.square { list-style: square outside; margin-left: 2em; }
 ol { list-style: decimal outside; margin-left: 2em; }
-li ul, li ol { margin-bottom: 0; }
-
+ul ul, ul ol, ol ol, ol ul { margin-bottom: 0; }
 nav ul { margin: 0; }
 
 
@@ -52,30 +53,29 @@ input[type=email],
 input[type=url],
 input[type=tel],
 input[type=file],
-textarea { background: #fff; display: inline-block; width: 100%; border: 1px solid #fff; border-radius: 0; -webkit-appearance: none; margin: 0; padding: 4px; }
+textarea { background: #fff; display: inline-block; width: 100%; border: 1px solid #fff; border-radius: 0; -webkit-appearance: none; margin: 0; padding: .25em; }
 
 input[type="checkbox"],
 input[type="radio"] { padding: 0; }
 
 textarea { overflow: auto; resize: none; vertical-align: top; resize: vertical; }
 
-button, .btn { background: transparent; font-weight: bold; font-family: inherit; font-size: inherit; color: inherit; text-align: center; display: inline-block; *display: inline; *zoom: 1; vertical-align: baseline; width: auto; overflow: visible; cursor: pointer; border: 0 none; margin: 0; }
+button, .btn { background: transparent; font-weight: bold; font-family: inherit; font-size: inherit; line-height: normal; color: inherit; text-align: center; display: inline-block; *display: inline; *zoom: 1; vertical-align: baseline; width: auto; overflow: visible; cursor: pointer; border: 0 none; margin: 0; }
 
 
 /* Placeholder */
 
-::-webkit-input-placeholder { text-overflow: ellipsis; }
-:-moz-placeholder { text-overflow: ellipsis; }
-:placeholder { text-overflow: ellipsis; }
+input:-moz-placeholder, textarea:-moz-placeholder { color: #999; text-overflow: ellipsis; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #999; text-overflow: ellipsis; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #999; text-overflow: ellipsis; }
+:placeholder { color: #999; text-overflow: ellipsis; }
 
 
 /* Reset search input styling in Webkit */
 
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration { -webkit-appearance: none; }
 input[type=search] { -webkit-appearance: textfield; }
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
 
 
 /* Fix button styling in Firefox */
@@ -95,9 +95,12 @@ th, td { font-family: inherit; font-weight: normal; color: inherit; text-align: 
 
 /* MEDIA -------------------------------------- */
 
-img, object, embed { display: block; vertical-align: middle; max-width: 100%; width: auto; /* IE Fix */ height: auto; }
+img { -ms-interpolation-mode: bicubic; }
+img, object, embed { display: block; vertical-align: middle; max-width: 100%; width: auto; width: auto\9; /* IE Fix */ height: auto; border: 0; }
 audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; }
+
+#map_canvas img, .google-maps img { max-width: none; }
 
 
 /* HELPER CLASSES -------------------------------------- */
@@ -120,6 +123,6 @@ a.arrow:hover:after { border-left-color: #c00; }
 .ie7 legend { margin-left: -7px; }
 .ie7 input, .ie7 select, .ie7 textarea, .ie7 button, .ie7 .btn { vertical-align: middle; }
 .ie7 input[type=text], .ie7 input[type=password], .ie7 input[type=search], .ie7 input[type=email], .ie7 input[type=url], .ie7 input[type=tel], .ie7 textarea { display: inline; zoom: 1; }
-.ie7 audio, .ie7 canvas, .ie7 video { display: inline; *zoom: 1; }
-.ie7 .cf { *zoom: 1; }
+.ie7 audio, .ie7 canvas, .ie7 video { display: inline; zoom: 1; }
+.ie7 .cf { zoom: 1; }
 

@@ -67,7 +67,7 @@ Lorem ipsum dolor sit amet
 
 			<h3>Unordered List w/ disc bullets</h3>
 
-			<ul class="ul-disc">
+			<ul class="disc">
 				<li>Unordered list item</li>
 				<li>Unordered list item</li>
 				<li>Unordered list item</li>
@@ -75,7 +75,15 @@ Lorem ipsum dolor sit amet
 
 			<h3>Unordered List w/ square bullets</h3>
 
-			<ul class="ul-square">
+			<ul class="square">
+				<li>Unordered list item</li>
+				<li>Unordered list item</li>
+				<li>Unordered list item</li>
+			</ul>
+
+			<h3>Unordered horizontal List</h3>
+
+			<ul class="inline">
 				<li>Unordered list item</li>
 				<li>Unordered list item</li>
 				<li>Unordered list item</li>
@@ -83,9 +91,9 @@ Lorem ipsum dolor sit amet
 
 			<h3>Unordered List with nested items</h3>
 
-			<ul class="ul-square">
+			<ul class="square">
 				<li>Unordered list item
-					<ul class="ul-square">
+					<ul class="square">
 						<li>Nested unordered list item</li>
 						<li>Nested unordered list item</li>
 						<li>Nested unordered list item</li>

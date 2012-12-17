@@ -7,12 +7,11 @@
 
 <head>
 
+<meta charset="utf-8">
+
 <title>Pagetitle</title>
 
-<meta charset="utf-8">
 <meta name="description" content="XXXXXXXXXXXXXXXX">
-
-<!-- Viewport-Metatag for responsive designs -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--[if IE]>

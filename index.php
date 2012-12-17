@@ -12,9 +12,8 @@
 <meta charset="utf-8">
 <meta name="description" content="XXXXXXXXXXXXXXXX">
 
-<!-- Use Viewport-Metatag for responsive designs only!
+<!-- Viewport-Metatag for responsive designs -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
--->
 
 <!--[if IE]>
 <meta http-equiv="imagetoolbar" content="no">
@@ -84,6 +83,7 @@
 			document.write(unescape("%3Cscript src='/js/libs/jquery.js'%3E%3C/script%3E"));
 		}
 	</script>
+	<script src="js/ios.js"></script>
 	<script src="js/functions.js"></script>
 
 </body>

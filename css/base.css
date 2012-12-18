@@ -10,6 +10,7 @@ html { height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -web
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { background: transparent; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; margin: 0; padding: 0; }
 article, aside, dialog, figure, figcaption, footer, header, hgroup, nav, section { display: block; }
 
+
 /* TYPOGRAPHY -------------------------------------- */
 
 strong, b { font-weight: bold; }
@@ -91,7 +92,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner { border: 0; margin:
 /* TABLES -------------------------------------- */
 
 table { width: 100%; border-spacing: 0; border-collapse: collapse; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-th, td { font-family: inherit; font-weight: normal; color: inherit; text-align: center; vertical-align: top; }
+th, td { font-family: inherit; font-weight: normal; color: inherit; vertical-align: top; }
 
 
 /* MEDIA -------------------------------------- */

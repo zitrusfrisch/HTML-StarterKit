@@ -127,4 +127,5 @@ a.arrow:hover:after { border-left-color: #c00; }
 .ie7 input[type=text], .ie7 input[type=password], .ie7 input[type=search], .ie7 input[type=email], .ie7 input[type=url], .ie7 input[type=tel], .ie7 textarea { display: inline; zoom: 1; }
 .ie7 audio, .ie7 canvas, .ie7 video { display: inline; zoom: 1; }
 .ie7 .cf { zoom: 1; }
+.ie7 .ul.inline > li { display: inline; zoom: 1; }
 

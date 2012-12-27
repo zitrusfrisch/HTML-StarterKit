@@ -1,8 +1,3 @@
-$(window).load(function() {
-
-});
-
-
 $(document).ready(function(){
 
 /* ================================================================================================================
@@ -12,6 +7,5 @@ jQuery placeholder plugin (see polyfills.js)
 	if ($.fn.placeholder) {
 		$('input, textarea').placeholder();
 	}
-
 
 });

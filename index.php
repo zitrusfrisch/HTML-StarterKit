@@ -8,11 +8,10 @@
 <head>
 
 <meta charset="utf-8">
-
-<title>Pagetitle</title>
-
 <meta name="description" content="XXXXXXXXXXXXXXXX">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pagetitle</title>
 
 <!--[if IE]>
 <meta http-equiv="imagetoolbar" content="no">
@@ -36,9 +35,6 @@
 
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-<!-- Use Mediaqueries polyfill for responsive designs only! -->
-<!--[if lt IE 9 ]><script src="js/libs/css3-mediaqueries.js"></script><![endif]-->
 
 </head>
 
@@ -84,6 +80,10 @@
 	</script>
 	<script src="js/ios.js"></script>
 	<script src="js/functions.js"></script>
+
+<!--[if lt IE 9 ]>
+	<script src="js/libs/polyfills.js"></script>
+<![endif]-->
 
 </body>
 

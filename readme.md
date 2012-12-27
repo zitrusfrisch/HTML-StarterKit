@@ -1,25 +1,28 @@
 # HTML-StarterKit v1.06  
-Ein schlankes HTML5 Template für die reibungslose Umsetzung Deiner responsiven Websites. 
+Ein schlankes HTML5 Template für die reibungslose Umsetzung Deiner responsiven Websites. **Jetzt auch mit eigener Website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
 
 ## Optimiere Deinen Workflow mit dem HTML-StarterKit  
-Mit dem HTML-StarterKit erhältst Du kein überladenes Framework, sondern eine einfache, aber solide Grundlage für responsive HTML5 Websites. Nie mehr um doctypes, jQuery oder Datei-Struktur kümmern, sondern direkt mit dem Layout beginnen.
+Das HTML-StarterKit bringt alles für die Umsetzung Deiner Website mit: Nie mehr um doctypes, jQuery oder Datei-Struktur kümmern, sondern direkt mit dem Layout beginnen.
 
 ## Das HTML-StarterKit nutzt aktuelle Standards wie HTML5 und CSS3  
-Als Basis verwendet das HTML-StarterKit HTML5 als Markup, inklusive neuer, semantischer Selektoren. Darüber hinaus ist alles vorbereitet für eine flexible, sprich responsive, Umsetzung Deiner Website.
+Als Markup verwendet das HTML-StarterKit valides HTML5, inklusive neuer, semantischer Selektoren. Darüber hinaus ist im CSS alles für eine flexible, sprich responsive, Umsetzung Deiner Website vorbereitet.
+
+## Die "Mach, was immer Du willst"-Lizenz  
+Das zitrusfrisch HTML-StarterKit unterliegt keinen urheberrechtlichen Beschränkungen und darf daher sowohl für private als auch für kommerzielle Zwecke frei verwendet werden. Ausgenommen sind Javascripts von Drittanbietern, die jeweils den Nutzungsbedingungen des Anbieters unterliegen.
 
 ## Diese Dateien sind im HTML-StarterKit enthalten
 
 **index.php**  
-HTML5-Rahmen mit Meta-Tags, sowie Links zu CSS-Dateien und jQuery; außerdem ungestylte Demo-Inhalte, die mittels DEMO_content.inc.php inkludiert werden.  
+HTML5-Rahmen mit Meta-Tags, Links zu CSS- und JavaScript-Dateien sowie beispielhafte Inhalten.  
 
 **base.css**  
 Basis Stylesheet mit individuellem CSS-Reset, grundlegenden Styling-Angaben und nützlichen "Helper-Classes".
 
 **styles.css**  
-Zentrales Stylesheet mit Platzhaltern für gängige Selektoren, Klassen und IDs sowie MediaQueries für verschiedene Viewports.
+Zentrales Stylesheet mit Platzhaltern für häufig genutzte Selektoren, Klassen und IDs sowie MediaQueries für gängige Viewports.
   
 **jquery.js**  
-[jQuery](http://jquery.com/) - notwendige Basis für eine Reihe der genutzten Plugins und Polyfills. Im Footer ist jeweils die aktuellste Version auf Google's CDN verlinkt. Falls das Laden von dort fehlschlägt, wird dieser lokale Fallback eingebunden.  
+[jQuery](http://jquery.com/) - notwendige Basis für eine Reihe der genutzten Plugins und Polyfills. Im Footer ist jeweils die aktuellste Version auf Googles CDN verlinkt. Falls das Laden von dort fehlschlägt, wird dieser lokale Fallback eingebunden.  
   
 **modernizr.js**  
 [Modernizr](http://modernizr.com/) ist eine JavaScript Library, die den Browser auf diverse HTML5 und CSS3 Features überprüft und entsprechende Klassen in das <html>-Tag der Website schreibt.  
@@ -32,14 +35,15 @@ iOS.js behebt Darstellungsfehler, die auf iOS-Devices im Zusammenhang mit respon
 Verschiedene Plugins zur Funktionserweiterung älterer IE-Versionen, die je nach Bedarf aktiviert werden können: [Selctivizr](http://selectivizr.com) und [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) für CSS3-Psuedoklassen, [Respond.js](http://j.mp/respondjs) für CSS3-Mediaqueries und ein [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder).
   
 **functions.js**  
-In der functions.js ist noch jede Menge Platz für Deine eigenen JavaScripts.  
+In der functions.js ist neben der Initialisierung des Placeholder Polyfills noch jede Menge Platz für Deine eigenen JavaScripts.  
 
 
 ## Version-Log
 
-**Version v1.06 - jetzt auch mit eigener Website: http://zitrusfrisch.de/html-starterkit/**  
-+ Wieder auf Respond.js gewechselt (s. Version v1.04), da sich CSS3-Mediaqueries.js sich in manchen Fällen nicht mit den Selectivizr-Plugins verträgt.
-+ Alle IE-Polyfills in polyfills.js zusammengefasst  
+**Version v1.06**    
++ Wieder auf Respond.js gewechselt (s. Version v1.04), da sich CSS3-Mediaqueries.js in manchen Fällen nicht mit den Selectivizr-Plugins verträgt.
++ Alle IE-Polyfills (inlusive respond.js) in polyfills.js zusammengefasst  
++ Bug fixed in iOS.js
 
 **Version v1.05**  
 + Small improvements

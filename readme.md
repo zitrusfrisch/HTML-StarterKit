@@ -19,7 +19,7 @@ HTML5-Rahmen mit Meta-Tags, Links zu CSS- und JavaScript-Dateien sowie beispielh
 Basis Stylesheet mit individuellem CSS-Reset, grundlegenden Styling-Angaben und nützlichen "Helper-Classes".
 
 **styles.css**  
-Zentrales Stylesheet mit Platzhaltern für häufig genutzte Selektoren, Klassen und IDs sowie MediaQueries für gängige Viewports.
+Zentrales Stylesheet mit Platzhaltern für häufig genutzte Selektoren, Klassen und IDs sowie Media Queries für gängige Viewports.
   
 **jquery.js**  
 [jQuery](http://jquery.com/) - notwendige Basis für eine Reihe der genutzten Plugins und Polyfills. Im Footer ist jeweils die aktuellste Version auf Googles CDN verlinkt. Falls das Laden von dort fehlschlägt, wird dieser lokale Fallback eingebunden.  
@@ -32,7 +32,7 @@ Zentrales Stylesheet mit Platzhaltern für häufig genutzte Selektoren, Klassen 
 iOS.js behebt Darstellungsfehler, die auf iOS-Devices im Zusammenhang mit responsiven Designs auftreten können und enthält Fixes für den [iOS Viewport Scaling Bug](https://gist.github.com/901295) und den [Placeholder Bug in iOS 6](http://mooki83.tistory.com), sowie ein Script, um die [Adresszeile im Safari Mobile auszublenden](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/).
   
 **polyfills.js**  
-Verschiedene Plugins zur Funktionserweiterung älterer IE-Versionen, die je nach Bedarf aktiviert werden können: [Selctivizr](http://selectivizr.com) und [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) für CSS3-Psuedoklassen, [Respond.js](http://j.mp/respondjs) für CSS3-Mediaqueries und ein [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder).
+Verschiedene Plugins zur Funktionserweiterung älterer IE-Versionen, die je nach Bedarf aktiviert werden können: [Selctivizr](http://selectivizr.com) und [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) für CSS3-Psuedoklassen, [Respond.js](http://j.mp/respondjs) für CSS3 Media Queries und ein [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder).
   
 **functions.js**  
 In der functions.js ist neben der Initialisierung des Placeholder Polyfills noch jede Menge Platz für Deine eigenen JavaScripts.  

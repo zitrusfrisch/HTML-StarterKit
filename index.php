@@ -78,7 +78,7 @@
 			document.write(unescape("%3Cscript src='js/libs/jquery.js'%3E%3C/script%3E"));
 		}
 	</script>
-	<script src="js/ios.js"></script>
+	<script src="js/libs/ios.js"></script>
 	<script src="js/functions.js"></script>
 
 <!--[if lt IE 9 ]>

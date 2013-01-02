@@ -1,5 +1,7 @@
 # HTML-StarterKit, Version v1.06  
-Ein schlankes HTML5 Template für die reibungslose Umsetzung Deiner responsiven Websites. **Jetzt auch mit eigener Website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
+Ein schlankes HTML5 Template für die reibungslose Umsetzung Deiner responsiven Websites.
+
+**Jetzt auch mit eigener Website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
 
 ## Optimiere Deinen Workflow mit dem HTML-StarterKit  
 Das HTML-StarterKit bringt alles für die Umsetzung Deiner Website mit: Nie mehr um doctypes, jQuery oder Datei-Struktur kümmern, sondern direkt mit dem Layout beginnen.

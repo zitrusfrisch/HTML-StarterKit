@@ -1,4 +1,4 @@
-# HTML-StarterKit, Version v1.06  
+# HTML-StarterKit, Version v1.1  
 Ein schlankes HTML5 Template für die reibungslose Umsetzung Deiner responsiven Websites.
 
 **Jetzt auch mit eigener Website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
@@ -42,7 +42,12 @@ In der functions.js ist neben der Initialisierung des Placeholder Polyfills noch
 
 ## Version-Log
 
-**Version v1.06**    
+**Version v1.1**  
++ jQuery-Update auf Version 1.9.0  
++ Platzhalter für selection-Pseudoklasse entfernt (Bleiben diese leer können Inhalte im Firefox nicht mehr markiert/selektiert werden)
++ Links für Favicon und Apple-Touch-Icons im Header verlinkt und DEMO-Icons hinzugefügt
+
+**Version v1.06**  
 + Wieder auf Respond.js gewechselt (s. Version v1.04), da sich CSS3-Mediaqueries.js in manchen Fällen nicht mit den Selectivizr-Plugins verträgt.
 + Alle IE-Polyfills (inlusive respond.js) in polyfills.js zusammengefasst  
 + Bug fixed in iOS.js

@@ -66,14 +66,6 @@ textarea { overflow: auto; resize: none; vertical-align: top; resize: vertical; 
 button, .btn { background: transparent; font-weight: bold; font-family: inherit; font-size: inherit; line-height: normal; color: inherit; text-align: center; display: inline-block; *display: inline; *zoom: 1; vertical-align: baseline; width: auto; overflow: visible; cursor: pointer; border: 0 none; margin: 0; }
 
 
-/* Placeholder */
-
-input:-moz-placeholder, textarea:-moz-placeholder { color: #999; text-overflow: ellipsis; }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #999; text-overflow: ellipsis; }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #999; text-overflow: ellipsis; }
-:placeholder { color: #999; text-overflow: ellipsis; }
-
-
 /* Reset search input styling in Webkit */
 
 input[type=search] { -webkit-appearance: textfield; }

@@ -54,18 +54,6 @@ button:hover, .btn:hover {  }
 button:active, .btn:active {  }
 
 
-/* Placeholder */
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {  }
-input:-moz-placeholder,
-textarea:-moz-placeholder {  }
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {  }
-input:placeholder,
-textarea:placeholder {  }
-
-
 /* MEDIA --------------------------------------------------------------------------------------- */
 
 figure {  }

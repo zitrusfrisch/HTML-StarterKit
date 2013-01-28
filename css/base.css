@@ -21,7 +21,7 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 mark { background: #ffc; padding: 1px 3px; }
-hr { display: block; height: 1px; border: 0 none; border-top: 1px solid #384749; padding: 0; }
+hr { display: block; height: 1px; border: 0 none; border-top: 1px solid #000; padding: 0; }
 
 
 /* Lists */
@@ -103,7 +103,7 @@ audio:not([controls]) { display: none; }
 .left { float: left !important; }
 .right { float: right !important; }
 .normal { font-weight: normal !important; }
-.anim { -webkit-backface-visibility: hidden; -webkit-perspective: 1000; -webkit-transform: translate3d(0,0,0); /* Speeds up CSS animations in Webkit */ }
+.anim { -moz-backface-visibility: hidden; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; -webkit-transform: translate3d(0,0,0); /* Speeds up CSS animations */ }
 .cf:before, .cf:after { content: ""; display: table; }
 .cf:after, .clear { clear: both; }
 

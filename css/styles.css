@@ -5,7 +5,7 @@ S T Y L E S . C S S
 */
 
 html { background: #eee; }
-body { font: normal 1.125em/1.5 "Gentium Basic", Georgia, Times, "Times New Roman", serif; color: #333; text-align: center; max-width: 64em; margin: 0 auto; padding: 0 2%; }
+body { font: normal 1.125em/1.5 "Gentium Basic", Georgia, Times, "Times New Roman", serif; color: #333; max-width: 64em; margin: 0 auto; padding: 0 2%; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, video { margin-bottom: 1em; }
 
@@ -45,6 +45,11 @@ input[type=url],
 input[type=tel],
 input[type=file],
 textarea {  }
+
+input[type=checkbox],
+input[type=radio] {  }
+
+select {  }
 
 
 /* Button */
@@ -86,7 +91,7 @@ tfoot td {  }
 #masthead {  }
 
 a#logo {  }
-a#logo img { display: inline-block; }
+a#logo img {  }
 
 
 /* MODUL: NAVIGATION --------------------------------------------------------------------------- */
@@ -94,18 +99,16 @@ a#logo img { display: inline-block; }
 #mainnav {  }
 
 #mainnav ul {  }
-#mainnav li { display: inline-block; }
+#mainnav li {  }
 
 #mainnav a {  }
 #mainnav a:hover {  }
 #mainnav a:active {  }
 
-#mainnav .current a { cursor: default; }
-
 
 /* MODUL: MAIN --------------------------------------------------------------------------------- */
 
-#main { text-align: left; }
+#main {  }
 
 
 /* MODUL: FOOTER (Contentinfo) ----------------------------------------------------------------- */
@@ -211,6 +214,32 @@ M E D I A   Q U E R I E S   >   Min-width:  1382px
 /* MODUL: FOOTER (Contentinfo) ----------------------------------------------------------------- */
 
 }
+
+
+/*
+===================================================================================================
+M E D I A   Q U E R I E S   >   Retina / High DPI Styles
+===================================================================================================
+*/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+
+/* TYPOGRAPHY ---------------------------------------------------------------------------------- */
+
+/* FORMS --------------------------------------------------------------------------------------- */
+
+/* MEDIA --------------------------------------------------------------------------------------- */
+
+/* MODUL: HEADER (Masthead) -------------------------------------------------------------------- */
+
+/* MODUL: NAVIGATION --------------------------------------------------------------------------- */
+
+/* MODUL: MAIN --------------------------------------------------------------------------------- */
+
+/* MODUL: FOOTER (Contentinfo) ----------------------------------------------------------------- */
+
+}
+
 
 
 /*

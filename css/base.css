@@ -46,8 +46,8 @@ a img { border: 0 none; }
 
 label { cursor: pointer; }
 
-input, textarea { font-weight: inherit; font-size: inherit; font-family: inherit; color: inherit; vertical-align: baseline; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-select { cursor: pointer; vertical-align: baseline; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+input,
+textarea { font-weight: inherit; font-size: inherit; font-family: inherit; color: inherit; vertical-align: baseline; margin: 0; }
 
 input[type=text],
 input[type=password],
@@ -56,14 +56,17 @@ input[type=email],
 input[type=url],
 input[type=tel],
 input[type=file],
-textarea { background: #fff; display: inline-block; width: 100%; border: 1px solid #fff; border-radius: 0; -webkit-appearance: none; margin: 0; padding: .25em; }
-
-input[type="checkbox"],
-input[type="radio"] { padding: 0; }
+textarea { background: #fff; display: inline-block; width: 100%; border: 1px solid #fff; border-radius: 0; -webkit-appearance: none; margin: 0; padding: .25em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 textarea { overflow: auto; resize: none; vertical-align: top; resize: vertical; }
 
-button, .btn { background: transparent; font-weight: bold; font-family: inherit; font-size: inherit; line-height: normal; color: inherit; text-align: center; display: inline-block; *display: inline; *zoom: 1; vertical-align: baseline; width: auto; overflow: visible; cursor: pointer; border: 0 none; margin: 0; }
+input[type=checkbox],
+input[type=radio] { padding: 0; }
+
+select { cursor: pointer; vertical-align: baseline; margin: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+button,
+.btn { background: transparent; font-weight: bold; font-family: inherit; font-size: inherit; line-height: normal; color: inherit; text-align: center; display: inline-block; *display: inline; *zoom: 1; vertical-align: baseline; width: auto; overflow: visible; cursor: pointer; border: 0 none; margin: 0; }
 
 
 /* Reset search input styling in Webkit */
@@ -76,10 +79,10 @@ input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
 /* Fix button styling in Firefox */
 
 button::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-input[type="file"] > input[type="button"]::-moz-focus-inner { border: 0; margin: 0; padding: 0; }
+input[type=reset]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=file] > input[type=button]::-moz-focus-inner { border: 0; margin: 0; padding: 0; }
 
 
 /* TABLES -------------------------------------- */

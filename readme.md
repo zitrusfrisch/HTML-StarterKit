@@ -1,4 +1,4 @@
-# HTML-StarterKit, Version v1.2
+# HTML-StarterKit, Version v1.3
 Ein schlankes HTML5 Template für die reibungslose Umsetzung Deiner responsiven Websites.
 
 **Jetzt auch mit eigener Website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
@@ -41,6 +41,12 @@ In der functions.js ist neben der Initialisierung des Placeholder Polyfills noch
 
 
 ## Version-Log
+
+**Version v1.3**
++ NEW! Introducing FlexRows, a flexible structure to get your content in shape.
++ Web-Fonts wieder entfernt (sind ja kein Muss)
++ Demo-Content liegt jetzt direkt in index.html (von PHP auf HTML gewechselt)
++ Deleted <dialog> from base.css
 
 **Version v1.2**
 + Mediaquery für Retina / High DPI Displays hinzugefügt (https://gist.github.com/3446599)

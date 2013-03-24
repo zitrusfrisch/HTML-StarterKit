@@ -5,22 +5,19 @@ S T Y L E S . C S S
 */
 
 html { background: #eee; }
-body { font: normal 1.125em/1.5 "Gentium Basic", Georgia, Times, "Times New Roman", serif; color: #333; max-width: 64em; margin: 0 auto; padding: 0 2%; }
+body { font: normal 1.125em/1.35 "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333; max-width: 64em; margin: 0 auto; padding: 0 2%; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, video { margin-bottom: 1em; }
 
 
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
-
-h1, h2, h3 { font-family: "Open Sans", sans-serif; text-rendering: optimizelegibility; }
-
-h1 { font-size: 2.25em; line-height: 1.16667; margin-bottom: .4445em; }
-h2 { font-size: 1.875em; line-height: 1.2; margin-bottom: .5334em; }
-h3 { font-size: 1.5em; line-height: 1.25; margin-bottom: .6667em; }
-h4 { font-size: 1em; line-height: 1.5; }
-h5 { font-size: 1em; line-height: 1.5; }
-h6 { font-size: 1em; line-height: 1.5; }
+h1 { font-size: 2em; line-height: 1.175; margin-bottom: .5em; }
+h2 { font-size: 1.6667em; line-height: 1.2; margin-bottom: .5334em; }
+h3 { font-size: 1.3334em; line-height: 1.25; margin-bottom: .6667em; }
+h4 {  }
+h5 {  }
+h6 {  }
 
 a {  }
 a:visited {  }
@@ -86,6 +83,14 @@ tbody td[colspan] {  }
 tfoot td {  }
 
 
+/* FLEXROWS ------------------------------------------------------------------------------------ */
+
+.flexrow { *zoom: 1; }
+.flexrow:before, .flexrow:after { content: ""; display: table; clear: both; }
+
+.col { background: #ddd; float: left; width: 100%; margin-bottom: 1em; padding: 3em 0; }
+
+
 /* MODUL: HEADER (Masthead) -------------------------------------------------------------------- */
 
 #masthead {  }
@@ -124,6 +129,12 @@ M E D I A   Q U E R I E S   >   Min-width:  480px
 
 @media only screen and (min-width: 480px) {
 
+/* FLEXROWS */
+
+.col { width: 49%; margin-left: 2%; }
+.col:nth-child(odd) { clear: left; margin-left: 0; }
+
+
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
 /* FORMS --------------------------------------------------------------------------------------- */
@@ -148,6 +159,23 @@ M E D I A   Q U E R I E S   >   Min-width:  768px
 */
 
 @media only screen and (min-width: 768px) {
+
+/* FLEXROWS */
+
+.col:nth-child(odd) { clear: none; margin-left: 2%; }
+.col:nth-child(1) { margin-left: 0; }
+
+.col1_6 { width: 15%; }
+.col1_5 { width: 18.4%; }
+.col1_4 { width: 23.5%; }
+.col1_3 { width: 32%; }
+.col2_5 { width: 38.8%; }
+.col1_2 { width: 49%; }
+.col3_5 { width: 59.2%; }
+.col2_3 { width: 66%; }
+.col3_4 { width: 74.5%; }
+.col1_1 { width: 100%; }
+
 
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
@@ -174,6 +202,8 @@ M E D I A   Q U E R I E S   >   Min-width:  992px
 
 @media only screen and (min-width: 992px) {
 
+/* FLEXROWS */
+
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
 /* FORMS --------------------------------------------------------------------------------------- */
@@ -199,6 +229,8 @@ M E D I A   Q U E R I E S   >   Min-width:  1382px
 
 @media only screen and (min-width: 1382px) {
 
+/* FLEXROWS */
+
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
 /* FORMS --------------------------------------------------------------------------------------- */
@@ -223,6 +255,8 @@ M E D I A   Q U E R I E S   >   Retina / High DPI Styles
 */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+
+/* FLEXROWS */
 
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
@@ -254,6 +288,8 @@ M E D I A   Q U E R I E S   >   Print Styles
 
 @page { margin: .5cm; }
 
+
+/* FLEXROWS */
 
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 

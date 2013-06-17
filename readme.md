@@ -43,8 +43,8 @@ In der functions.js ist neben der Initialisierung des Placeholder Polyfills noch
 ## Version-Log
 
 **Version v1.4**
-+ Deleted <hgroup> and <dialog> in base.css as they were dropped from HTML5 spec  
-+ Switched order of Modernizr and CSS files (Modernizr now loads after CSS, as recommended by the Modernizr creators)
++ Removed hgroup and dialog tags from base.css as they were dropped from HTML5 spec  
++ Switched order of Modernizr and CSS files (Modernizr now loads after CSS (recommended by the Modernizr creators)
 
 **Version v1.3**
 + NEW! Introducing FlexRows, a flexible structure to get your content in shape.

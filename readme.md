@@ -1,4 +1,4 @@
-# HTML-StarterKit, Version v1.3
+# HTML-StarterKit, Version v1.4
 Ein schlankes HTML5 Template für die reibungslose Umsetzung Deiner responsiven Websites.
 
 **Jetzt auch mit eigener Website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
@@ -41,6 +41,10 @@ In der functions.js ist neben der Initialisierung des Placeholder Polyfills noch
 
 
 ## Version-Log
+
+**Version v1.4**
++ Deleted <hgroup> and <dialog> in base.css as they were dropped from HTML5 spec  
++ Switched order of Modernizr and CSS files (Modernizr now loads after CSS, as recommended by the Modernizr creators)
 
 **Version v1.3**
 + NEW! Introducing FlexRows, a flexible structure to get your content in shape.

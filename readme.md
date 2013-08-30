@@ -40,9 +40,9 @@ In der functions.js ist neben der Initialisierung des Placeholder Polyfills noch
 ## Version-Log  
 
 **Version v1.5**
-+ Merged the base.css into styles.css to save a http-request
++ Merged base.css into styles.css to save a http-request
 + Webkit browsers now hide placeholder when focussing input fields
-+ Added .htacces-file for gzipping and caching files and other stuff to speed up performance (based on https://github.com/cferdinandi/htaccess)
++ Added .htacces-file for gzipping, caching and other stuff to speed up performance (based on https://github.com/cferdinandi/htaccess)
 
 **Version v1.4**
 + Removed hgroup and dialog tags from base.css as they were dropped from HTML5 spec  

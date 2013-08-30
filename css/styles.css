@@ -4,33 +4,57 @@ S T Y L E S . C S S
 ===================================================================================================
 */
 
-html { background: #eee; }
-body { font: normal 1.125em/1.35 "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333; max-width: 64em; margin: 0 auto; padding: 0 2%; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video { background: transparent; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; margin: 0; padding: 0; }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, video { margin-bottom: 1em; }
+html { background: #eee; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+body { font: normal 1em/1.375 "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333; max-width: 64em; margin: 0 auto; padding: 0 2%; }
+
+article, aside, figure, figcaption, footer, header, nav, section { display: block; }
+h1, h2, h3, h4, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, video { margin-bottom: 1em; }
 
 
 /* TYPOGRAPHY ---------------------------------------------------------------------------------- */
 
-h1 { font-size: 2em; line-height: 1.175; margin-bottom: .5em; }
-h2 { font-size: 1.6667em; line-height: 1.2; margin-bottom: .5334em; }
-h3 { font-size: 1.3334em; line-height: 1.25; margin-bottom: .6667em; }
-h4 {  }
-h5 {  }
-h6 {  }
+h1 { font-size: 1.875em; line-height: 1.2; margin-bottom: .53333333em; }	 /* Font-Size: 30px / Line-Height: 36px */
+h2 { font-size: 1.5em; line-height: 1.25; margin-bottom: .66666666em; }		 /* Font-Size: 24px / Line-Height: 30px */
+h3 { font-size: 1.25em; line-height: 1.3; margin-bottom: .8em; }			 /* Font-Size: 20px / Line-Height: 26px */
+h4 { font-size: 1em; }														 /* Font-Size: 16px / Line-Height: 22px */
+
+a, :focus { outline: 0; }
 
 a {  }
 a:visited {  }
 a:hover {  }
 a:active {  }
 
+a img { border: 0 none; }
+
+strong, b { font-weight: bold; }
+small { font-size: .875em; }
+strike, del { text-decoration: line-through; }
+
+pre, code, kbd, samp { font-family: Consolas, "Lucida Console", Monaco, monospace; font-size: .875em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+mark { background: #ffc; padding: 1px 3px; }
+
+hr { display: block; height: 1px; border: 0 none; border-top: 1px solid #000; padding: 0; }
+
+ul { list-style: square outside; margin-left: 2em; }
+ol { list-style: decimal outside; margin-left: 2em; }
+
 
 /* FORMS --------------------------------------------------------------------------------------- */
 
 form {  }
 fieldset {  }
+label { cursor: pointer; }
 label, .label {  }
-
+input, select, textarea { font-weight: inherit; font-size: inherit; font-family: inherit; color: inherit; vertical-align: baseline; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /* Default Input Styles */
 
@@ -41,46 +65,72 @@ input[type=email],
 input[type=url],
 input[type=tel],
 input[type=file],
-textarea {  }
+textarea { display: block; width: 100%; border: 1px solid #ccc; margin: 0; padding: .25em; border-radius: 0; }
 
 input[type=checkbox],
-input[type=radio] {  }
+input[type=radio] { margin: 0; padding: 0; }
 
-select {  }
+select { cursor: pointer; }
+
+textarea { overflow: auto; resize: none; vertical-align: top; }
+
+input[type=search], input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration { -webkit-appearance: none; }
+[placeholder]:focus::-webkit-input-placeholder { color: transparent; }
 
 
 /* Button */
 
-button, .btn { background: #ccc; }
+button::-moz-focus-inner, input[type=reset]::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=file] > input[type=button]::-moz-focus-inner { border: 0; margin: 0; padding: 0; }
+button, .btn { background: #ccc; font-family: inherit; font-size: inherit; line-height: normal; color: inherit; text-align: center; display: inline-block; vertical-align: baseline; width: auto; overflow: visible; cursor: pointer; border: 0 none; margin: 0; padding: .5em 1em; }
 button:hover, .btn:hover {  }
 button:active, .btn:active {  }
 
+.ie7 button, .ie7 .btn { vertical-align: middle; display: inline; zoom: 1; }
+
 
 /* MEDIA --------------------------------------------------------------------------------------- */
+
+img { -ms-interpolation-mode: bicubic; }
+img, object, embed { display: block; vertical-align: middle; max-width: 100%; width: auto; width: auto\9; /* IE Fix */ height: auto; border: 0; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; }
+
+/* Disable max-width for Google Map images */
+
+#map_canvas img, .google-maps img { max-width: none; }
 
 figure {  }
 figcaption {  }
 
 img, object, embed {  }
 
-[class^="icon-"], [class*=" icon-"] {  }
-
 
 /* TABLES --------------------------------------------------------------------------------------- */
 
-table {  }
+table { width: 100%; border-spacing: 0; border-collapse: collapse; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-colgroup {  }
+colgroup { border: 1px solid #ccc; }
 
-th, td {  }
+th, td { font-family: inherit; font-weight: normal; color: inherit; text-align: left; vertical-align: top; border-bottom: 1px solid #ccc; padding: .5em; }
 
-thead th {  }
+thead th { font-weight: bold; }
 
-tbody th {  }
+tbody th { font-weight: bold; }
 tbody td {  }
-tbody td[colspan] {  }
+tbody td[colspan] { text-align: center; }
 
-tfoot td {  }
+tfoot td { color: #777; }
+
+
+/* HELPER CLASSES -------------------------------------- */
+
+.left { float: left !important; }
+.right { float: right !important; }
+.normal { font-weight: normal !important; }
+
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after, .clear { clear: both; }
+.ie7 .cf { zoom: 1; }
 
 
 /* FLEXROWS ------------------------------------------------------------------------------------ */

@@ -1,4 +1,4 @@
-# HTML-StarterKit, Version v1.4
+# HTML-StarterKit, Version v1.5
 Ein schlankes HTML5 Template für die reibungslose Umsetzung Deiner responsiven Websites.
 
 **Jetzt auch mit eigener Website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
@@ -17,11 +17,8 @@ Das zitrusfrisch HTML-StarterKit unterliegt keinen urheberrechtlichen Beschränk
 **index.php**
 HTML5-Rahmen mit Meta-Tags, Links zu CSS- und JavaScript-Dateien sowie beispielhafte Inhalten.
 
-**base.css**
-Basis Stylesheet mit individuellem CSS-Reset, grundlegenden Styling-Angaben und nützlichen "Helper-Classes".
-
 **styles.css**
-Zentrales Stylesheet mit Platzhaltern für häufig genutzte Selektoren, Klassen und IDs sowie Media Queries für gängige Viewports.
+Zentrales Stylesheet mit individuellem CSS-Reset, grundlegenden Styling-Angaben sowie Platzhaltern für häufig genutzte Selektoren, Klassen und IDs sowie Media Queries für gängige Viewports.
 
 **jquery.js**
 [jQuery](http://jquery.com/) - notwendige Basis für eine Reihe der genutzten Plugins und Polyfills. Im Footer ist jeweils die aktuellste Version auf Googles CDN verlinkt. Falls das Laden von dort fehlschlägt, wird dieser lokale Fallback eingebunden.
@@ -40,7 +37,12 @@ Verschiedene Plugins zur Funktionserweiterung älterer IE-Versionen, die je nach
 In der functions.js ist neben der Initialisierung des Placeholder Polyfills noch jede Menge Platz für Deine eigenen JavaScripts.
 
 
-## Version-Log
+## Version-Log  
+
+**Version v1.5**
++ Merged the base.css into styles.css to save a http-request
++ Webkit browsers now hide placeholder when focussing input fields
++ Added .htacces-file for gzipping and caching files and other stuff to speed up performance (based on https://github.com/cferdinandi/htaccess)
 
 **Version v1.4**
 + Removed hgroup and dialog tags from base.css as they were dropped from HTML5 spec  

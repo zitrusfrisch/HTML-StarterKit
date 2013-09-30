@@ -13,44 +13,6 @@
 
 
 # ----------------------------------------------------------------------
-# CORS-enabled images (@crossorigin)
-# ----------------------------------------------------------------------
-
-# Send CORS headers if browsers request them; enabled by default for images.
-# developer.mozilla.org/en/CORS_Enabled_Image
-# blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
-# hacks.mozilla.org/2011/11/using-cors-to-load-webgl-textures-from-cross-domain-images/
-# wiki.mozilla.org/Security/Reviews/crossoriginAttribute
-
-<IfModule mod_setenvif.c>
-  <IfModule mod_headers.c>
-    # mod_headers, y u no match by Content-Type?!
-    <FilesMatch "\.(gif|ico|jpe?g|png|svg|svgz|webp)$">
-      SetEnvIf Origin ":" IS_CORS
-      Header set Access-Control-Allow-Origin "*" env=IS_CORS
-    </FilesMatch>
-  </IfModule>
-</IfModule>
-
-
-
-# ----------------------------------------------------------------------
-# Webfont access
-# ----------------------------------------------------------------------
-
-# Allow access from all domains for webfonts.
-# Alternatively you could only whitelist your
-# subdomains like "subdomain.example.com".
-
-<IfModule mod_headers.c>
-  <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff)$">
-    Header set Access-Control-Allow-Origin "*"
-  </FilesMatch>
-</IfModule>
-
-
-
-# ----------------------------------------------------------------------
 # Proper MIME type for all files
 # ----------------------------------------------------------------------
 
@@ -63,7 +25,7 @@ AddType audio/mp4                      		m4a f4a f4b
 AddType audio/ogg                      		oga ogg
 
 # Video
-AddType video/mp4                      		mp4 m4v f4v f4p
+AddType video/mp4                      		mp4
 AddType video/ogg                      		ogv
 AddType video/webm                     		webm
 AddType video/x-flv                    		flv
@@ -193,18 +155,6 @@ AddType text/x-vcard                        vcf
 <IfModule mod_headers.c>
 	Header set Cache-Control "no-transform"
 </IfModule>
-
-
-
-# ----------------------------------------------------------------------
-# ETag removal
-# ----------------------------------------------------------------------
-
-<IfModule mod_headers.c>
-	Header unset ETag
-</IfModule>
-
-FileETag None
 
 
 

@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v2.0
+# HTML-StarterKit, version v2.01
 A simple HTML5 template for your responsive websites.
 
 **Visit the website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
@@ -6,7 +6,7 @@ A simple HTML5 template for your responsive websites.
 ## Speed up your workflow with HTML-StarterKit
 HTML-StarterKit contains everything you need to create your responsive website: Never care about doctypes and ubiquitous HTML parts, linking to jQuery or the file structure again – start designing immediately.
 
-## HTML-StarterKit uses modern standards like HTML5 and CSS3
+## HTML-StarterKit uses modern standards
 HTML-StarterKit features valid HTML5, including new, semantic selectors. And by using media queries and the FlexRow grid it is even responsive!
 
 ## The "Do, whatever you want"-license
@@ -38,6 +38,9 @@ Use functions.js for your personal javascripts and functions.
 
 
 ## Version-Log  
+
+**Version v2.01** 
++ Minor bugfix
 
 **Version v2.0** 
 + NEW! English version! 

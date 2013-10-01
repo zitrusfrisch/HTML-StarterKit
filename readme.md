@@ -1,7 +1,8 @@
 # HTML-StarterKit, version v2.01
 A simple HTML5 template for your responsive websites.
 
-**Visit the website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**
+**Visit the website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**  
+**Demo: [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)**
 
 ## Speed up your workflow with HTML-StarterKit
 HTML-StarterKit contains everything you need to create your responsive website: Never care about doctypes and ubiquitous HTML parts, linking to jQuery or the file structure again – start designing immediately.

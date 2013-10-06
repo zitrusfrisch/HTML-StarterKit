@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v2.01
+# HTML-StarterKit, version v2.02
 A simple HTML5 template for your responsive websites.
 
 **Visit the website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**  
@@ -39,6 +39,9 @@ Use functions.js for your personal javascripts and functions.
 
 
 ## Version-Log  
+
+**Version v2.02** 
++ Performance tweaks (optimized images, included additional minified styles.css and removed webfonts – yeah, again)
 
 **Version v2.01** 
 + Minor bugfix

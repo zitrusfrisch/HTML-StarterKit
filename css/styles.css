@@ -138,7 +138,7 @@ tfoot td { color: #777; }
 
 .flexrow { margin-left: -1.5em; padding-left: 4px; }
 
-[class^="col"] { display: inline-block; width: 100%; vertical-align: top; border-left: 1.5em solid transparent; margin-bottom: 1.5em; margin-left: -3px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+[class^="col"] { display: inline-block; width: 100%; vertical-align: top; border-left: 1.5em solid transparent; margin-bottom: 1.5em; margin-left: -4px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 
 

@@ -31,14 +31,20 @@ Stylesheet with individual CSS-Reset, basic styles and placeholders for frequent
 **ios.js**
 iOS.js contains fixes for iOS related bugs: [iOS Viewport Scaling Bug](https://gist.github.com/901295), [Placeholder Bug in iOS 6](http://mooki83.tistory.com) and a script to hide the URL bar [Doing it right: skipping the iPhone url bar](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/).
 
-**polyfills.js**
-Various plugins to enhance older versions of InternetExplorer and behave nicely, which can be activated optionally: [Selctivizr](http://selectivizr.com) and [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) to add CSS3 psuedoclasses, [Respond.js](http://j.mp/respondjs) for Media Queries and a [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder).
+**Polyfills**
+Various plugins to enhance older versions of InternetExplorer and behave nicely: [Selctivizr](http://selectivizr.com) and [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) to add CSS3 psuedoclasses, [Respond.js](http://j.mp/respondjs) for Media Queries and a [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder).
 
 **functions.js**
 Use functions.js for your personal javascripts and functions.
 
 
 ## Version-Log  
+
+**Version v2.1** 
++ NEW! Responsive tables based on Steven Hays approach – which is just plain brilliant (http://www.the-haystack.com/2013/09/24/responsive-scrollable-tables/)
++ Updated jQuery to version 1.10.2 (latest version that works with older IE versions)
++ jQuery now loaded via Google CDN with local fallback
++ Splitted up polyfills.js and moved files into separate folder to simplify individual usage.
 
 **Version v2.02** 
 + Performance tweaks (optimized images, included additional minified styles.css and removed webfonts – yeah, again)

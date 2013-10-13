@@ -31,7 +31,7 @@ ol ol{margin-bottom:0;}
 dl{}
 dt{font-weight:bold;}
 dd{}
-dd + dt{margin-top:1.5em;}
+dd + dt, dd + dd{margin-top:1.5em;}
 form{}
 fieldset{}
 fieldset > div{margin-bottom:1.5em;}
@@ -64,7 +64,10 @@ thead th{font-weight:bold;}
 tbody th{font-weight:bold;}
 tbody td{}
 tbody td[colspan]{text-align:center;}
+.ie8 tbody td[colspan]{text-align:left;}
 tfoot td{color:#777;}
+.responsive-table{overflow-x:auto;background-image:-webkit-linear-gradient(left, #fff, rgba(255,255,255,0)), -webkit-linear-gradient(right, #fff, rgba(255,255,255,0)), -webkit-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -webkit-linear-gradient(right, #c3c3c3, rgba(195,195,195,0));background-image:-moz-linear-gradient(left, #fff, rgba(255,255,255,0)), -moz-linear-gradient(right, #fff, rgba(255,255,255,0)), -moz-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -moz-linear-gradient(right, #c3c3c3, rgba(195,195,195,0));background-image:-o-linear-gradient(left, #fff, rgba(255,255,255,0)), -o-linear-gradient(right, #fff, rgba(255,255,255,0)), -o-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -o-linear-gradient(right, #c3c3c3, rgba(195,195,195,0));background-image:linear-gradient(left, #fff, rgba(255,255,255,0)), linear-gradient(right, #fff, rgba(255,255,255,0)), linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), linear-gradient(right, #c3c3c3, rgba(195,195,195,0));background-position:0 0, 100% 0, 0 0, 100% 0;background-repeat:no-repeat;background-color:#fff;background-size:5em 100%, 5em 100%, .5em 100%, .5em 100%;background-attachment:local, local, scroll, scroll;margin-bottom:1.5em;}
+.responsive-table table{margin:0;}
 .left{float:left !important;}
 .right{float:right !important;}
 .normal{font-weight:normal !important;}

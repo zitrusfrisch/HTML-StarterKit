@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v2.02
+# HTML-StarterKit, version v2.1
 A simple HTML5 template for your responsive websites.
 
 **Visit the website: [http://zitrusfrisch.de/html-starterkit/](http://zitrusfrisch.de/html-starterkit/)**  

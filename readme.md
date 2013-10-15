@@ -41,7 +41,7 @@ Use functions.js for your personal javascripts and functions.
 ## Version-Log  
 
 **Version v2.1** 
-+ NEW! Responsive tables based on Steven Hays approach – which is just plain brilliant (http://www.the-haystack.com/2013/09/24/responsive-scrollable-tables/)
++ NEW! Responsive tables based on Stephen Hays approach – which is just plain brilliant (http://www.the-haystack.com/2013/09/24/responsive-scrollable-tables/)
 + Updated jQuery to version 1.10.2 (latest version that works with older IE versions)
 + jQuery now loaded via Google CDN with local fallback
 + Splitted up polyfills.js and moved files into separate folder to simplify individual usage.

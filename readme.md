@@ -3,7 +3,7 @@ A simple, modular HTML5 template for your responsive websites.
 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit)  
-+ **Twitter:** [@html-starterkit](http://twitter.com/html-starterkit)  
++ **Twitter:** [@htmlstarterkit](http://twitter.com/htmlstarterkit)  
 
 #### Speed up your workflow
 HTML-StarterKit contains everything you need to create responsive websites: Stop caring about doctypes, ubiquitous HTML parts or linking to the latest jQuery version – just start designing.

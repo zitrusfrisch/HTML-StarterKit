@@ -1,15 +1,15 @@
 # HTML-StarterKit, version v2.1
 A simple, modular HTML5 template for your responsive websites.
 
-+ **Demo:** [http://zitrusfrisch.com/html-starterkit/demo](http://zitrusfrisch.com/html-starterkit/demo)  
-+ **Website:** [http://zitrusfrisch.com/html-starterkit](http://zitrusfrisch.com/html-starterkit)  
++ **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
++ **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit)  
 + **Twitter:** [@html-starterkit](http://twitter.com/html-starterkit)  
 
 #### Speed up your workflow
 HTML-StarterKit contains everything you need to create responsive websites: Stop caring about doctypes, ubiquitous HTML parts or linking to the latest jQuery version – just start designing.
 
 #### Modern web standards
-HTML-StarterKit uses super-modern HTML5 code, including new, semantic selectors. And by using a fluid grid, flexible elements and media queries it is responsive out of the box. See the [demo page](http://zitrusfrisch.com/html-starterkit/demo).
+HTML-StarterKit uses super-modern HTML5 code, including new, semantic selectors. And by using a fluid grid, flexible elements and media queries it is responsive out of the box. See the [demo page](http://zitrusfrisch.de/html-starterkit/demo).
 
 #### It's free!
 HTML-StarterKit is free for both personal and commercial usage under the terms of the [MIT license](http://opensource.org/licenses/MIT).
@@ -106,3 +106,4 @@ Use functions.js for your personal javascripts and functions.
 
 #### Version v1.0
 + Initial public release
+

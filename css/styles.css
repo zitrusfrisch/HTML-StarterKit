@@ -1,7 +1,7 @@
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video { background: transparent; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; margin: 0; padding: 0; }
 
-html { background: #fff; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
-body { font: normal 1em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif; color: #111; max-width: 64em; margin: 0 auto; padding: 3em 1.5em; }
+html { background: #fff; font: normal 1em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
+body { max-width: 64em; margin: 0 auto; padding: 3em 1.5em; }
 
 article, aside, figure, figcaption, footer, header, nav, section { display: block; }
 h1, h2, h3, h4, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, video { margin-bottom: 1.5em; }
@@ -11,7 +11,7 @@ h1, h2, h3, h4, p, ul, ol, dl, pre, address, table, form, hr, figure, audio, vid
 /* TYPOGRAPHY
 ------------------------------------------------------------------------------------------------ */
 
-h1 { font-weight: bold; font-size: 3em; line-height: 1.15; margin-bottom: .5em; }
+h1 { font-weight: bold; font-size: 3em; line-height: 1.125; margin-bottom: .5em; }
 h2 { font-weight: bold; font-size: 2em; line-height: 1.25; margin-bottom: .75em; }
 h3 { font-weight: bold; font-size: 1.5em; line-height: 1.25; margin-bottom: 1em; }
 h4 { font-weight: bold; font-size: 1em; }
@@ -31,10 +31,10 @@ strike, del { text-decoration: line-through; }
 
 pre, code, kbd, samp { font-family: Consolas, "Lucida Console", Monaco, monospace; font-size: .875em; }
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sub, sup { font-size: .75em; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
-mark { background: #ffc; padding: 1px 3px; }
+mark { background: #ff6; padding: 1px 3px; }
 
 blockquote { font-style: italic; border-left: 2px solid #07f; margin-bottom: 1.5em; padding: 1.125em 1.5em 1px; }
 
@@ -72,7 +72,7 @@ button, .btn { background: transparent; font-family: inherit; font-weight: bold;
 button:hover, .btn:hover { background: #07f; color: #fff; }
 button:active, .btn:active { background: #07f; color: #fff; }
 
-.helptext { font-size: .75em; display: block; }
+.helptext { font-size: .75em; display: block; padding-top: .25em; }
 
 /* Firefox Fix */
 button::-moz-focus-inner, input[type=reset]::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=file] > input[type=button]::-moz-focus-inner { border: 0; margin: 0; padding: 0; }
@@ -121,19 +121,7 @@ tbody td[colspan] { text-align: center; }
 tfoot td { color: #777; }
 
 /* Responsive Table Wrapper */
-.responsive-table {
-overflow-x: auto;
-background-image: -webkit-linear-gradient(left, #fff, rgba(255,255,255,0)), -webkit-linear-gradient(right, #fff, rgba(255,255,255,0)), -webkit-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -webkit-linear-gradient(right, #c3c3c3, rgba(195,195,195,0));
-background-image: -moz-linear-gradient(left, #fff, rgba(255,255,255,0)), -moz-linear-gradient(right, #fff, rgba(255,255,255,0)), -moz-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -moz-linear-gradient(right, #c3c3c3, rgba(195,195,195,0));
-background-image: -o-linear-gradient(left, #fff, rgba(255,255,255,0)), -o-linear-gradient(right, #fff, rgba(255,255,255,0)), -o-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -o-linear-gradient(right, #c3c3c3, rgba(195,195,195,0));
-background-image: linear-gradient(left, #fff, rgba(255,255,255,0)), linear-gradient(right, #fff, rgba(255,255,255,0)), linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), linear-gradient(right, #c3c3c3, rgba(195,195,195,0));
-background-position: 0 0, 100% 0, 0 0, 100% 0;
-background-repeat: no-repeat;
-background-color: #fff;
-background-size: 5em 100%, 5em 100%, .5em 100%, .5em 100%;
-background-attachment: local, local, scroll, scroll;
-margin-bottom: 1.5em;
-}
+.responsive-table { overflow-x: auto; background-image: -webkit-linear-gradient(left, #fff, rgba(255,255,255,0)), -webkit-linear-gradient(right, #fff, rgba(255,255,255,0)), -webkit-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -webkit-linear-gradient(right, #c3c3c3, rgba(195,195,195,0)); background-image: -moz-linear-gradient(left, #fff, rgba(255,255,255,0)), -moz-linear-gradient(right, #fff, rgba(255,255,255,0)), -moz-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -moz-linear-gradient(right, #c3c3c3, rgba(195,195,195,0)); background-image: -o-linear-gradient(left, #fff, rgba(255,255,255,0)), -o-linear-gradient(right, #fff, rgba(255,255,255,0)), -o-linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), -o-linear-gradient(right, #c3c3c3, rgba(195,195,195,0)); background-image: linear-gradient(left, #fff, rgba(255,255,255,0)), linear-gradient(right, #fff, rgba(255,255,255,0)), linear-gradient(left, #c3c3c3, rgba(195,195,195,0)), linear-gradient(right, #c3c3c3, rgba(195,195,195,0)); background-position: 0 0, 100% 0, 0 0, 100% 0; background-repeat: no-repeat; background-color: #fff; background-size: 5em 100%, 5em 100%, .5em 100%, .5em 100%; background-attachment: local, local, scroll, scroll; margin-bottom: 1.5em; }
 .responsive-table table { margin: 0; }
 
 
@@ -153,10 +141,11 @@ margin-bottom: 1.5em;
 /* FLEXROWS
 ------------------------------------------------------------------------------------------------ */
 
-.flexrow { margin-left: -1.5em; padding-left: 4px; }
+.flexrow { font-size: 0; margin: 0 -.5rem; }
+[class^="col"] { font-size: 1rem; display: inline-block; width: 100%; vertical-align: top; margin-bottom: 1.5em; padding: 0 .5em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-[class^="col"] { display: inline-block; width: 100%; vertical-align: top; border-left: 1.5em solid transparent; margin-bottom: 1.5em; margin-left: -4px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
+.ie8 .flexrow { margin: 0 -8px; }
+.ie8 [class^="col"] { font-size: 16px; }
 
 
 /* MODUL: HEADER (Masthead)
@@ -165,7 +154,7 @@ margin-bottom: 1.5em;
 .masthead {  }
 
 a.logo {  }
-a.logo img { display: inline-block; }
+a.logo img { display: inline-block; width: 310px; height: auto; }
 
 
 
@@ -196,7 +185,6 @@ a.logo img { display: inline-block; }
 ------------------------------------------------------------------------------------------------ */
 
 footer[role=contentinfo] {  }
-
 
 
 
@@ -293,12 +281,18 @@ M E D I A   Q U E R I E S   >   Min-width:  768px
 /* FORMS
 ------------------------------------------------------------------------------------------------ */
 
-.flexform .label, .flexform label { display: inline-block; width: 28%; padding-right: 2%; }
+.flexform fieldset > div { font-size: 0; margin-bottom: 1.5rem; }
+.flexform .label, .flexform label { font-size: 1rem; display: inline-block; width: 30%; padding-right: 1em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .flexform label.autowidth { width: auto; }
+.flexform input[type=text], .flexform input[type=password], .flexform input[type=search], .flexform input[type=email], .flexform input[type=url], .flexform input[type=tel], .flexform input[type=date], .flexform input[type=time], .flexform input[type=number], .flexform input[type=file], .flexform textarea { font-size: 1rem; display: inline-block; width: 70%; }
+.flexform select { font-size: 1rem; }
+.flexform span.helptext { font-size: .75rem; margin-left: 30%; }
+.flexform button { margin-left: 30%; }
 
-.flexform input[type=text], .flexform input[type=password], .flexform input[type=search], .flexform input[type=email], .flexform input[type=url], .flexform input[type=tel], .flexform input[type=date], .flexform input[type=time], .flexform input[type=number], .flexform input[type=file], .flexform textarea { display: inline-block; width: 70%; margin-left: -5px }
-
-.flexform button, .flexform span.helptext { margin-left: 30%; }
+.ie8 .flexform fieldset > div { margin-bottom: 24px; }
+.ie8 .flexform .label, .ie8 .flexform label, .ie8 .flexform input[type=text], .ie8 .flexform input[type=password], .ie8 .flexform input[type=search], .ie8 .flexform input[type=email], .ie8 .flexform input[type=url], .ie8 .flexform input[type=tel], .ie8 .flexform input[type=date], .ie8 .flexform input[type=time], .ie8 .flexform input[type=number], .ie8 .flexform input[type=file], .ie8 .flexform textarea, .ie8 .flexform select { font-size: 16px; }
+.ie8 .flexform span.helptext { font-size: 12px; }
+.ie8 .flexform button { font-size: 14px; }
 
 
 

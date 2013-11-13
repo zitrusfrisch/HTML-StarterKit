@@ -1,15 +1,16 @@
-# HTML-StarterKit, version v2.1
-A simple, modular HTML5 template for your responsive websites.
+# HTML-StarterKit, version v2.2
+A simple, modular HTML5 template to kick off your responsive websites.
 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
-+ **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit)  
++ **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
++ **Facebook:** [http://facebook.com/htmlstarterkit](http://facebook.com/htmlstarterkit)  
 + **Twitter:** [@htmlstarterkit](http://twitter.com/htmlstarterkit)  
 
 #### Speed up your workflow
-HTML-StarterKit contains everything you need to create responsive websites: Stop caring about doctypes, ubiquitous HTML parts or linking to the latest jQuery version – just start designing.
+HTML-StarterKit contains everything you need to create responsive websites: Stop caring about doctypes, ubiquitous HTML parts or linking to the latest jQuery version – just start developing.
 
 #### Modern web standards
-HTML-StarterKit uses super-modern HTML5 code, including new, semantic selectors. And by using a fluid grid, flexible elements and media queries it is responsive out of the box. See the [demo page](http://zitrusfrisch.de/html-starterkit/demo).
+HTML-StarterKit uses super-modern HTML5 code, including new, semantic selectors. And by using a fluid grid, flexible elements and media queries it is responsive out of the box. See the [demo page](http://zitrusfrisch.com/html-starterkit/demo).
 
 #### It's free!
 HTML-StarterKit is free for both personal and commercial usage under the terms of the [MIT license](http://opensource.org/licenses/MIT).
@@ -25,19 +26,24 @@ Stylesheet with individual CSS-Reset, basic styles and placeholders for frequent
 #### jquery.js
 [jQuery](http://jquery.com/) – required as base for most of the plugins and polyfills, included via Google’s CDN with a local fallback.
 
-#### modernizr.js
-[Modernizr](http://modernizr.com/) is a javascript library, that runs on page load to detect browser features and adds classes to the element of the website. _You may want to build your own production version of Modernizr with just the tests you need._
-
 #### ios.js
 iOS.js contains fixes for iOS related bugs: [iOS Viewport Scaling Bug](https://gist.github.com/901295), [Placeholder Bug in iOS 6](http://mooki83.tistory.com) and a script to hide the URL bar [Doing it right: skipping the iPhone url bar](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/) (which sadly does not work in iOS7 anymore).
 
 #### Polyfills
-Various plugins to enhance older versions of Internet Explorer and make them behave nicely: [Selctivizr](http://selectivizr.com) and [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) to add CSS3 psuedoclasses, [Respond.js](http://j.mp/respondjs) for Media Queries and a [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder).
+Various plugins to enhance older versions of InternetExplorer and make them behave nicely: [Selctivizr](http://selectivizr.com) and [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) to add CSS3 psuedoclasses, [Respond.js](http://j.mp/respondjs) for Media Queries, a [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder) and the [HTML5shiv](https://github.com/aFarkas/html5shiv/).
 
 #### functions.js
 Use functions.js for your personal javascripts and functions.
 
 ## Version-Log  
+
+#### Version v2.2
++ Switched font-size unit to rem (including fallback for IE8) for FlexRows and FlexForm
++ Removed modernizr.js and added html5shiv.js instead
++ Removed all apple-touch-icons but one
++ Fixed link to local jQuery fallback
++ Moved font-related declarations from ‘body’ to ‘html’
++ Minor CSS changes
 
 #### Version v2.1 
 + NEW! Responsive tables based on Stephen Hays approach – which is just plain brilliant (http://www.the-haystack.com/2013/09/24/responsive-scrollable-tables/)

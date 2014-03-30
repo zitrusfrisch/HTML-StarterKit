@@ -1,3 +1,9 @@
+/* RESET
+------------------------------------------------------------------------------------------------ */
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, form, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video { background: transparent; font-size: 100%; vertical-align: baseline; border: 0; outline: 0; margin: 0; padding: 0; }
 
 html { background: #fff; font: normal 1em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif; color: #333; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; height: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; }
@@ -62,15 +68,21 @@ fieldset > div { margin-bottom: 1.5em; }
 
 label, .label { display: block; cursor: pointer; }
 
-input, select, textarea { font-weight: inherit; font-size: inherit; font-family: inherit; color: inherit; vertical-align: baseline; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+label.checkbox,
+label.radio { text-indent: -20px; padding-left: 21px; }
+
+input, select, textarea { font-weight: inherit; font-size: inherit; font-family: inherit; color: inherit; vertical-align: baseline; }
 input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=time], input[type=number], input[type=file], textarea { background: #fff; display: block; width: 100%; border: 1px solid #ccc; margin: 0; padding: .375em; border-radius: 0; -webkit-appearance: none; }
 input[type=checkbox], input[type=radio] { margin: 0; padding: 0; }
 select { cursor: pointer; }
 textarea { overflow: auto; resize: none; vertical-align: top; }
 
-button, .btn { background: transparent; font-family: inherit; font-weight: bold; font-size: .875em; line-height: normal; color: #07f; text-align: center; text-transform: uppercase; display: inline-block; vertical-align: baseline; width: auto; overflow: visible; cursor: pointer; border: 2px solid #07f; margin: 0; padding: .75em 2em; }
+button,
+.btn { background: transparent; font-family: inherit; font-weight: bold; font-size: .875em; line-height: normal; color: #07f; text-align: center; text-transform: uppercase; display: inline-block; vertical-align: baseline; width: 100%; overflow: visible; cursor: pointer; border: 2px solid #07f; margin: 0; padding: .75em 2em; }
 button:hover, .btn:hover { background: #07f; color: #fff; }
 button:active, .btn:active { background: #07f; color: #fff; }
+
+button.alt { background: transparent !important; font-weight: normal; font-size: 1em; color: #07f !important; text-align: left; text-transform: none; border: 0 none; padding: 0; }
 
 .helptext { font-size: .75em; display: block; padding-top: .25em; }
 
@@ -107,7 +119,7 @@ img, object, embed {  }
 /* TABLES
 ------------------------------------------------------------------------------------------------ */
 
-table { width: 100%; border-spacing: 0; border-collapse: collapse; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+table { width: 100%; border-spacing: 0; border-collapse: collapse; }
 
 colgroup { border: 1px solid #111; }
 
@@ -142,10 +154,10 @@ tfoot td { color: #777; }
 ------------------------------------------------------------------------------------------------ */
 
 .flexrow { font-size: 0; margin: 0 -.5rem; }
-[class^="col"] { font-size: 1rem; display: inline-block; width: 100%; vertical-align: top; margin-bottom: 1.5em; padding: 0 .5em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.col { font-size: 1rem; display: inline-block; width: 100%; vertical-align: top; margin-bottom: 1.5em; padding: 0 .5em; }
 
 .ie8 .flexrow { margin: 0 -8px; }
-.ie8 [class^="col"] { font-size: 16px; }
+.ie8 .col { font-size: 16px; }
 
 
 /* MODUL: HEADER (Masthead)
@@ -202,7 +214,7 @@ M E D I A   Q U E R I E S   >   Min-width:  480px
 /* FLEXROWS
 ------------------------------------------------------------------------------------------------ */
 
-[class^="col"] { width: 50%; }
+.col { width: 50%; }
 
 
 
@@ -281,8 +293,10 @@ M E D I A   Q U E R I E S   >   Min-width:  768px
 /* FORMS
 ------------------------------------------------------------------------------------------------ */
 
+button, .btn { width: auto; }
+
 .flexform fieldset > div { font-size: 0; margin-bottom: 1.5rem; }
-.flexform .label, .flexform label { font-size: 1rem; display: inline-block; width: 30%; padding-right: 1em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.flexform .label, .flexform label { font-size: 1rem; display: inline-block; width: 30%; padding-right: 1em; }
 .flexform label.autowidth { width: auto; }
 .flexform input[type=text], .flexform input[type=password], .flexform input[type=search], .flexform input[type=email], .flexform input[type=url], .flexform input[type=tel], .flexform input[type=date], .flexform input[type=time], .flexform input[type=number], .flexform input[type=file], .flexform textarea { font-size: 1rem; display: inline-block; width: 70%; }
 .flexform select { font-size: 1rem; }

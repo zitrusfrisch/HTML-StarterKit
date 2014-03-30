@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v2.2
+# HTML-StarterKit, version v2.3
 A simple, modular HTML5 template to kick off your responsive websites.
 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
@@ -23,6 +23,9 @@ HTML5 based index file with common meta tags, links to CSS- and javascript files
 #### styles.css
 Stylesheet with individual CSS-Reset, basic styles and placeholders for frequently uses selectors, classes und ids as well as Media Queries for common viewports.
 
+#### modernizr.js
+[Modernizr](http://modernizr.com/) is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.
+
 #### jquery.js
 [jQuery](http://jquery.com/) – required as base for most of the plugins and polyfills, included via Google’s CDN with a local fallback.
 
@@ -30,12 +33,17 @@ Stylesheet with individual CSS-Reset, basic styles and placeholders for frequent
 iOS.js contains fixes for iOS related bugs: [iOS Viewport Scaling Bug](https://gist.github.com/901295), [Placeholder Bug in iOS 6](http://mooki83.tistory.com) and a script to hide the URL bar [Doing it right: skipping the iPhone url bar](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/) (which sadly does not work in iOS7 anymore).
 
 #### Polyfills
-Various plugins to enhance older versions of InternetExplorer and make them behave nicely: [Selctivizr](http://selectivizr.com) and [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) to add CSS3 psuedoclasses, [Respond.js](http://j.mp/respondjs) for Media Queries, a [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder) and the [HTML5shiv](https://github.com/aFarkas/html5shiv/).
+Various plugins to enhance older versions of InternetExplorer and make them behave nicely: [Selctivizr](http://selectivizr.com) and [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) to add CSS3 psuedoclasses, [Respond.js](http://j.mp/respondjs) for Media Queries and a [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder).
 
 #### functions.js
 Use functions.js for your personal javascripts and functions.
 
 ## Version-Log  
+
+#### Version v2.3
++ Added Box-Sizing Reset in CSS
++ Re-added modernizr.js as there is hardly any case you don't need it
++ Minor performance tweaks and bug-fixing
 
 #### Version v2.2
 + Switched font-size unit to rem (including fallback for IE8) for FlexRows and FlexForm

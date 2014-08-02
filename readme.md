@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v2.3
+# HTML-StarterKit, version v2.4
 A simple, modular HTML5 template to kick off your responsive websites.
 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
@@ -23,9 +23,6 @@ HTML5 based index file with common meta tags, links to CSS- and javascript files
 #### styles.css
 Stylesheet with individual CSS-Reset, basic styles and placeholders for frequently uses selectors, classes und ids as well as Media Queries for common viewports.
 
-#### modernizr.js
-[Modernizr](http://modernizr.com/) is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.
-
 #### jquery.js
 [jQuery](http://jquery.com/) – required as base for most of the plugins and polyfills, included via Google’s CDN with a local fallback.
 
@@ -39,6 +36,11 @@ Various plugins to enhance older versions of InternetExplorer and make them beha
 Use functions.js for your personal javascripts and functions.
 
 ## Version-Log  
+
+#### Version v2.4  
++ Aaaaand… Modernizr is off again. Just because there ARE cases you won't need it. One request / blocking element saved.
++ If you care about IE8: HTMLShiv is now included inline in the head, wrapped in a conditional comment (previously part of Modernizr). Another request / blocking element saved.
++ Added "-moz-osx-font-smoothing: grayscale;" to the CSS to improve font rendering in Firefox on Mac OS X 
 
 #### Version v2.3
 + Added Box-Sizing Reset in CSS

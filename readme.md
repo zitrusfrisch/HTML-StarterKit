@@ -17,7 +17,7 @@ HTML-StarterKit is free for both personal and commercial usage under the terms o
 
 ## HTML-StarterKit contains the following files
 
-#### index.php
+#### index.html
 HTML5 based index file with common meta tags, links to CSS- and javascript files and exemplary content.
 
 #### styles.css

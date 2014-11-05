@@ -38,8 +38,8 @@ Use functions.js for your personal javascripts and functions.
 ## Version-Log  
 
 #### Version v2.5  
-+ Added <main> to global CSS-Reset
-+ Added new version of Respond.js (to support <main>)
++ Added the new main-element to global CSS-Reset
++ Added a new version of Respond.js (to support the new main-element)
 
 #### Version v2.4  
 + Aaaaand… Modernizr is off again. Just because there ARE cases you won't need it. One request / blocking element saved.

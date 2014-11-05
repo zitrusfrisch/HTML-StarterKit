@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v2.4
+# HTML-StarterKit, version v2.5
 A simple, modular HTML5 template to kick off your responsive websites.
 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
@@ -36,6 +36,10 @@ Various plugins to enhance older versions of InternetExplorer and make them beha
 Use functions.js for your personal javascripts and functions.
 
 ## Version-Log  
+
+#### Version v2.5  
++ Added <main> to global CSS-Reset
++ Added new version of Respond.js (to support <main>)
 
 #### Version v2.4  
 + Aaaaand… Modernizr is off again. Just because there ARE cases you won't need it. One request / blocking element saved.

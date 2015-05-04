@@ -1,0 +1,6 @@
+// Font size with dynamix line-height
+
+@mixin fontsize ($fontsize) {
+	@include rem(font-size, $fontsize);
+	line-height: #{($line-height-default - 1) / ($fontsize / ($fontsize * 0 + 1)) + 1};
+}

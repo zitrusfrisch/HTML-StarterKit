@@ -1,0 +1,60 @@
+.content {
+
+	& > .wrapper {
+		padding: $global-spacing;
+	}
+
+	& > .wrapper.wide h2,
+	& > .wrapper.wide h3,
+	& > .wrapper.full h2,
+	& > .wrapper.full h3 {
+		max-width: $wrapper-width - ($global-spacing * 2);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&:nth-child(odd) {
+		background: #f1f2f3;
+	}
+}
+
+
+// Styles for viewport > 480 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-s) {
+}
+
+
+// Styles for viewport > 600 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-m) {
+}
+
+
+// Styles for viewport > 768 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-l) {
+}
+
+
+// Styles for viewport > 992 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-xl) {
+}
+
+
+// Styles for viewport > 1280 px --------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-xxl) {
+}
+
+
+// Styles for Retina / High DPI Styles --------------------------------------- //
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+}
+
+// Print Styles -------------------------------------------------------------- //
+
+@media print {
+}

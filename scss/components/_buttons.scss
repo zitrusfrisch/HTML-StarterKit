@@ -1,0 +1,102 @@
+button,
+.btn {
+	font-family: $font-stack-alt;
+	text-align: center;
+	display: inline-block;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: $font-weight-bold;
+	font-size: $font-size-xs;
+	color: $button-color-alt;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 100%;
+	border: 2px solid $button-color-default;
+	margin: 0;
+	padding: .75em 2em;
+}
+
+button:hover,
+.btn:hover {
+	background: $button-color-hover-default;
+	color: #fff;
+	border-color: $button-color-hover-default;
+}
+
+button:active,
+.btn:active {
+	background: $button-color-hover-default;
+	color: #fff;
+	border-color: $button-color-hover-default;
+}
+
+button.alt {
+	background: transparent !important;
+	font-weight: $font-weight-normal;
+	font-size: $font-size-default;
+	color: $button-color-alt;
+	text-align: left;
+	text-transform: none;
+	width: auto;
+	border: 0 none;
+	padding: 0;
+}
+
+/* Firefox Fix */
+
+button::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=file] > input[type=button]::-moz-focus-inner {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+// Styles for viewport > 480 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-s) {
+
+	button,
+	.btn {
+	    width: auto;
+	}
+
+}
+
+
+// Styles for viewport > 600 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-m) {
+}
+
+
+// Styles for viewport > 768 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-l) {
+}
+
+
+// Styles for viewport > 992 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-xl) {
+}
+
+
+// Styles for viewport > 1280 px --------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-xxl) {
+}
+
+
+// Styles for Retina / High DPI Styles --------------------------------------- //
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+}
+
+// Print Styles -------------------------------------------------------------- //
+
+@media print {
+}

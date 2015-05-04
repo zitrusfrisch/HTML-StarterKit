@@ -1,5 +1,5 @@
-# HTML-StarterKit, version v2.5
-A simple, modular HTML5 template to kick off your responsive websites.
+# HTML-StarterKit, version v3.0
+A simple, modular HTML5 template to kick off your responsive websites – now sass’ified!
 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -20,22 +20,24 @@ HTML-StarterKit is free for both personal and commercial usage under the terms o
 #### index.html
 HTML5 based index file with common meta tags, links to CSS- and javascript files and exemplary content.
 
-#### styles.css
-Stylesheet with individual CSS-Reset, basic styles and placeholders for frequently uses selectors, classes und ids as well as Media Queries for common viewports.
+#### styles.css / styles.min.css  
+Compiled stylesheet built from SCSS files.
 
 #### jquery.js
 [jQuery](http://jquery.com/) – required as base for most of the plugins and polyfills, included via Google’s CDN with a local fallback.
 
-#### ios.js
-iOS.js contains fixes for iOS related bugs: [iOS Viewport Scaling Bug](https://gist.github.com/901295), [Placeholder Bug in iOS 6](http://mooki83.tistory.com) and a script to hide the URL bar [Doing it right: skipping the iPhone url bar](http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/) (which sadly does not work in iOS7 anymore).
-
-#### Polyfills
-Various plugins to enhance older versions of InternetExplorer and make them behave nicely: [Selctivizr](http://selectivizr.com) and [Selctivizr-Extended](http://github.com/keithclark/JQuery-Extended-Selectors) to add CSS3 psuedoclasses, [Respond.js](http://j.mp/respondjs) for Media Queries and a [Placeholder Plugin](https://github.com/mathiasbynens/jquery-placeholder).
-
 #### functions.js
 Use functions.js for your personal javascripts and functions.
 
+#### SCSS  
+The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used elements as well as Media Queries for common viewports. Following a modular approach each section and layout module has its own scss file. HTML-StarterKit comes with a set of handsome mixins and functions ready to use.  
+  
 ## Version-Log  
+
+#### Version v3.0  
++ HTML-StarterKit now comes written in SCSS (Very beta! Feel free to comment)
++ Rather than limiting the body to a fixed width, now each section has its own inner-wrapper (.) for more flexibility.
++ Supported IE version: 9+ 
 
 #### Version v2.5  
 + Added the new main-element to global CSS-Reset

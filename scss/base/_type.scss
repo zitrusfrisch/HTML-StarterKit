@@ -1,0 +1,254 @@
+html {
+	font-weight: $font-weight-normal;
+	font-family: $font-stack-default;
+	@include fontsize($font-size-s);
+	color: $text-color-default;
+}
+
+h1 {
+	font-weight: $font-weight-bold;
+	font-family: $font-stack-alt;
+	@include fontsize($font-size-xxl);
+	margin: 0 0 $global-spacing;
+}
+
+h2 {
+	font-weight: $font-weight-bold;
+	font-family: $font-stack-alt;
+	@include fontsize($font-size-xl);
+	margin: 0 0 $global-spacing;
+}
+
+h3 {
+	font-weight: $font-weight-bold;
+	font-family: $font-stack-alt;
+	@include fontsize($font-size-l);
+	margin: 0 0 $global-spacing;
+}
+
+h4 {
+	font-weight: $font-weight-bold;
+	font-family: $font-stack-alt;
+	@include fontsize($font-size-m);
+	margin: 0 0 $global-spacing;
+}
+
+h5 {
+	font-weight: $font-weight-bold;
+	font-family: $font-stack-alt;
+	@include fontsize($font-size-default);
+	margin: 0 0 $global-spacing;
+}
+
+h6 {
+	font-weight: $font-weight-bold;
+	font-family: $font-stack-alt;
+	@include fontsize($font-size-default);
+	margin: 0 0 $global-spacing;
+}
+
+p {
+	margin: 0 0 $global-spacing;
+}
+
+a {
+	color: $link-color-default;
+	text-decoration: $text-decoration-default;
+	@include prefix(transition, .2s, webkit ms);
+
+	&:hover, &:focus, &:active {
+		color: $link-color-hover-default;
+		text-decoration: $text-decoration-alt;
+	}
+}
+
+a,
+:focus { outline: 0; }
+
+em,
+.italic,
+address,
+blockquote,
+cite,
+dfn,
+i,
+var {
+	font-style: italic;
+}
+
+strike,
+del {
+	text-decoration: line-through;
+}
+
+pre,
+code,
+kbd,
+samp {
+	@include fontsize($font-size-s);
+	font-family: $font-stack-monospace;
+	white-space: pre-line;
+	white-space: pre-wrap;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	margin: 0 0 $global-spacing;
+}
+
+adress {
+	margin: 0 0 $global-spacing;
+}
+
+mark {
+	background: #ff7;
+	color: $text-color-default;
+}
+
+blockquote {
+	border-left: 2px solid $link-color-default;
+	margin: 0 0 $global-spacing;
+	padding: $global-spacing;
+	padding-bottom: 1px;
+}
+
+small {
+	@include fontsize($font-size-s);
+}
+
+ul,
+ol {
+	margin: 0;
+	padding-left: $global-spacing;
+	margin: 0 0 $global-spacing;
+
+}
+
+ul {
+	list-style: square outside;
+}
+
+ol {
+	list-style: decimal outside;
+}
+
+ul ul,
+ol ol {
+	margin-top: $global-spacing;
+}
+
+nav ul,
+nav ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+dl {
+	margin-bottom: $global-spacing;
+}
+
+dt {
+	font-weight: $font-weight-bold;
+}
+
+dd {
+}
+
+dd + dt,
+dd + dd {
+	margin-top: $global-spacing;
+}
+
+hr {
+	display: block;
+	border: 0 none;
+	border-top: 1px solid $text-color-default;
+	margin: $global-spacing 0 $global-spacing * 2;
+}
+
+.leadin {
+	@include fontsize($font-size-m);
+}
+
+// Styles for viewport > 480 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-s) {
+}
+
+
+// Styles for viewport > 600 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-m) {
+
+	html {
+		font-size: $font-size-default;
+	}
+
+}
+
+
+// Styles for viewport > 768 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-l) {
+
+	html {
+		font-size: $font-size-default * 1.125;
+	}
+
+}
+
+
+// Styles for viewport > 992 px ---------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-xl) {
+
+	html {
+		font-size: $font-size-m;
+	}
+
+}
+
+
+// Styles for viewport > 1280 px --------------------------------------------- //
+
+@media only screen and (min-width: $screenwidth-xxl) {
+}
+
+
+// Styles for Retina / High DPI Styles --------------------------------------- //
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+}
+
+// Print Styles -------------------------------------------------------------- //
+
+@media print {
+
+	h1, h2, h3, h4, h5, h6 {
+	    page-break-after: avoid;
+	}
+
+	p, h1, h2, h3, h4, h5, h6 {
+	    orphans: 3;
+	    widows: 3;
+	}
+
+	ul {
+	    list-style: disc inside;
+	    padding: 0 $global-spacing;
+	}
+
+	ol {
+	    list-style: decimal inside;
+	    padding: 0 $global-spacing;
+	}
+
+	a, a:visited {
+	    color: #000!important;
+	    text-decoration: underline;
+	}
+
+}

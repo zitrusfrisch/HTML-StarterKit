@@ -1,4 +1,0 @@
-@mixin rem ($property, $value) {
-	#{$property}: #{$value / ($value * 0 + 1) * 16}px;
-	#{$property}: #{$value / ($value * 0 + 1)}rem;
-}

@@ -1,21 +1,14 @@
-.content {
+.masthead {
+	background: $background-masthead;
+}
 
-	& > .wrapper {
-		padding: $global-spacing;
-	}
+a.logo {
+}
 
-	& > .wrapper.wide h2,
-	& > .wrapper.wide h3,
-	& > .wrapper.full h2,
-	& > .wrapper.full h3 {
-		max-width: $wrapper-width - ($global-spacing * 2);
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	&:nth-child(odd) {
-		background: #f1f2f3;
-	}
+a.logo img {
+	display: inline-block;
+	width: 272px;
+	height: auto;
 }
 
 

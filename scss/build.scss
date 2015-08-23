@@ -1,39 +1,43 @@
-// UTILS
+/* Mixins / Functions
+------------------------------------------------------------------------------------------------ */
 
-@import 'utils/_config';
-@import 'utils/_mixins';
-@import 'utils/_functions';
+@import 'mixins/_mixins';
+@import 'functions/_functions';
 
 
-/* RESET
+/* VENDORS
 ------------------------------------------------------------------------------------------------ */
 
 @import 'vendors/_normalize';
 
 
-/* BASE
------------------------------------------------------------------------------------------------- */
-
-@import 'base/_base';
-@import 'base/_type';
-
-
-/* LAYOUT
------------------------------------------------------------------------------------------------- */
-
-@import 'layout/_grid';
-
-@import 'layout/_masthead';
-@import 'layout/_mainnav';
-@import 'layout/_main';
-@import 'layout/_footer';
-
-
 /* COMPONENTS
 ------------------------------------------------------------------------------------------------ */
 
+@import 'components/_variables';
+@import 'components/_base';
 
+// Global Styles
+
+@import 'components/_type';
 @import 'components/_forms';
 @import 'components/_tables';
 @import 'components/_buttons';
 @import 'components/_media';
+@import 'components/_utilities';
+
+// Grid
+
+@import 'components/_grid';
+
+// Layout
+
+@import 'components/_masthead';
+@import 'components/_mainnav';
+@import 'components/_content';
+@import 'components/_footer';
+
+// Specials
+
+@import 'components/_accordion';
+@import 'components/_expandable';

@@ -1,13 +1,11 @@
-footer[role=contentinfo] {
-	background: $background-color-footer;
+.content {
+	background: $background-content-primary;
 
-	& > .wrapper {
-		padding: $global-spacing;
+	&:nth-child(even) {
+		background: $background-content-secondary;
 	}
 }
 
-footer[role=contentinfo] .inner {
-}
 
 // Styles for viewport > 480 px ---------------------------------------------- //
 

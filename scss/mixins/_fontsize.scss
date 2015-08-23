@@ -1,6 +1,25 @@
 // Font size with dynamix line-height
 
-@mixin fontsize ($fontsize) {
-	@include rem(font-size, $fontsize);
-	line-height: #{($line-height-default - 1) / ($fontsize / ($fontsize * 0 + 1)) + 1};
+@mixin fontsize ($font-size) {
+
+	@if ($font-size == s) {
+		font-size: $font-size-s;
+		line-height: $line-height-l;
+	}
+	@if ($font-size == m) {
+		font-size: $font-size-m;
+		line-height: $line-height-l;
+	}
+	@if ($font-size == l) {
+		font-size: $font-size-l;
+		line-height: $line-height-m;
+	}
+	@if ($font-size == xl) {
+		font-size: $font-size-xl;
+		line-height: $line-height-s;
+	}
+	@if ($font-size == xxl) {
+		font-size: $font-size-xxl;
+		line-height: $line-height-s;
+	}
 }

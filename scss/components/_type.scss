@@ -1,65 +1,111 @@
 html {
 	font-weight: $font-weight-normal;
-	font-family: $font-stack-default;
-	@include fontsize($font-size-s);
-	color: $text-color-default;
+	font-family: $font-family-serif;
+	@include fontsize(m);
+	color: $text-color;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, adress, blockquote {
+	margin: 0 0 $spacing-m;
+}
+
+h1, .h1 {
 	font-weight: $font-weight-bold;
-	font-family: $font-stack-alt;
-	@include fontsize($font-size-xxl);
-	margin: 0 0 $global-spacing;
+	font-family: $font-family-sans-serif;
+	@include fontsize(xxl);
 }
 
-h2 {
+h2, .h2 {
 	font-weight: $font-weight-bold;
-	font-family: $font-stack-alt;
-	@include fontsize($font-size-xl);
-	margin: 0 0 $global-spacing;
+	font-family: $font-family-sans-serif;
+	@include fontsize(xl);
 }
 
-h3 {
+h3, .h3 {
 	font-weight: $font-weight-bold;
-	font-family: $font-stack-alt;
-	@include fontsize($font-size-l);
-	margin: 0 0 $global-spacing;
+	font-family: $font-family-sans-serif;
+	@include fontsize(l);
 }
 
-h4 {
+h4, .h4 {
 	font-weight: $font-weight-bold;
-	font-family: $font-stack-alt;
-	@include fontsize($font-size-m);
-	margin: 0 0 $global-spacing;
+	font-family: $font-family-sans-serif;
+	@include fontsize(m);
 }
 
-h5 {
+h5, .h5 {
 	font-weight: $font-weight-bold;
-	font-family: $font-stack-alt;
-	@include fontsize($font-size-default);
-	margin: 0 0 $global-spacing;
+	font-family: $font-family-sans-serif;
+	@include fontsize(m);
+	margin: 0;
 }
 
-h6 {
-	font-weight: $font-weight-bold;
-	font-family: $font-stack-alt;
-	@include fontsize($font-size-default);
-	margin: 0 0 $global-spacing;
-}
-
-p {
-	margin: 0 0 $global-spacing;
+h6, .h6 {
+	font-weight: $font-weight-normal;
+	font-family: $font-family-sans-serif;
+	@include fontsize(m);
+	margin: 0;
 }
 
 a {
-	color: $link-color-default;
-	text-decoration: $text-decoration-default;
-	@include prefix(transition, .2s, webkit ms);
+	color: $link-color;
+	text-decoration: $text-decoration;
+	@include transition(color);
 
 	&:hover, &:focus, &:active {
-		color: $link-color-hover-default;
-		text-decoration: $text-decoration-alt;
+		color: $link-color-hover;
+		text-decoration: $text-decoration-hover;
 	}
+}
+
+p {  }
+
+.text-size-xxxl {
+	@include fontsize(xxxl);
+}
+
+.text-size-xxl {
+	@include fontsize(xxl);
+}
+
+.text-size-xl {
+	@include fontsize(xl);
+}
+
+.text-size-l {
+	@include fontsize(l);
+}
+
+.text-size-m {
+	@include fontsize(m);
+}
+
+.text-size-s {
+	@include fontsize(s);
+}
+
+.text-size-xs {
+	@include fontsize(xs);
+}
+
+.text-light {
+	color: $text-color-light;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-justify {
+	text-align: justify !important;
 }
 
 a,
@@ -76,6 +122,7 @@ var {
 	font-style: italic;
 }
 
+s,
 strike,
 del {
 	text-decoration: line-through;
@@ -85,8 +132,8 @@ pre,
 code,
 kbd,
 samp {
-	@include fontsize($font-size-s);
-	font-family: $font-stack-monospace;
+	@include fontsize(s);
+	font-family: $font-family-monospace;
 	white-space: pre-line;
 	white-space: pre-wrap;
 }
@@ -95,34 +142,29 @@ pre {
 	white-space: pre;
 	white-space: pre-wrap;
 	word-wrap: break-word;
-	margin: 0 0 $global-spacing;
 }
 
 adress {
-	margin: 0 0 $global-spacing;
 }
 
 mark {
-	background: #ff7;
-	color: $text-color-default;
+	background: $markedtext-color;
+	padding: $spacing-xs ;
 }
 
 blockquote {
-	border-left: 2px solid $link-color-default;
-	margin: 0 0 $global-spacing;
-	padding: $global-spacing;
-	padding-bottom: 1px;
+	border-left: 3px solid $link-color;
+	padding: $spacing-m * 2 $spacing-m * 2 $spacing-m;
 }
 
 small {
-	@include fontsize($font-size-s);
+	@include fontsize(s);
+	display: inline-block;
 }
 
 ul,
 ol {
-	margin: 0;
-	padding-left: $global-spacing;
-	margin: 0 0 $global-spacing;
+	padding-left: $spacing-l;
 
 }
 
@@ -134,11 +176,6 @@ ol {
 	list-style: decimal outside;
 }
 
-ul ul,
-ol ol {
-	margin-top: $global-spacing;
-}
-
 nav ul,
 nav ol {
 	list-style: none;
@@ -147,7 +184,6 @@ nav ol {
 }
 
 dl {
-	margin-bottom: $global-spacing;
 }
 
 dt {
@@ -155,23 +191,23 @@ dt {
 }
 
 dd {
+	margin: 0 0 $spacing-m;
 }
 
-dd + dt,
-dd + dd {
-	margin-top: $global-spacing;
-}
 
 hr {
 	display: block;
+	height: 1px;
 	border: 0 none;
-	border-top: 1px solid $text-color-default;
-	margin: $global-spacing 0 $global-spacing * 2;
+	border-top: 1px solid $border-color;
+	margin: $spacing-m 0;
 }
 
-.leadin {
-	@include fontsize($font-size-m);
-}
+.align-left { text-align: left !important; }
+.align-right { text-align: right !important; }
+.align-center { text-align: right !important; }
+
+
 
 // Styles for viewport > 480 px ---------------------------------------------- //
 
@@ -182,33 +218,18 @@ hr {
 // Styles for viewport > 600 px ---------------------------------------------- //
 
 @media only screen and (min-width: $screenwidth-m) {
-
-	html {
-		font-size: $font-size-default;
-	}
-
 }
 
 
 // Styles for viewport > 768 px ---------------------------------------------- //
 
 @media only screen and (min-width: $screenwidth-l) {
-
-	html {
-		font-size: $font-size-default * 1.125;
-	}
-
 }
 
 
 // Styles for viewport > 992 px ---------------------------------------------- //
 
 @media only screen and (min-width: $screenwidth-xl) {
-
-	html {
-		font-size: $font-size-m;
-	}
-
 }
 
 
@@ -238,12 +259,12 @@ hr {
 
 	ul {
 	    list-style: disc inside;
-	    padding: 0 $global-spacing;
+	    padding: 0 $spacing-l;
 	}
 
 	ol {
 	    list-style: decimal inside;
-	    padding: 0 $global-spacing;
+	    padding: 0 $spacing-l;
 	}
 
 	a, a:visited {

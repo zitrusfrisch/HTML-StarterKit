@@ -1,40 +1,14 @@
-img {
-	-ms-interpolation-mode:bicubic;
-}
+footer[role=contentinfo] {
+	background: $background-footer;
+	color: $text-color-inverted;
 
-a img {
-	border: 0 none;
-}
+	a {
+	 	color: $link-color-inverted;
 
-img,
-object,
-embed {
-	display:inline-block;
-	vertical-align:middle;
-	max-width:100%;
-	width:auto;
-	width:auto\9; /* IE Fix */
-	height:auto;
-}
-
-figure,
-audio,
-video {
-	margin: 0;
-}
-
-figcaption {
-	margin-top: $spacing-m;
-}
-
-// Disable max-width for Google Map images
-
-#map_canvas,
-.map_canvas,
-.mqa-display {
-	img,
-	embed,
-	object { max-width: none !important; }
+	 	&:hover, &:focus, &:active {
+	 		color: $link-color-inverted-hover;
+	 	}
+	}
 }
 
 
@@ -76,9 +50,4 @@ figcaption {
 // Print Styles -------------------------------------------------------------- //
 
 @media print {
-
-	img {
-		page-break-inside: avoid;
-	}
-
 }

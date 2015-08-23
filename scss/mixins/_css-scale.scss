@@ -1,0 +1,4 @@
+@mixin scale($scale:1) {
+  -webkit-transform: scale($scale);
+  transform: scale($scale);
+}

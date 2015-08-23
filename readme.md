@@ -1,5 +1,5 @@
-# HTML-StarterKit, version v3.0
-A simple, modular HTML5 template to kick off your responsive websites – now sass’ified!
+# HTML-StarterKit, version v3.1
+A simple, modular HTML5 template to kick off your responsive websites – now scss’ified!
 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -23,16 +23,19 @@ HTML5 based index file with common meta tags, links to CSS- and javascript files
 #### styles.css / styles.min.css  
 Compiled stylesheet built from SCSS files.
 
-#### jquery.js
-[jQuery](http://jquery.com/) – required as base for most of the plugins and polyfills, included via Google’s CDN with a local fallback.
-
-#### functions.js
+#### functions.js / functions.min.js
 Use functions.js for your personal javascripts and functions.
 
 #### SCSS  
-The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used elements as well as Media Queries for common viewports. Following a modular approach each section and layout module has its own scss file. HTML-StarterKit comes with a set of handsome mixins and functions ready to use.  
+The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used elements as well as Media Queries for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins ready to use.  
   
 ## Version-Log  
+
+#### Version v3.1  
++ HTML-StarterKit now includes a basic accordion and expandable content that works with super little js
++ New button styles, including three different sizes, ghost buttons and a combo-button 
++ Simplified file hierarchy by moving all scss partials to 'components'
++ Optimized a hell lot more for performance sake (removed jQuery for example… :)
 
 #### Version v3.0  
 + HTML-StarterKit now comes written in SCSS (Very beta! Feel free to comment)

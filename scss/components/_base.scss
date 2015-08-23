@@ -1,18 +1,41 @@
-.masthead {
-	background: $background-color-masthead;
+* {
+	box-sizing:border-box;
 
-	& > .wrapper {
-		padding: $global-spacing;
+	&:before,&:after {
+		box-sizing: inherit;
 	}
 }
 
-a.logo {
+html {
+	background: #fff;
+	height: 100%;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-a.logo img {
-	display: inline-block;
-	width: 272px;
-	height: auto;
+body {
+	background: #fff;
+	height: 100%;
+}
+
+.inner-wrap {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: $spacing-l $spacing-m;
+
+	&.full-width {
+		padding-right: 0;
+		padding-left: 0;
+
+		& > .centered {
+			padding-right: $spacing-m;
+			padding-left: $spacing-m;
+		}
+
+	}
 }
 
 
@@ -54,4 +77,19 @@ a.logo img {
 // Print Styles -------------------------------------------------------------- //
 
 @media print {
+
+	* {
+		background: transparent!important;
+		color: #000!important;
+		text-shadow: none!important;
+		box-shadow: none!important;
+		opacity: 1!important;
+		filter: none!important;
+		-ms-filter: none!important;
+	}
+
+	@page {
+		margin: 2cm;
+	}
+
 }

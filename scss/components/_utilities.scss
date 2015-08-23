@@ -1,43 +1,46 @@
-* {
-	box-sizing:border-box;
+// Max-Width settings
 
-	&:before,&:after {
-		box-sizing: inherit;
-	}
+.max-width-xs { max-width: $screenwidth-xs }
+.max-width-s { max-width: $screenwidth-s }
+.max-width-m { max-width: $screenwidth-m }
+.max-width-l { max-width: $screenwidth-l }
+.max-width-xl { max-width: $screenwidth-xl }
+.max-width-xxl { max-width: $screenwidth-xxl }
+.max-width-xxxl { max-width: $screenwidth-xxxl }
+
+// Floats
+
+.centered {
+	margin-right: auto !important;
+	margin-left: auto !important;
 }
 
-html {
-	background: $background-color-html;
-	height: 100%;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.pull-right {
+	float: right !important;
 }
 
-body {
-	background: $background-color-body;
-	height: 100%;
+.pull-left {
+	float: left !important;
 }
 
-.wrapper {
-	max-width: $wrapper-width;
-	margin-right: auto;
-	margin-left: auto;
+.clearfix {
+	@include clearfix;
 }
 
-.wrapper.wide {
-	max-width: $wide-wrapper-width;
+.hide {
+	display: none !important;
 }
 
-.wrapper.no-limit {
-	max-width: none;
+.show {
+	display: block !important;
 }
 
-.wrapper.no-padding {
-	overflow: hidden;
-	padding-right: 0 !important;
-	padding-left: 0 !important;
+.invisible {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
 }
 
 
@@ -79,19 +82,5 @@ body {
 // Print Styles -------------------------------------------------------------- //
 
 @media print {
-
-	* {
-		background: transparent!important;
-		color: #000!important;
-		text-shadow: none!important;
-		box-shadow: none!important;
-		opacity: 1!important;
-		filter: none!important;
-		-ms-filter: none!important;
-	}
-
-	@page {
-		margin: 2cm;
-	}
 
 }

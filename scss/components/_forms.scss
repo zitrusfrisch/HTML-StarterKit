@@ -1,6 +1,5 @@
 form {
-	margin: 0;
-	margin-bottom: $global-spacing;
+	margin: 0 0 $spacing-m;
 }
 
 fieldset {
@@ -11,13 +10,13 @@ fieldset {
 
 fieldset > div {
     font-size: 0;
-	margin-bottom: $global-spacing;
+	margin-bottom: $spacing-m;
 }
 
 fieldset > div > input,
 fieldset > div > select,
 fieldset > div > textarea {
-	@include fontsize($font-size-default);
+	@include fontsize(m);
 }
 
 label {
@@ -26,10 +25,10 @@ label {
 
 label,
 .label {
-	@include fontsize($font-size-s);
-	font-family: $font-stack-alt;
+	@include fontsize(m);
+	font-family: $font-family-sans-serif;
 	display: block;
-	margin-bottom: $global-spacing / 4;
+	margin-bottom: $spacing-xs;
 }
 
 label.checkbox,
@@ -67,14 +66,15 @@ textarea {
 	background: #fff;
 	display :block;
 	width: 100%;
-	border: 1px solid #ccc;
+	border: 1px solid $border-color;
 	margin: 0;
-	padding: $global-spacing / 4;
+	padding: $spacing-xs;
 	border-radius: 0;
 	-webkit-appearance: none;
 }
 
 input[type=file] {
+	background: transparent !important;
 	border: 0 none;
 	padding: 0;
 }
@@ -84,30 +84,32 @@ select {
 }
 
 textarea {
+	height: auto;
+	min-height: 100px;
 	vertical-align:top;
 }
 
 ::-webkit-input-placeholder {
-   color: $text-color-light;
+	color: $text-color-light;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: $text-color-light;
+	color: $text-color-light;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: $text-color-light;
+	color: $text-color-light;
 }
 
 :-ms-input-placeholder {
-   color: $text-color-light;
+	color: $text-color-light;
 }
 
 .helptext {
-	@include fontsize($font-size-s);
+	@include fontsize(s);
 	color: $text-color-light;
     display: block;
-	margin-top: $global-spacing / 4;
+	margin-top: $spacing-xs;
 }
 
 /* Normalize Fix */
@@ -149,7 +151,7 @@ input[type=search] {
 	.flexform .label {
 	    display: inline-block;
 	    width: 33.3334%;
-		padding-right: $global-spacing;
+		padding-right: $spacing-m;
 	}
 
 	.inputs {
@@ -181,8 +183,13 @@ input[type=search] {
 	    margin-left: 0;
 	}
 
-	.flexform button {
+	.flexform .btn,
+	.flexform .btn-group {
 	    margin-left: 33.3334%;
+	}
+
+	.flexform .btn-group .btn {
+	    margin-left: 0;
 	}
 
 }

@@ -1,45 +1,120 @@
-button,
-.btn {
-	font-family: $font-stack-alt;
+.btn,
+.btn:visited {
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-m;
+	line-height: 40px;
+	color: $color-white;
 	text-align: center;
-	display: inline-block;
+	text-decoration: none !important;
 	vertical-align: baseline;
-	background: transparent;
-	font-weight: $font-weight-bold;
-	font-size: $font-size-xs;
-	color: $button-color-alt;
-	text-transform: uppercase;
+	background: $button-color-primary;
 	display: inline-block;
 	width: 100%;
-	border: 2px solid $button-color-default;
-	margin: 0;
-	padding: .75em 2em;
+	height: 44px;
+	border: 2px solid $button-color-primary;
+	border-radius: $global-radius;
+	margin: 0 0 $spacing-m;
+	padding: 0 1.5em;
+	@include transition(all,.1s);
 }
 
-button:hover,
 .btn:hover {
-	background: $button-color-hover-default;
-	color: #fff;
-	border-color: $button-color-hover-default;
+	color: $color-white;
+	background: $button-color-primary-hover;
+	border-color: $button-color-primary-hover;
 }
 
-button:active,
 .btn:active {
-	background: $button-color-hover-default;
-	color: #fff;
-	border-color: $button-color-hover-default;
+	color: $color-white;
+	background: $button-color-primary-hover;
 }
 
-button.alt {
+.btn-disabled {
+	cursor: not-allowed !important;
+	opacity: .25;
+	pointer-events: none;
+}
+
+.btn-primary {
+	background: $button-color-primary;
+	border-color: $button-color-primary;
+
+	&:hover {
+		background: $button-color-primary-hover;
+		border-color: $button-color-primary-hover;
+	}
+
+	&:active {
+		background: $button-color-primary-hover;
+		border-color: $button-color-primary-hover;
+	}
+
+	&.btn-outline {
+		background: transparent !important;
+		color: $button-color-primary;
+
+		&:hover {
+			color: $button-color-primary-hover;
+		}
+
+		&:active {
+			color: $button-color-primary-hover;
+		}
+	}
+
+}
+
+.btn-secondary {
+	background: $button-color-secondary;
+	border-color: $button-color-secondary;
+
+	&:hover {
+		background: $button-color-secondary-hover;
+		border-color: $button-color-secondary-hover;
+	}
+
+	&:active {
+		background: $button-color-secondary-hover;
+		border-color: $button-color-secondary-hover;
+	}
+
+	&.btn-outline {
+		background: transparent !important;
+		color: $button-color-secondary;
+
+		&:hover {
+			color: $button-color-secondary-hover;
+		}
+
+		&:active {
+			color: $button-color-secondary-hover;
+		}
+	}
+
+}
+
+.btn-link {
 	background: transparent !important;
-	font-weight: $font-weight-normal;
-	font-size: $font-size-default;
-	color: $button-color-alt;
+	font-size: $font-size-m;
+	color: $link-color;
 	text-align: left;
-	text-transform: none;
 	width: auto;
 	border: 0 none;
 	padding: 0;
+}
+
+.btn-small {
+	font-size: $font-size-s;
+	line-height: 24px;
+	height: 28px;
+	padding: 0 1em;
+}
+
+.btn-big {
+	font-size: $font-size-l;
+	line-height: 56px;
+	height: 60px;
+	padding: 0 1.5em;
 }
 
 /* Firefox Fix */
@@ -62,6 +137,52 @@ input[type=file] > input[type=button]::-moz-focus-inner {
 	button,
 	.btn {
 	    width: auto;
+	}
+
+	.btn-group {
+		@include clearfix;
+	}
+
+	.btn-group .btn {
+		float: left;
+		border-radius: 0;
+
+		&:first-child {
+			border-radius: $global-radius 0 0 $global-radius;
+			border-left-width: 0;
+		}
+
+		&:last-child {
+			border-radius: 0 $global-radius $global-radius 0;
+			border-right-width: 0;
+		}
+
+		&-outline {
+			border-color: $button-color-primary;
+			border-width: 2px 1px !important;
+
+			&:first-child {
+				border-radius: $global-radius 0 0 $global-radius;
+				border-left-width: 2px !important;
+			}
+
+			&:last-child {
+				border-radius: 0 $global-radius $global-radius 0;
+				border-right-width: 2px !important;
+			}
+
+			&:hover {
+				background: $button-color-primary-hover !important;
+				border-color: $button-color-primary-hover !important;
+				color: $color-white;
+			}
+
+			&:active {
+				background: $button-color-primary-hover !important;
+				border-color: $button-color-primary-hover !important;
+				color: $color-white;
+			}
+		}
 	}
 
 }

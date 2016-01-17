@@ -1,5 +1,3 @@
-// Font size with dynamix line-height
-
 @mixin gradient ($gradientdir:vert, $gradientfrom:transparent, $gradientto: #000) {
 
 	background: $gradientfrom; /* Old browsers */

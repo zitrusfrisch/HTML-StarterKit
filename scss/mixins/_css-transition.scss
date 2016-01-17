@@ -1,4 +1,4 @@
-@mixin transition($property:all, $speed:$global-transition-timing, $ease:$global-transition-easing) {
+@mixin transition($property:all, $speed:$transition-timing-default, $ease:$transition-easing-default) {
   -webkit-transition: $property $speed $ease;
   transition: $property $speed $ease;
 }

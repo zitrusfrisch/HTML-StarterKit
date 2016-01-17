@@ -1,8 +1,9 @@
 .content {
-	background: $background-content-primary;
+	background: getColor(background);
+	padding: $spacing-xxl 0;
 
 	&:nth-child(even) {
-		background: $background-content-secondary;
+		background: getColor(background, light);
 	}
 }
 

@@ -1,14 +1,11 @@
 .masthead {
-	background: $background-masthead;
+	padding: $spacing-xxl 0;
 }
 
 a.logo {
-}
-
-a.logo img {
-	display: inline-block;
-	width: 272px;
-	height: auto;
+	& img {
+		max-width: 272px;
+	}
 }
 
 

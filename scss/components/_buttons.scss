@@ -1,120 +1,112 @@
-.btn,
-.btn:visited {
+// --------------------------------------------------------------------------------------------------------------------
+// Button Variables
+// --------------------------------------------------------------------------------------------------------------------
+
+
+// Sizes
+
+$button-height:					2.75rem;
+$button-s-height:				1.75rem;
+$button-l-height:				3.75rem;
+
+
+// Styles
+
+$button-border-radius:			$global-border-radius;
+$button-box-shadow:				$global-box-shadow;
+
+
+// --------------------------------------------------------------------------------------------------------------------
+
+
+.btn {
+	background: getColor(button);
 	font-family: $font-family-sans-serif;
 	font-size: $font-size-m;
-	line-height: 40px;
-	color: $color-white;
+	color: #fff;
 	text-align: center;
 	text-decoration: none !important;
 	vertical-align: baseline;
-	background: $button-color-primary;
 	display: inline-block;
 	width: 100%;
-	height: 44px;
-	border: 2px solid $button-color-primary;
-	border-radius: $global-radius;
-	margin: 0 0 $spacing-m;
-	padding: 0 1.5em;
-	@include transition(all,.1s);
-}
-
-.btn:hover {
-	color: $color-white;
-	background: $button-color-primary-hover;
-	border-color: $button-color-primary-hover;
-}
-
-.btn:active {
-	color: $color-white;
-	background: $button-color-primary-hover;
-}
-
-.btn-disabled {
-	cursor: not-allowed !important;
-	opacity: .25;
-	pointer-events: none;
-}
-
-.btn-primary {
-	background: $button-color-primary;
-	border-color: $button-color-primary;
-
-	&:hover {
-		background: $button-color-primary-hover;
-		border-color: $button-color-primary-hover;
-	}
-
-	&:active {
-		background: $button-color-primary-hover;
-		border-color: $button-color-primary-hover;
-	}
-
-	&.btn-outline {
-		background: transparent !important;
-		color: $button-color-primary;
-
-		&:hover {
-			color: $button-color-primary-hover;
-		}
-
-		&:active {
-			color: $button-color-primary-hover;
-		}
-	}
-
-}
-
-.btn-secondary {
-	background: $button-color-secondary;
-	border-color: $button-color-secondary;
-
-	&:hover {
-		background: $button-color-secondary-hover;
-		border-color: $button-color-secondary-hover;
-	}
-
-	&:active {
-		background: $button-color-secondary-hover;
-		border-color: $button-color-secondary-hover;
-	}
-
-	&.btn-outline {
-		background: transparent !important;
-		color: $button-color-secondary;
-
-		&:hover {
-			color: $button-color-secondary-hover;
-		}
-
-		&:active {
-			color: $button-color-secondary-hover;
-		}
-	}
-
-}
-
-.btn-link {
-	background: transparent !important;
-	font-size: $font-size-m;
-	color: $link-color;
-	text-align: left;
-	width: auto;
+	height: $button-height;
 	border: 0 none;
-	padding: 0;
-}
+	border-radius: $button-border-radius;
+	box-shadow: $button-box-shadow;
+	margin: 0 0 $spacing-m;
+	padding: 0 $spacing-m;
+	@include transition(background);
 
-.btn-small {
-	font-size: $font-size-s;
-	line-height: 24px;
-	height: 28px;
-	padding: 0 1em;
-}
+	&:hover {
+		background: getColor(button, base-hover);
+	}
 
-.btn-big {
-	font-size: $font-size-l;
-	line-height: 56px;
-	height: 60px;
-	padding: 0 1.5em;
+	&:active {
+		background: getColor(button, base-hover);
+	}
+
+	&--primary {
+		background: getColor(button, primary);
+
+		&:hover {
+			background: getColor(button, primary-hover);
+		}
+
+		&:active {
+			background: getColor(button, primary-hover);
+		}
+
+	}
+
+	&--secondary {
+		background: getColor(button, secondary);
+
+		&:hover {
+			background: getColor(button, secondary-hover);
+		}
+
+		&:active {
+			background: getColor(button, secondary-hover);
+		}
+
+	}
+
+	&--disabled {
+		cursor: not-allowed !important;
+		opacity: .25;
+		pointer-events: none;
+	}
+
+	&--link {
+		background: transparent !important;
+		font-size: $font-size-m;
+		color: getColor(text, link);
+		text-align: left;
+		width: auto;
+		border: 0 none;
+		padding: 0;
+
+		&:hover {
+			color: getColor(text, link-hover);
+		}
+
+		&:active {
+			color: getColor(text, link-hover);
+		}
+	}
+
+	&--s {
+		font-size: $font-size-xs;
+		height: $button-s-height;
+		padding: 0 $spacing-s;
+	}
+
+	&--l {
+		font-size: $font-size-l;
+		height: $button-l-height;
+		padding: 0 $spacing-l;
+	}
+
 }
 
 /* Firefox Fix */
@@ -137,52 +129,6 @@ input[type=file] > input[type=button]::-moz-focus-inner {
 	button,
 	.btn {
 	    width: auto;
-	}
-
-	.btn-group {
-		@include clearfix;
-	}
-
-	.btn-group .btn {
-		float: left;
-		border-radius: 0;
-
-		&:first-child {
-			border-radius: $global-radius 0 0 $global-radius;
-			border-left-width: 0;
-		}
-
-		&:last-child {
-			border-radius: 0 $global-radius $global-radius 0;
-			border-right-width: 0;
-		}
-
-		&-outline {
-			border-color: $button-color-primary;
-			border-width: 2px 1px !important;
-
-			&:first-child {
-				border-radius: $global-radius 0 0 $global-radius;
-				border-left-width: 2px !important;
-			}
-
-			&:last-child {
-				border-radius: 0 $global-radius $global-radius 0;
-				border-right-width: 2px !important;
-			}
-
-			&:hover {
-				background: $button-color-primary-hover !important;
-				border-color: $button-color-primary-hover !important;
-				color: $color-white;
-			}
-
-			&:active {
-				background: $button-color-primary-hover !important;
-				border-color: $button-color-primary-hover !important;
-				color: $color-white;
-			}
-		}
 	}
 
 }

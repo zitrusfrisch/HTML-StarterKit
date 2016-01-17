@@ -1,5 +1,5 @@
-# HTML-StarterKit, version v3.1
-A simple, modular HTML5 template to kick off your responsive websites – now scss’ified!
+# HTML-StarterKit, version v3.2
+A simple, modular HTML5 template to kick off your responsive websites – now scss’ified and **BEM’ified**!
 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -27,14 +27,22 @@ Compiled stylesheet built from SCSS files.
 Use functions.js for your personal javascripts and functions.
 
 #### SCSS  
-The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used elements as well as Media Queries for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins ready to use.  
+The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used UI elements as well as Media Queries for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins ready to use.  
   
 ## Version-Log  
+
+#### Version v3.2  
++ Now using the BEM methodology, a „highly useful, powerful and simple naming convention to make your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit and a lot more strict.“ Read more at http://getbem.com
++ Color variables organized in a SASS map
++ Changed grids naming from „flexrow“ to „grid“ and „col“ to „grid__cell“
++ Extended grid settings: You can now set various gutter widths by class name
++ Removed modules „Expandable“ and „Accordion“ since they are not necessarily needed in your project (You can still grab them on Codepen though, see http://codepen.io/zitrusfrisch/pen/LGzBPM and http://codepen.io/zitrusfrisch/pen/VeMdoN). 
++ Other minor but smart enhancements and fixes…
 
 #### Version v3.1  
 + HTML-StarterKit now includes a basic accordion and expandable content that works with super little js
 + New button styles, including three different sizes, ghost buttons and a combo-button 
-+ Simplified file hierarchy by moving all scss partials to 'components'
++ Simplified file hierarchy by moving all scss partials to ‚components‘
 + Optimized a hell lot more for performance sake (removed jQuery for example… :)
 
 #### Version v3.0  

@@ -1,13 +1,15 @@
 footer[role=contentinfo] {
-	background: $background-footer;
-	color: $text-color-inverted;
+	background: getColor(background, footer);
+	color: getColor(text, inverted);
+	padding: $spacing-xxl 0;
 
 	a {
-	 	color: $link-color-inverted;
+		color: getColor(text, link-inverted);
 
-	 	&:hover, &:focus, &:active {
-	 		color: $link-color-inverted-hover;
-	 	}
+		&:hover {
+			color: getColor(text, link-inverted-hover);
+
+		}
 	}
 }
 

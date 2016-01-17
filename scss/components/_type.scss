@@ -1,171 +1,111 @@
+// --------------------------------------------------------------------------------------------------------------------
+// Type Variables
+// --------------------------------------------------------------------------------------------------------------------
+
+
+// Font stacks
+
+$font-family-sans-serif:		"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family-serif:				Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family-mono:				Consolas, "Liberation Mono", Courier, monospace !default;
+
+
+// Weights
+
+$font-weight-normal:			400;
+$font-weight-bold:				700;
+
+
+// Sizes
+
+$font-size-xxs:					$base-size * .625;	// 10px
+$font-size-xs:					$base-size * .75;	// 12px
+$font-size-s:					$base-size * .875;	// 14px
+$font-size-m:					$base-size * 1;		// 16px
+$font-size-l:					$base-size * 1.5;	// 24px
+$font-size-xl:					$base-size * 2;		// 32px
+$font-size-xxl:					$base-size * 3;		// 48px
+
+$line-height-s:					1.125;
+$line-height-m:					1.375;
+$line-height-l:					1.4375;
+
+
+// --------------------------------------------------------------------------------------------------------------------
+
+
 html {
 	font-weight: $font-weight-normal;
 	font-family: $font-family-serif;
 	@include fontsize(m);
-	color: $text-color;
+	color: getColor(text);
+	text-align: left;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, pre, adress, blockquote {
-	margin: 0 0 $spacing-m;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, ul, ol, dl, pre, adress, blockquote {
+	margin: 0 0 $global-spacing;
+}
+
+
+// Headings
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
 }
 
 h1, .h1 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
 	@include fontsize(xxl);
 }
 
 h2, .h2 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
 	@include fontsize(xl);
 }
 
 h3, .h3 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
 	@include fontsize(l);
 }
 
 h4, .h4 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
 	@include fontsize(m);
 }
 
 h5, .h5 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
 	@include fontsize(m);
-	margin: 0;
+	margin-bottom: 0;
 }
 
 h6, .h6 {
-	font-weight: $font-weight-normal;
-	font-family: $font-family-sans-serif;
 	@include fontsize(m);
-	margin: 0;
+	margin-bottom: 0;
 }
 
+
+// Links
+
 a {
-	color: $link-color;
-	text-decoration: $text-decoration;
+	color: getColor(text, link);
+	text-decoration: none;
+	outline: 0;
 	@include transition(color);
 
 	&:hover, &:focus, &:active {
-		color: $link-color-hover;
-		text-decoration: $text-decoration-hover;
+		color: getColor(text, link-hover);
+		text-decoration: underline;
 	}
+
+	&:focus {
+		outline: 0;
+	}
+
 }
 
-p {  }
 
-.text-size-xxxl {
-	@include fontsize(xxxl);
-}
+// Lists
 
-.text-size-xxl {
-	@include fontsize(xxl);
-}
-
-.text-size-xl {
-	@include fontsize(xl);
-}
-
-.text-size-l {
-	@include fontsize(l);
-}
-
-.text-size-m {
-	@include fontsize(m);
-}
-
-.text-size-s {
-	@include fontsize(s);
-}
-
-.text-size-xs {
-	@include fontsize(xs);
-}
-
-.text-light {
-	color: $text-color-light;
-}
-
-.text-left {
-	text-align: left !important;
-}
-
-.text-right {
-	text-align: right !important;
-}
-
-.text-center {
-	text-align: center !important;
-}
-
-.text-justify {
-	text-align: justify !important;
-}
-
-a,
-:focus { outline: 0; }
-
-em,
-.italic,
-address,
-blockquote,
-cite,
-dfn,
-i,
-var {
-	font-style: italic;
-}
-
-s,
-strike,
-del {
-	text-decoration: line-through;
-}
-
-pre,
-code,
-kbd,
-samp {
-	@include fontsize(s);
-	font-family: $font-family-monospace;
-	white-space: pre-line;
-	white-space: pre-wrap;
-}
-
-pre {
-	white-space: pre;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-}
-
-adress {
-}
-
-mark {
-	background: $markedtext-color;
-	padding: $spacing-xs ;
-}
-
-blockquote {
-	border-left: 3px solid $link-color;
-	padding: $spacing-m * 2 $spacing-m * 2 $spacing-m;
-}
-
-small {
-	@include fontsize(s);
-	display: inline-block;
-}
-
-ul,
-ol {
+ul, ol {
+	margin: $global-spacing 0;
 	padding-left: $spacing-l;
-
 }
 
 ul {
@@ -176,8 +116,7 @@ ol {
 	list-style: decimal outside;
 }
 
-nav ul,
-nav ol {
+nav ul, nav ol {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -195,18 +134,66 @@ dd {
 }
 
 
+// Various
+
+address, blockquote, cite, dfn, em, i, .italic, var {
+	font-style: italic;
+}
+
+del, s, strike {
+	text-decoration: line-through;
+}
+
+code, kbd, pre, samp {
+	font-family: $font-family-mono;
+	@include fontsize(s);
+	white-space: pre-line;
+	white-space: pre-wrap;
+}
+
+p {
+	margin-bottom: $spacing-m;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+adress {
+}
+
+mark {
+	background: getColor(text, marked);
+	color: getColor(text);
+	border-radius: 2px;
+	padding: $spacing-xxs $spacing-xs;
+}
+
+blockquote {
+	border-left: 3px solid getColor(border, blockquote);
+	margin-bottom: $global-spacing;
+	padding: $gutter;
+
+	:last-child {
+		margin-bottom: 0;
+	}
+
+}
+
+small {
+	@include fontsize(s);
+	display: inline-block;
+}
+
 hr {
 	display: block;
 	height: 1px;
 	border: 0 none;
-	border-top: 1px solid $border-color;
+	border-top: 1px solid getColor(border);
 	margin: $spacing-m 0;
 }
-
-.align-left { text-align: left !important; }
-.align-right { text-align: right !important; }
-.align-center { text-align: right !important; }
-
 
 
 // Styles for viewport > 480 px ---------------------------------------------- //

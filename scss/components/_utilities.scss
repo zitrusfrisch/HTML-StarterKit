@@ -1,30 +1,50 @@
-// Max-Width settings
+.maxwidth {
+	margin-right: auto;
+	margin-left: auto;
 
-.max-width-xs { max-width: $screenwidth-xs }
-.max-width-s { max-width: $screenwidth-s }
-.max-width-m { max-width: $screenwidth-m }
-.max-width-l { max-width: $screenwidth-l }
-.max-width-xl { max-width: $screenwidth-xl }
-.max-width-xxl { max-width: $screenwidth-xxl }
-.max-width-xxxl { max-width: $screenwidth-xxxl }
+	&--xs {
+		max-width: $screenwidth-xs;
+	}
 
-// Floats
+	&--s {
+		max-width: $screenwidth-s;
+	}
 
-.centered {
-	margin-right: auto !important;
-	margin-left: auto !important;
+	&--m {
+		max-width: $screenwidth-m;
+	}
+
+	&--l {
+		max-width: $screenwidth-l;
+	}
+
+	&--xl {
+		max-width: $screenwidth-xl;
+	}
+
+	&--xxl {
+		max-width: $screenwidth-xxl;
+	}
+
+	&--xxxl {
+		max-width: $screenwidth-xxxl;
+	}
 }
 
-.pull-right {
-	float: right !important;
+.align--left {
+	text-align: left;
 }
 
-.pull-left {
-	float: left !important;
+.align--right {
+	text-align: right;
 }
 
-.clearfix {
-	@include clearfix;
+.align--center {
+	text-align: center;
+}
+
+.align--justify {
+	text-align: justify;
 }
 
 .hide {
@@ -43,44 +63,10 @@
 	visibility: visible;
 }
 
-
-// Styles for viewport > 480 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-s) {
+.clearfix {
+	@include clearfix;
 }
 
-
-// Styles for viewport > 600 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-m) {
-}
-
-
-// Styles for viewport > 768 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-l) {
-}
-
-
-// Styles for viewport > 992 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-xl) {
-}
-
-
-// Styles for viewport > 1280 px --------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-xxl) {
-}
-
-
-// Styles for Retina / High DPI Styles --------------------------------------- //
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-}
-
-// Print Styles -------------------------------------------------------------- //
-
-@media print {
-
+.truncate {
+	@include truncate;
 }

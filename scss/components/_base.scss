@@ -1,3 +1,5 @@
+@import 'vendors/_normalize';
+
 * {
 	box-sizing:border-box;
 
@@ -7,7 +9,7 @@
 }
 
 html {
-	background: #fff;
+	background: getColor(background, html);
 	height: 100%;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -16,26 +18,30 @@ html {
 }
 
 body {
-	background: #fff;
+	background: getColor(background, body);
 	height: 100%;
 }
 
-.inner-wrap {
+.wrap {
 	position: relative;
 	width: 100%;
-	margin: 0 auto;
-	padding: $spacing-l $spacing-m;
 
-	&.full-width {
-		padding-right: 0;
-		padding-left: 0;
+	&--guttered {
+		padding-right: $gutter;
+		padding-left: $gutter;
 
-		& > .centered {
-			padding-right: $spacing-m;
-			padding-left: $spacing-m;
+		&--s {
+			padding-right: $gutter-s;
+			padding-left: $gutter-s;
+		}
+
+		&--l {
+			padding-right: $gutter-l;
+			padding-left: $gutter-l;
 		}
 
 	}
+
 }
 
 

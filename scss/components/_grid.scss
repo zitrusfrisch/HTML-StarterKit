@@ -1,9 +1,8 @@
-.flexrow {
+.grid {
 	font-size: 0;
 	text-justify: distribute-all-lines;
-	margin-bottom: $spacing-m;
 
-	.col {
+	&__cell {
 		@include fontsize(m);
 		text-align: left;
 		display: inline-block;
@@ -11,21 +10,29 @@
 		vertical-align: top;
 	}
 
-	&.flexrow-with-gutter {
-		margin-right: ($spacing-s / 2) * -1;
-		margin-bottom: 0;
-		margin-left: ($spacing-s / 2) * -1;
+	&--guttered {
+		margin: 0 ($gutter / 2) * -1;
 
-		& .col {
-			margin-bottom: $spacing-m;
-			padding-right: $spacing-m / 2;
-			padding-left: $spacing-m / 2;
+		& .grid__cell {
+			padding: 0 $gutter / 2;
+		}
+
+		&--s {
+			margin: 0 ($gutter-s / 2) * -1;
+
+			& .grid__cell {
+				padding: 0 $gutter-s / 2;
+			}
+		}
+
+		&--l {
+			margin: 0 ($gutter-l / 2) * -1;
+
+			& .grid__cell {
+				padding: 0 $gutter-l / 2;
+			}
 		}
 	}
-
-	&.flexrow-align-right { text-align: right; }
-	&.flexrow-align-left { text-align: left; }
-	&.flexrow-align-center { text-align: center; }
 
 }
 
@@ -33,8 +40,8 @@
 
 @media only screen and (min-width: $screenwidth-s) {
 
-	.flexrow {
-		.col {
+	.grid {
+		&__cell {
 			width: 50%;
 		}
 	}
@@ -45,6 +52,18 @@
 // Styles for viewport > 600 px ---------------------------------------------- //
 
 @media only screen and (min-width: $screenwidth-m) {
+
+	.grid {
+		&__cell {
+			width: 33.3334%;
+
+			&--1-of-2 {
+				width: 50% !important;
+			}
+
+		}
+	}
+
 }
 
 
@@ -52,48 +71,18 @@
 
 @media only screen and (min-width: $screenwidth-l) {
 
-	.flexrow {
-
-		.col1_6 {
-		    width: 16.6667%;
-		}
-
-		.col1_5 {
-		    width: 20%;
-		}
-
-		.col1_4 {
+	.grid {
+		&__cell {
 		    width: 25%;
-		}
 
-		.col1_3 {
-		    width: 33.3334%;
-		}
+			&--1-of-3 {
+				width: 33.3334% !important;
+			}
 
-		.col2_5 {
-		    width: 40%;
+			&--2-of-3 {
+				width: 66.6667% !important;
+			}
 		}
-
-		.col1_2 {
-		    width: 50%;
-		}
-
-		.col3_5 {
-		    width: 60%;
-		}
-
-		.col2_3 {
-		    width: 66.6667%;
-		}
-
-		.col3_4 {
-		    width: 75%;
-		}
-
-		.col1_1 {
-		    width: 100%;
-		}
-
 	}
 
 }
@@ -102,12 +91,58 @@
 // Styles for viewport > 992 px ---------------------------------------------- //
 
 @media only screen and (min-width: $screenwidth-xl) {
+
+	.grid {
+		&__cell {
+		    width: 20%;
+
+			&--1-of-4 {
+				width: 25% !important;
+			}
+
+			&--2-of-4 {
+				width: 50% !important;
+			}
+
+			&--3-of-4 {
+				width: 75% !important;
+			}
+		}
+	}
+
 }
 
 
 // Styles for viewport > 1280 px --------------------------------------------- //
 
 @media only screen and (min-width: $screenwidth-xxl) {
+
+	.grid {
+		&__cell {
+		    width: 16.6667%;
+
+			&--1-of-5 {
+				width: 20% !important;
+			}
+
+			&--2-of-5 {
+				width: 40% !important;
+			}
+
+			&--3-of-5 {
+				width: 60% !important;
+			}
+
+			&--4-of-5 {
+				width: 80% !important;
+			}
+
+			&--1-of-6 {
+				width: 16.6667% !important;
+			}
+		}
+	}
+
 }
 
 

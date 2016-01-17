@@ -1,25 +1,21 @@
 table {
-	width:100%;
-	max-width:100%;
-	vertical-align:top;
-	margin: 0 0 $spacing-m;
-}
-
-table#recaptcha_table,table.table-auto {
-	table-layout:auto;
+	width: 100%;
+	max-width: 100%;
+	vertical-align: top;
+	margin: 0 0 $global-spacing;
 }
 
 colgroup {
-	border: 1px solid $border-color;
+	border: 1px solid getColor(border);
 }
 
 th, td {
-	font-weight:inherit;
-	font-family:inherit;
-	color:inherit;
-	text-align:left;
-	vertical-align:top;
-	border-bottom: 1px solid $border-color;
+	font-weight: inherit;
+	font-family: inherit;
+	color: inherit;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid getColor(border);
 	padding: $spacing-s;
 }
 
@@ -35,7 +31,7 @@ tbody td {
 }
 
 tbody td[colspan] {
-	text-align:center;
+	text-align: center;
 }
 
 tfoot td {
@@ -55,11 +51,18 @@ tfoot td {
 	background-repeat: no-repeat;
 	background-size: 5em 100%, 5em 100%, .5em 100%, .5em 100%;
 	background-attachment: local, local, scroll, scroll;
-	margin: $spacing-m 0;
+	margin: $global-spacing 0;
 }
 
 .flex-table table {
 	margin: 0;
+}
+
+// Set table-layout to auto for ReCaptcha
+
+table#recaptcha_table,
+table.table-auto {
+	table-layout: auto;
 }
 
 

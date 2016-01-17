@@ -1,8 +1,9 @@
 form {
-	margin: 0 0 $spacing-m;
+	margin-bottom: $global-spacing;
 }
 
 fieldset {
+	min-width: 0;
 	border: 0 none;
 	margin: 0;
 	padding: 0;
@@ -25,17 +26,17 @@ label {
 
 label,
 .label {
-	@include fontsize(m);
 	font-family: $font-family-sans-serif;
+	@include fontsize(m);
 	display: block;
 	margin-bottom: $spacing-xs;
-}
 
-label.checkbox,
-label.radio {
-	text-indent: -19px;
-	margin: 0;
-	padding-left: 21px;
+	&--checkbox,
+	&--radio {
+		text-indent: -19px;
+		margin: 0;
+		padding-left: 21px;
+	}
 }
 
 .inputs {
@@ -64,9 +65,10 @@ input[type=number],
 input[type=file],
 textarea {
 	background: #fff;
-	display :block;
+	display: block;
 	width: 100%;
-	border: 1px solid $border-color;
+	min-height: 2em;
+	border: 1px solid getColor(border);
 	margin: 0;
 	padding: $spacing-xs;
 	border-radius: 0;
@@ -75,6 +77,7 @@ textarea {
 
 input[type=file] {
 	background: transparent !important;
+	width: auto;
 	border: 0 none;
 	padding: 0;
 }
@@ -90,24 +93,24 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-	color: $text-color-light;
+	color: getColor(text, light);
 }
 
 :-moz-placeholder { /* Firefox 18- */
-	color: $text-color-light;
+	color: getColor(text, light);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-	color: $text-color-light;
+	color: getColor(text, light);
 }
 
 :-ms-input-placeholder {
-	color: $text-color-light;
+	color: getColor(text, light);
 }
 
 .helptext {
 	@include fontsize(s);
-	color: $text-color-light;
+	color: getColor(text, light);
     display: block;
 	margin-top: $spacing-xs;
 }
@@ -143,8 +146,12 @@ input[type=search] {
 
 @media only screen and (min-width: $screenwidth-l) {
 
-	label.autowidth {
-	    width: auto !important;
+	label,
+	.label {
+
+		&--autowidth {
+	    	width: auto !important;
+		}
 	}
 
 	.flexform label,
@@ -183,13 +190,8 @@ input[type=search] {
 	    margin-left: 0;
 	}
 
-	.flexform .btn,
-	.flexform .btn-group {
+	.flexform .btn {
 	    margin-left: 33.3334%;
-	}
-
-	.flexform .btn-group .btn {
-	    margin-left: 0;
 	}
 
 }

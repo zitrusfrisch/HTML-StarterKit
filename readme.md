@@ -33,7 +33,7 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
 
 #### Version v3.2  
 + Now using the BEM methodology, a „highly useful, powerful and simple naming convention to make your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit and a lot more strict.“ Read more at http://getbem.com
-+ Color variables organized in a SASS map
++ Color variables organized in a Sass map
 + Changed grids naming from „flexrow“ to „grid“ and „col“ to „grid__cell“
 + Extended grid settings: You can now set various gutter widths by class name
 + Removed modules „Expandable“ and „Accordion“ since they are not necessarily needed in your project (You can still grab them on Codepen though, see http://codepen.io/zitrusfrisch/pen/LGzBPM and http://codepen.io/zitrusfrisch/pen/VeMdoN). 

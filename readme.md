@@ -10,7 +10,7 @@ A simple, modular HTML5 template to kick off your responsive websites – now sc
 HTML-StarterKit contains everything you need to create responsive websites: Stop caring about doctypes and ubiquitous HTML parts – just start developing.
 
 #### Modern web standards
-HTML-StarterKit is based on HTML5, styled using SCSS and responsive out of the box. See the [demo page](http://zitrusfrisch.com/html-starterkit/demo).
+HTML-StarterKit is based on HTML5, styled using SCSS and is completely responsive out of the box. See the [demo page](http://zitrusfrisch.com/html-starterkit/demo).
 
 #### It's free!
 HTML-StarterKit is free for both personal and commercial usage under the terms of the [MIT license](http://opensource.org/licenses/MIT). So fork away! :-)

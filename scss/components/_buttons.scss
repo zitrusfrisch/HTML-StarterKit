@@ -5,14 +5,15 @@
 
 // Sizes
 
-$button-height:					2.75rem;
-$button-s-height:				1.75rem;
-$button-l-height:				3.75rem;
+$button-height:					44px;
+$button-s-height:				28px;
+$button-l-height:				60px;
 
 
 // Styles
 
-$button-border-radius:			$global-border-radius;
+$button-border:					2px;
+$button-radius:					$global-border-radius;
 $button-box-shadow:				$global-box-shadow;
 
 
@@ -20,60 +21,61 @@ $button-box-shadow:				$global-box-shadow;
 
 
 .btn {
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	background: getColor(button);
 	font-family: $font-family-sans-serif;
 	font-size: $font-size-m;
-	color: #fff;
+	line-height: 1;
+	color: getColor(button, base-text);
 	text-align: center;
 	text-decoration: none !important;
 	vertical-align: baseline;
 	display: inline-block;
 	width: 100%;
 	height: $button-height;
-	border: 0 none;
-	border-radius: $button-border-radius;
-	box-shadow: $button-box-shadow;
-	margin: 0 0 $spacing-m;
+	border: $button-border solid getColor(button, base-border);
+	border-radius: $button-radius;
+	box-shadow: none;
+	margin: 0 0 $global-spacing;
 	padding: 0 $spacing-m;
-	@include transition(background);
+	@include transitionOut();
 
 	&:hover {
 		background: getColor(button, base-hover);
+		color: getColor(button, base-text-hover);
+		border-color: getColor(button, base-border-hover);
+		@include transitionIn();
 	}
 
 	&:active {
 		background: getColor(button, base-hover);
-	}
-
-	&--primary {
-		background: getColor(button, primary);
-
-		&:hover {
-			background: getColor(button, primary-hover);
-		}
-
-		&:active {
-			background: getColor(button, primary-hover);
-		}
-
+		color: getColor(button, base-text-hover);
+		border-color: getColor(button, base-border-hover);
 	}
 
 	&--secondary {
 		background: getColor(button, secondary);
+		color: getColor(button, secondary-text);
+		border-color: getColor(button, secondary-border);
+		box-shadow: none;
 
 		&:hover {
 			background: getColor(button, secondary-hover);
+			color: getColor(button, secondary-text-hover);
+			border-color: getColor(button, secondary-border-hover);
 		}
 
 		&:active {
 			background: getColor(button, secondary-hover);
+			color: getColor(button, secondary-text-hover);
+			border-color: getColor(button, secondary-border-hover);
 		}
 
 	}
 
 	&--disabled {
-		cursor: not-allowed !important;
-		opacity: .25;
+		opacity: .375;
 		pointer-events: none;
 	}
 
@@ -107,63 +109,16 @@ $button-box-shadow:				$global-box-shadow;
 		padding: 0 $spacing-l;
 	}
 
-}
-
-/* Firefox Fix */
-
-button::-moz-focus-inner,
-input[type=reset]::-moz-focus-inner,
-input[type=button]::-moz-focus-inner,
-input[type=submit]::-moz-focus-inner,
-input[type=file] > input[type=button]::-moz-focus-inner {
-	border: 0;
-	margin: 0;
-	padding: 0;
-}
-
-
-// Styles for viewport > 480 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-s) {
-
-	button,
-	.btn {
-	    width: auto;
+	@include mq-s {
+		width: auto;
 	}
 
 }
 
+/* Firefox Fix */
 
-// Styles for viewport > 600 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-m) {
-}
-
-
-// Styles for viewport > 768 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-l) {
-}
-
-
-// Styles for viewport > 992 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-xl) {
-}
-
-
-// Styles for viewport > 1280 px --------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-xxl) {
-}
-
-
-// Styles for Retina / High DPI Styles --------------------------------------- //
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-}
-
-// Print Styles -------------------------------------------------------------- //
-
-@media print {
+button::-moz-focus-inner, input[type=reset]::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=submit]::-moz-focus-inner, input[type=file] > input[type=button]::-moz-focus-inner {
+	border: 0;
+	margin: 0;
+	padding: 0;
 }

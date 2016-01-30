@@ -1,28 +1,23 @@
 img {
-	-ms-interpolation-mode:bicubic;
+	-ms-interpolation-mode: bicubic;
 }
 
-img,
-object,
-embed {
-	display:inline-block;
-	vertical-align:middle;
-	max-width:100%;
-	width:auto;
-	width:auto\9; /* IE Fix */
-	height:auto;
+img, object, embed {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	width: auto;
+	width: auto\9; /* IE Fix */
+	height: auto;
 }
 
-figure,
-audio,
-video {
+figure, audio, video {
 	margin: 0;
 }
 
 .mediabox {
 	position: relative;
 	height: 0;
-	margin-bottom: $spacing-m;
 
 	img {
 		display: block;
@@ -54,56 +49,8 @@ video {
 
 // Disable max-width for Google Map images
 
-#map_canvas,
-.map_canvas,
-.mqa-display {
-	img,
-	embed,
-	object { max-width: none !important; }
-}
-
-
-// Styles for viewport > 480 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-s) {
-}
-
-
-// Styles for viewport > 600 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-m) {
-}
-
-
-// Styles for viewport > 768 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-l) {
-}
-
-
-// Styles for viewport > 992 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-xl) {
-}
-
-
-// Styles for viewport > 1280 px --------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-xxl) {
-}
-
-
-// Styles for Retina / High DPI Styles --------------------------------------- //
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-}
-
-// Print Styles -------------------------------------------------------------- //
-
-@media print {
-
-	img {
-		page-break-inside: avoid;
+#map_canvas, .map_canvas, .mqa-display {
+	img, embed, object {
+		max-width: none !important;
 	}
-
 }

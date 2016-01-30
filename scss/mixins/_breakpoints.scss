@@ -1,0 +1,35 @@
+@mixin mq-s {
+	@media only screen and (min-width: $screenwidth-s) {
+		@content;
+	}
+}
+
+@mixin mq-m {
+	@media only screen and (min-width: $screenwidth-m) {
+		@content;
+	}
+}
+
+@mixin mq-l {
+	@media only screen and (min-width: $screenwidth-l) {
+		@content;
+	}
+}
+
+@mixin mq-xl {
+	@media only screen and (min-width: $screenwidth-xl) {
+		@content;
+	}
+}
+
+@mixin mq-xxl {
+	@media only screen and (min-width: $screenwidth-xxl) {
+		@content;
+	}
+}
+
+@mixin mq-hires {
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+		@content;
+	}
+}

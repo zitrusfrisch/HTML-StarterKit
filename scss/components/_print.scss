@@ -1,0 +1,48 @@
+@media print {
+
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		text-shadow: none !important;
+		box-shadow: none !important;
+		opacity: 1 !important;
+		filter: none !important;
+		-ms-filter: none !important;
+	}
+
+	@page {
+		margin: 2cm;
+	}
+
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+		page-break-after: avoid;
+	}
+
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+		orphans: 3;
+		widows: 3;
+	}
+
+	a {
+		color: #000 !important;
+		text-decoration: underline;
+	}
+
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+    thead {
+		display: table-header-group;
+	}
+
+	tr, img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+}

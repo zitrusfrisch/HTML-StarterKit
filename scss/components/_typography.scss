@@ -1,0 +1,263 @@
+// --------------------------------------------------------------------------------------------------------------------
+// Typography Variables
+// --------------------------------------------------------------------------------------------------------------------
+
+
+// Font stacks
+
+$font-family-sans-serif:		"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family-serif:				Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family-mono:				Consolas, "Liberation Mono", Courier, monospace !default;
+
+
+// Weights
+
+$font-weight-normal:			400;
+$font-weight-bold:				700;
+
+
+// Sizes
+
+$font-size-xxs:					$base-size * .625;			// 10px
+$line-height-xxs:				$base-size * .875;			// 14px
+
+$font-size-xs:					$base-size * .75;			// 12px
+$line-height-xs:				$base-size * 1.125;			// 18px
+
+$font-size-s:					$base-size * .875;			// 14px
+$line-height-s:					$base-size * 1.25;			// 20px
+
+$font-size-m:					$base-size * 1;				// 16px
+$line-height-m:					$base-size * 1.5;			// 24px
+
+$font-size-l:					$base-size * 1.5;			// 24px
+$line-height-l:					$base-size * 2;				// 32px
+
+$font-size-xl:					$base-size * 2;				// 32px
+$line-height-xl:				$base-size * 2.5;			// 40px
+
+$font-size-xxl:					$base-size * 3;				// 48px
+$line-height-xxl:				$base-size * 3.5;			// 56px
+
+
+// --------------------------------------------------------------------------------------------------------------------
+
+
+
+html {
+	font-weight: $font-weight-normal;
+	font-family: $font-family-serif;
+	@include fontsize(m);
+	color: getColor(text);
+	text-align: left;
+}
+
+
+// Headings and paragraph
+
+h1, .h1 {
+	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
+	@include fontsize(xxl);
+	margin: 0 0 $global-spacing;
+}
+
+h2, .h2 {
+	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
+	@include fontsize(xl);
+	margin: 0 0 $global-spacing;
+}
+
+h3, .h3 {
+	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
+	@include fontsize(l);
+	margin: 0 0 $global-spacing;
+}
+
+h4, .h4 {
+	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
+	@include fontsize(m);
+	margin: 0 0 $global-spacing;
+}
+
+h5, .h5 {
+	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
+	@include fontsize(m);
+	margin: 0;
+}
+
+h6, .h6 {
+	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
+	@include fontsize(m);
+	margin: 0;
+}
+
+p {
+	margin: 0 0 $global-spacing;
+}
+
+
+// Links
+
+a {
+	color: getColor(text, link);
+	text-decoration: none;
+	outline: 0;
+	@include transitionOut(color);
+
+	&:hover, &:focus, &:active {
+		color: getColor(text, link-hover);
+		text-decoration: none;
+		@include transitionIn(color);
+	}
+
+}
+
+
+// Lists
+
+ul, ol {
+	margin: 0 0 $global-spacing;
+	padding-left: $spacing-l;
+
+	& & {
+		margin: $global-spacing 0;
+	}
+
+}
+
+ul {
+	list-style: square outside;
+}
+
+ol {
+	list-style: decimal outside;
+}
+
+nav ul, nav ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+dl {
+	margin: 0 0 $global-spacing;
+}
+
+dt {
+	font-weight: $font-weight-bold;
+}
+
+dd {
+	margin: 0 0 $global-spacing;
+}
+
+
+// General text formatting
+
+small {
+	@include fontsize(s);
+	display: inline-block;
+}
+
+b, strong {
+	font-weight: $font-weight-bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+del, s, strike {
+	text-decoration: line-through;
+}
+
+code, kbd, pre, samp {
+	font-family: $font-family-mono;
+	@include fontsize(s);
+	white-space: pre-line;
+	white-space: pre-wrap;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	margin: 0 0 $global-spacing;
+}
+
+adress {
+	font-style: italic;
+	margin: 0 0 $global-spacing;
+}
+
+mark {
+	background: getColor(text, marked);
+	color: getColor(text);
+	border-radius: 2px;
+	padding: $spacing-xxs $spacing-xs;
+}
+
+blockquote {
+	font-style: italic;
+	border-left: 3px solid getColor(border, blockquote);
+	margin: $global-spacing * 2 0;
+	padding: $gutter;
+
+	:last-child {
+		margin-bottom: 0;
+	}
+
+}
+
+cite {
+	font-style: italic;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0 none;
+	border-top: 1px solid getColor(border);
+	margin: 0 0 $global-spacing;
+}
+
+
+// Text Styles
+
+.text--small {
+	@extend small;
+}
+
+.text--light {
+	color: getColor(text, light);
+}
+
+.text--spaced {
+	letter-spacing: 3px;
+}
+
+.text--caps {
+	text-transform: uppercase;
+}
+
+.text--success {
+	color: getColor(text, success);
+}
+
+.text--warning {
+	color: getColor(text, warning);
+}
+
+.text--alert {
+	color: getColor(text, alert);
+}
+
+.text--truncate {
+	@include truncate;
+}

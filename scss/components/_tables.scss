@@ -16,7 +16,7 @@ th, td {
 	text-align: left;
 	vertical-align: top;
 	border-bottom: 1px solid getColor(border);
-	padding: $spacing-s;
+	padding: $spacing-m;
 }
 
 thead th {
@@ -35,6 +35,12 @@ tbody td[colspan] {
 }
 
 tfoot td {
+}
+
+// Set table-layout to auto for ReCaptcha
+
+table#recaptcha_table, table.table-auto {
+	table-layout: auto;
 }
 
 
@@ -56,52 +62,4 @@ tfoot td {
 
 .flex-table table {
 	margin: 0;
-}
-
-// Set table-layout to auto for ReCaptcha
-
-table#recaptcha_table,
-table.table-auto {
-	table-layout: auto;
-}
-
-
-// Styles for viewport > 480 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-s) {
-}
-
-
-// Styles for viewport > 600 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-m) {
-}
-
-
-// Styles for viewport > 768 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-l) {
-}
-
-
-// Styles for viewport > 992 px ---------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-xl) {
-}
-
-
-// Styles for viewport > 1280 px --------------------------------------------- //
-
-@media only screen and (min-width: $screenwidth-xxl) {
-}
-
-
-// Styles for Retina / High DPI Styles --------------------------------------- //
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-}
-
-// Print Styles -------------------------------------------------------------- //
-
-@media print {
 }

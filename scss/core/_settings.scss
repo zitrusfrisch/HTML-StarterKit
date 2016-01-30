@@ -6,64 +6,6 @@
 $base-size:						16px;
 
 
-// Colors
-
-$colors: (
-
-	primary: (
-		"base":					#369,
-		"light":				#69c,
-		"dark":					#036
-	),
-
-	secondary: (
-		"base":					#737577,
-		"light":				#a1a5a9,
-		"dark":					#333537
-	),
-
-	text: (
-		"base":					#333537,
-		"light":				#737577,
-		"inverted":				#fff,
-
-		"link":					#369,
-		"link-hover":			#036,
-		"link-inverted":		#a3a5a7,
-		"link-inverted-hover":	#fff,
-
-		"marked":				#ffe500
-	),
-
-	background: (
-		"base":					#fff,
-		"dark":					#333537,
-		"light":				#e9ebed,
-
-		"html":					#fff,
-		"body":					#fff,
-		"footer":				#333537
-	),
-
-	button: (
-		"base":					#a3a5a7,
-		"base-hover":			#737577,
-
-		"primary":				#369,
-		"primary-hover":		#036,
-
-		"secondary":			#737573,
-		"secondary-hover":		#333537
-	),
-
-	border: (
-		"base":					#a3a5a7,
-		"blockquote":			#369
-	)
-
-) !default;
-
-
 // Spacings
 
 $spacing-xxs:					$base-size / 8;		// 16px / 8   = 2px
@@ -85,14 +27,14 @@ $gutter-l:						$spacing-l;
 
 // Global Styles and Dimensions
 
-$global-border-radius:			2px;
-$global-box-shadow:				none;
-$global-spacing:				$spacing-m;
+$global-border-radius:			3px;
+$global-box-shadow:				0 1px 1px rgba(0,0,0,.25);
+$global-spacing:				$spacing-m;			// Applied to all block elements
 
 
 // Transistion Properties
 
-$transition-timing-default:		150ms;
+$transition-timing-default:		100ms;
 $transition-easing-default:		ease-in-out;
 
 
@@ -105,4 +47,3 @@ $screenwidth-l:					768px;				// Tablet
 $screenwidth-xl:				992px;				// Laptop
 $screenwidth-xxl:				1280px;				// Screen
 $screenwidth-xxxl:				1600px;				// Big screen
-

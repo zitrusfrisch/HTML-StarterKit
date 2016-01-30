@@ -1,19 +1,19 @@
-@mixin gradient ($gradientdir:vert, $gradientfrom:transparent, $gradientto: #000) {
+@mixin gradient ($gradientdir: vert, $gradientfrom: transparent, $gradientto: #000) {
 
 	background: $gradientfrom; /* Old browsers */
 
 	@if ($gradientdir == vert) {
-		background: -webkit-linear-gradient(top,	$gradientfrom 0%, $gradientto 100%); /* Chrome10+,Safari5.1+ */
-		background: linear-gradient(to bottom,		$gradientfrom 0%, $gradientto 100%); /* W3C */
+		background: -webkit-linear-gradient(top, $gradientfrom 0%, $gradientto 100%); /* Chrome10+,Safari5.1+ */
+		background: linear-gradient(to bottom, $gradientfrom 0%, $gradientto 100%); /* W3C */
 	}
 
 	@if ($gradientdir == horiz) {
-		background: -webkit-linear-gradient(left,	$gradientfrom 0%, $gradientto 100%); /* Chrome10+,Safari5.1+ */
-		background: linear-gradient(to right,		$gradientfrom 0%, $gradientto 100%); /* W3C */
+		background: -webkit-linear-gradient(left, $gradientfrom 0%, $gradientto 100%); /* Chrome10+,Safari5.1+ */
+		background: linear-gradient(to right, $gradientfrom 0%, $gradientto 100%); /* W3C */
 	}
 
 	@if ($gradientdir == rad) {
-		background: -webkit-linear-gradient(center, ellipse cover,	$gradientfrom 0%, $gradientto 100%); /* Chrome10+,Safari5.1+ */
-		background: linear-gradient(ellipse at center,		$gradientfrom 0%, $gradientto 100%); /* W3C */
+		background: -webkit-linear-gradient(center, ellipse cover, $gradientfrom 0%, $gradientto 100%); /* Chrome10+,Safari5.1+ */
+		background: linear-gradient(ellipse at center, $gradientfrom 0%, $gradientto 100%); /* W3C */
 	}
 }

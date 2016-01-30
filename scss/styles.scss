@@ -1,13 +1,14 @@
-// Global Variables, Mixins and Functions
+// Global Settings, Mixins and Functions
 
-@import 'components/_global';
-@import 'mixins/_mixins';
-@import 'functions/_functions';
+@import 'core/_settings';
+@import 'core/_colors';
+@import 'core/_mixins';
+@import 'core/_functions';
 
 // Core
 
 @import 'components/_base';
-@import 'components/_type';
+@import 'components/_typography';
 @import 'components/_forms';
 @import 'components/_buttons';
 @import 'components/_tables';
@@ -20,4 +21,9 @@
 @import 'components/_masthead';
 @import 'components/_mainnav';
 @import 'components/_content';
+@import 'components/_card';
 @import 'components/_footer';
+
+// Print Styles
+
+@import 'components/_print';

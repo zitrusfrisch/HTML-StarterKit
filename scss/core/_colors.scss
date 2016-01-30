@@ -1,0 +1,90 @@
+// --------------------------------------------------------------------------------------------------------------------
+// Colors
+// --------------------------------------------------------------------------------------------------------------------
+
+$color-white:						#fff;
+
+// Grey
+
+$color-primary:						#838587;
+$color-primary-xlight:				lighten($color-primary, 43%);
+$color-primary-light:				lighten($color-primary, 30%);
+$color-primary-dark:				darken($color-primary, 20%);
+
+// Blue
+
+$color-secondary:					#39a0e5;
+$color-secondary-light:				lighten($color-secondary, 30%);
+$color-secondary-dark:				darken($color-secondary, 15%);
+
+
+// --------------------------------------------------------------------------------------------------------------------
+
+
+$colors: (
+
+// Background Colors
+
+	background: (
+		"base":						$color-white,
+		"dark":						$color-primary-dark,
+		"light":					$color-primary-xlight,
+
+		"html":						$color-white,
+		"body":						$color-white,
+		"masthead":					$color-white,
+		"footer":					$color-primary-dark
+	),
+
+// Text Colors
+
+	text: (
+		"base":						$color-primary-dark,
+		"light":					$color-primary,
+		"inverted":					$color-white,
+
+		"link":						$color-secondary,
+		"link-hover":				$color-secondary-dark,
+		"link-inverted":			$color-primary,
+		"link-inverted-hover":		$color-white,
+
+		"marked":					$color-secondary-light,
+
+		"success":					#6fae3f,
+		"warning":					#f6ba04,
+		"alert":					#e91a1a
+	),
+
+// Button Colors
+
+	button: (
+		"base":						$color-secondary,
+		"base-hover":				$color-secondary-dark,
+		"base-border":				$color-secondary,
+		"base-border-hover":		$color-secondary-dark,
+		"base-text":				$color-white,
+		"base-text-hover":			$color-white,
+
+		"secondary":				transparent,
+		"secondary-hover":			transparent,
+		"secondary-border":			$color-primary,
+		"secondary-border-hover":	$color-secondary,
+		"secondary-text":			$color-primary,
+		"secondary-text-hover":		$color-secondary
+	),
+
+// Border Colors
+
+	border: (
+		"base":						$color-primary-light,
+		"blockquote":				$color-secondary
+	),
+
+// Custom
+
+	logo: (
+		"base":						$color-secondary,
+		"hover":					$color-secondary-dark
+	)
+
+) !default;

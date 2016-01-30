@@ -1,19 +1,19 @@
-# HTML-StarterKit, version v3.2
-A simple, modular HTML5 template to kick off your responsive websites – now scss’ified and **BEM’ified**!
+# HTML-StarterKit, version v3.3
+A simple, modular HTML5 template to kick off your responsive websites – now scss- and **BEM’ified**!
 
-+ **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
++ **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
 + **Facebook:** [http://facebook.com/htmlstarterkit](http://facebook.com/htmlstarterkit)  
 + **Twitter:** [@htmlstarterkit](http://twitter.com/htmlstarterkit)  
 
 #### Speed up your workflow
-HTML-StarterKit contains everything you need to create responsive websites: Stop caring about doctypes, ubiquitous HTML parts or linking to the latest jQuery version – just start developing.
+HTML-StarterKit contains everything you need to create responsive websites: Stop caring about doctypes and ubiquitous HTML parts – just start developing.
 
 #### Modern web standards
-HTML-StarterKit uses super-modern HTML5 code, including new, semantic selectors. And by using a fluid grid, flexible elements and media queries it is responsive out of the box. See the [demo page](http://zitrusfrisch.com/html-starterkit/demo).
+HTML-StarterKit is based on HTML5, styled using SCSS and responsive out of the box. See the [demo page](http://zitrusfrisch.com/html-starterkit/demo).
 
 #### It's free!
-HTML-StarterKit is free for both personal and commercial usage under the terms of the [MIT license](http://opensource.org/licenses/MIT).
+HTML-StarterKit is free for both personal and commercial usage under the terms of the [MIT license](http://opensource.org/licenses/MIT). So fork away! :-)
 
 ## HTML-StarterKit contains the following files
 
@@ -21,23 +21,35 @@ HTML-StarterKit is free for both personal and commercial usage under the terms o
 HTML5 based index file with common meta tags, links to CSS- and javascript files and exemplary content.
 
 #### styles.css / styles.min.css  
-Compiled stylesheet built from SCSS files.
+Compiled stylesheets built from SCSS files.
 
 #### functions.js / functions.min.js
-Use functions.js for your personal javascripts and functions.
+Use functions.js for your personal scripts and functions.
 
 #### SCSS  
-The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used UI elements as well as Media Queries for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins ready to use.  
+The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used UI elements as well as media query settings for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins and functions ready to use.  
   
 ## Version-Log  
 
+#### Version v3.3  
++ Better file hierarchy: All globals are now stored separately in scss/core
++ Inline media queries
++ Added various CSS classes for common text styles (light, small, etc.) 
++ Isolated print styles in one file
++ Even smarter color management with color variables and a color map for more detailed coloring.
++ New card style component
++ Touch-optimized form input fields
++ Removed IE-specific Meta-Tags and paths to favicon and apple-touch-icon from HTML head
++ Inline SVG Logo (finally!)
++ Minor fixes and enhancements
+
 #### Version v3.2  
-+ Now using the BEM methodology, a „highly useful, powerful and simple naming convention to make your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit and a lot more strict.“ Read more at http://getbem.com
-+ Color variables organized in a Sass map
-+ Changed grids naming from „flexrow“ to „grid“ and „col“ to „grid__cell“
++ Now using the BEM methodology, a „highly useful, powerful and simple naming convention to make your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit and a lot more strict.“ Read more at [getbem.com](http://getbem.com)
++ color variables organized in a Sass map
++ Changed grid naming from „flexrow“ to „grid“ and „col“ to „grid__cell“
 + Extended grid settings: You can now set various gutter widths by class name
-+ Removed modules „Expandable“ and „Accordion“ since they are not necessarily needed in your project (You can still grab them on Codepen though, see http://codepen.io/zitrusfrisch/pen/LGzBPM and http://codepen.io/zitrusfrisch/pen/VeMdoN). 
-+ Other minor but smart enhancements and fixes…
++ Removed modules „Expandable“ and „Accordion“ since they are not necessarily needed in your project (You can still grab them on Codepen though: [Expandable](http://codepen.io/zitrusfrisch/pen/LGzBPM) and [Accordion](http://codepen.io/zitrusfrisch/pen/VeMdoN)). 
++ Minor fixes and enhancements
 
 #### Version v3.1  
 + HTML-StarterKit now includes a basic accordion and expandable content that works with super little js

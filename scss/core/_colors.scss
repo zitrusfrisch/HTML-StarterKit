@@ -2,12 +2,11 @@
 // Colors
 // --------------------------------------------------------------------------------------------------------------------
 
-$color-white:						#fff;
 
 // Grey
 
 $color-primary:						#838587;
-$color-primary-xlight:				lighten($color-primary, 43%);
+$color-primary-xlight:				lighten($color-primary, 45%);
 $color-primary-light:				lighten($color-primary, 30%);
 $color-primary-dark:				darken($color-primary, 20%);
 
@@ -16,6 +15,10 @@ $color-primary-dark:				darken($color-primary, 20%);
 $color-secondary:					#39a0e5;
 $color-secondary-light:				lighten($color-secondary, 30%);
 $color-secondary-dark:				darken($color-secondary, 15%);
+
+$color-success:						#6fae3f;
+$color-warning:						#f6ba04;
+$color-alert:						#e91a1a;
 
 
 // --------------------------------------------------------------------------------------------------------------------
@@ -26,13 +29,13 @@ $colors: (
 // Background Colors
 
 	background: (
-		"base":						$color-white,
+		"base":						#fff,
 		"dark":						$color-primary-dark,
 		"light":					$color-primary-xlight,
 
-		"html":						$color-white,
-		"body":						$color-white,
-		"masthead":					$color-white,
+		"html":						#fff,
+		"body":						#fff,
+		"masthead":					#fff,
 		"footer":					$color-primary-dark
 	),
 
@@ -41,18 +44,18 @@ $colors: (
 	text: (
 		"base":						$color-primary-dark,
 		"light":					$color-primary,
-		"inverted":					$color-white,
+		"inverted":					#fff,
 
 		"link":						$color-secondary,
 		"link-hover":				$color-secondary-dark,
 		"link-inverted":			$color-primary,
-		"link-inverted-hover":		$color-white,
+		"link-inverted-hover":		#fff,
 
 		"marked":					$color-secondary-light,
 
-		"success":					#6fae3f,
-		"warning":					#f6ba04,
-		"alert":					#e91a1a
+		"success":					$color-success,
+		"warning":					$color-warning,
+		"alert":					$color-alert
 	),
 
 // Button Colors
@@ -62,8 +65,8 @@ $colors: (
 		"base-hover":				$color-secondary-dark,
 		"base-border":				$color-secondary,
 		"base-border-hover":		$color-secondary-dark,
-		"base-text":				$color-white,
-		"base-text-hover":			$color-white,
+		"base-text":				#fff,
+		"base-text-hover":			#fff,
 
 		"secondary":				transparent,
 		"secondary-hover":			transparent,

@@ -1,29 +1,29 @@
 @mixin mq-s {
-	@media only screen and (min-width: $screenwidth-s) {
+	@media only screen and (min-width: $screenwidth--s) {
 		@content;
 	}
 }
 
 @mixin mq-m {
-	@media only screen and (min-width: $screenwidth-m) {
+	@media only screen and (min-width: $screenwidth--m) {
 		@content;
 	}
 }
 
 @mixin mq-l {
-	@media only screen and (min-width: $screenwidth-l) {
+	@media only screen and (min-width: $screenwidth--l) {
 		@content;
 	}
 }
 
 @mixin mq-xl {
-	@media only screen and (min-width: $screenwidth-xl) {
+	@media only screen and (min-width: $screenwidth--xl) {
 		@content;
 	}
 }
 
 @mixin mq-xxl {
-	@media only screen and (min-width: $screenwidth-xxl) {
+	@media only screen and (min-width: $screenwidth--xxl) {
 		@content;
 	}
 }

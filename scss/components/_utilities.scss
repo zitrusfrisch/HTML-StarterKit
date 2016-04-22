@@ -3,48 +3,56 @@
 	margin-left: auto;
 
 	&--xs {
-		max-width: $screenwidth-xs;
+		max-width: $screenwidth--xs;
 	}
 
 	&--s {
-		max-width: $screenwidth-s;
+		max-width: $screenwidth--s;
 	}
 
 	&--m {
-		max-width: $screenwidth-m;
+		max-width: $screenwidth--m;
 	}
 
 	&--l {
-		max-width: $screenwidth-l;
+		max-width: $screenwidth--l;
 	}
 
 	&--xl {
-		max-width: $screenwidth-xl;
+		max-width: $screenwidth--xl;
 	}
 
 	&--xxl {
-		max-width: $screenwidth-xxl;
+		max-width: $screenwidth--xxl;
 	}
 
 	&--xxxl {
-		max-width: $screenwidth-xxxl;
+		max-width: $screenwidth--xxxl;
 	}
 }
 
-.align--left {
-	text-align: left;
+.align {
+	&--left {
+		text-align: left;
+	}
+	&--right {
+		text-align: right;
+	}
+	&--center {
+		text-align: center;
+	}
+	&--justify {
+		text-align: justify;
+	}
 }
 
-.align--right {
-	text-align: right;
-}
-
-.align--center {
-	text-align: center;
-}
-
-.align--justify {
-	text-align: justify;
+.float {
+	&--left {
+		float: left;
+	}
+	&--right {
+		float: right;
+	}
 }
 
 .hide {
@@ -65,4 +73,35 @@
 
 .clearfix {
 	@include clearfix;
+}
+
+.block {
+	display: block;
+}
+
+.margin {
+	&--none {
+		margin-bottom: 0;
+	}
+	&--xs {
+		margin-bottom: $spacing--xs;
+	}
+	&--s {
+		margin-bottom: $spacing--s;
+	}
+	&--m {
+		margin-bottom: $spacing--m;
+	}
+	&--l {
+		margin-bottom: $spacing--l;
+	}
+	&--xl {
+		margin-bottom: $spacing--xl;
+	}
+	&--xxl {
+		margin-bottom: $spacing--xxl;
+	}
+	&--xxxl {
+		margin-bottom: $spacing--xxxl;
+	}
 }

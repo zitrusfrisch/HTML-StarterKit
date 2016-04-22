@@ -1,5 +1,5 @@
 form {
-	margin: 0 0 $global-spacing;
+	margin: 0 0 $spacing--m;
 }
 
 fieldset {
@@ -11,7 +11,7 @@ fieldset {
 
 fieldset > div {
     font-size: 0;
-	margin: 0 0 $global-spacing;
+	margin: 0 0 $spacing--m;
 }
 
 fieldset > div > input, fieldset > div > select, fieldset > div > textarea {
@@ -60,7 +60,7 @@ input[type=text], input[type=password], input[type=search], input[type=email], i
 	min-height: 2.75em;
 	border: 1px solid getColor(border);
 	margin: 0;
-	padding: $spacing-s;
+	padding: $spacing--s;
 	border-radius: 0;
 	-webkit-appearance: none;
 }
@@ -68,7 +68,7 @@ input[type=text], input[type=password], input[type=search], input[type=email], i
 input[type=checkbox], input[type=radio] {
 	position: relative;
 	top: -1px;
-	margin-right: $spacing-xs;
+	margin-right: $spacing--xs;
 }
 
 input[type=file] {
@@ -126,7 +126,7 @@ textarea {
 
 		& + span {
 			display: inline-block;
-			margin-top: $spacing-xs;
+			margin-top: $spacing--xs;
 
 			@include mq-l {
 				margin-left: 33.3334%;

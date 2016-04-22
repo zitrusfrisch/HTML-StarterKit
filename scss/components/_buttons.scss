@@ -37,8 +37,8 @@ $button-box-shadow:				$global-box-shadow;
 	border: $button-border solid getColor(button, base-border);
 	border-radius: $button-radius;
 	box-shadow: none;
-	margin: 0 0 $global-spacing;
-	padding: 0 $spacing-m;
+	margin: 0;
+	padding: 0 $spacing--m;
 	@include transitionOut();
 
 	&:hover {
@@ -100,13 +100,13 @@ $button-box-shadow:				$global-box-shadow;
 	&--s {
 		font-size: $font-size-xs;
 		height: $button-s-height;
-		padding: 0 $spacing-s;
+		padding: 0 $spacing--s;
 	}
 
 	&--l {
 		font-size: $font-size-l;
 		height: $button-l-height;
-		padding: 0 $spacing-l;
+		padding: 0 $spacing--l;
 	}
 
 	@include mq-s {

@@ -2,7 +2,7 @@ table {
 	width: 100%;
 	max-width: 100%;
 	vertical-align: top;
-	margin: 0 0 $global-spacing;
+	margin: 0 0 $spacing--m;
 }
 
 colgroup {
@@ -16,7 +16,7 @@ th, td {
 	text-align: left;
 	vertical-align: top;
 	border-bottom: 1px solid getColor(border);
-	padding: $spacing-m;
+	padding: $spacing--m;
 }
 
 thead th {
@@ -57,7 +57,7 @@ table#recaptcha_table, table.table-auto {
 	background-repeat: no-repeat;
 	background-size: 5em 100%, 5em 100%, .5em 100%, .5em 100%;
 	background-attachment: local, local, scroll, scroll;
-	margin: $global-spacing 0;
+	margin: $spacing--m 0;
 }
 
 .flex-table table {

@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v3.3
+# HTML-StarterKit, version v3.4
 A simple, modular HTML5 template to kick off your responsive websites – now scss- and **BEM’ified**!
 
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -30,6 +30,12 @@ Use functions.js for your personal scripts and functions.
 The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used UI elements as well as media query settings for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins and functions ready to use.  
   
 ## Version-Log  
+
+#### Version v3.4 (22.04.2016)  
++ **New grid system**! Control width of cols for each breakpoint with CSS classes
++ Added CSS classes add margin-bottom to elements  
++ Fixed link to normalize in base.scss (Thanks @chriswhawkins)
++ Minor fixes and enhancements
 
 #### Version v3.3 (30.01.2016)  
 + Better file hierarchy: All globals are now stored separately in scss/core

@@ -4,10 +4,9 @@
 	overflow: hidden;
 	box-shadow: $global-box-shadow;
 	border: none;
-	margin-bottom: $global-spacing;
 
 	& .card__inner {
-		padding: $spacing-m;
+		padding: $spacing--m;
 
 		& :last-child {
 			margin-bottom: 0;

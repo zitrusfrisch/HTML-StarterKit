@@ -827,7 +827,7 @@ img, object, embed {
   height: auto; }
 
 figure, audio, video {
-  margin: 0; }
+  margin: 10px; }
 
 .mediabox {
   position: relative;

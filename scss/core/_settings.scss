@@ -25,18 +25,6 @@ $gutter--s:						$spacing--s;
 $gutter--l:						$spacing--l;
 
 
-// Global Styles and Dimensions
-
-$global-border-radius:			3px;
-$global-box-shadow:				0 1px 1px rgba(0,0,0,.25);
-
-
-// Transistion Properties
-
-$transition-timing-default:		100ms;
-$transition-easing-default:		ease-in-out;
-
-
 // Screenwidths
 
 $screenwidth--xs:				320px;				// Smartphone
@@ -46,3 +34,15 @@ $screenwidth--l:				768px;				// Tablet
 $screenwidth--xl:				992px;				// Laptop
 $screenwidth--xxl:				1280px;				// Screen
 $screenwidth--xxxl:				1600px;				// Big screen
+
+
+// Global Styles and Dimensions
+
+$global-border-radius:			3px;
+$global-box-shadow:				0 1px 1px rgba(0,0,0,.25);
+
+
+// Global Transistion Properties
+
+$transition-timing-default:		100ms;
+$transition-easing-default:		ease-in-out;

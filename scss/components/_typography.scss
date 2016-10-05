@@ -48,7 +48,7 @@ html {
 	font-weight: $font-weight-normal;
 	font-family: $font-family-serif;
 	@include fontsize(m);
-	color: getColor(text);
+	color: $color-grey-900;
 	text-align: left;
 }
 
@@ -105,13 +105,13 @@ p {
 // Links
 
 a {
-	color: getColor(text, link);
+	color: $color-primary-500;
 	text-decoration: none;
 	outline: 0;
 	@include transitionOut(color);
 
 	&:hover, &:focus, &:active {
-		color: getColor(text, link-hover);
+		color: $color-primary-700;
 		text-decoration: none;
 		@include transitionIn(color);
 	}
@@ -197,15 +197,14 @@ adress {
 }
 
 mark {
-	background: getColor(text, marked);
-	color: getColor(text);
+	background: $color-primary-100;
 	border-radius: 2px;
 	padding: $spacing--xxs $spacing--xs;
 }
 
 blockquote {
 	font-style: italic;
-	border-left: 3px solid getColor(border, blockquote);
+	border-left: 3px solid $color-primary-500;
 	margin: $spacing--m * 2 0;
 	padding: $gutter;
 
@@ -240,7 +239,7 @@ hr {
 }
 
 .text--light {
-	color: getColor(text, light);
+	color: $color-grey-700;
 }
 
 .text--spaced {
@@ -252,15 +251,15 @@ hr {
 }
 
 .text--success {
-	color: getColor(text, success);
+	color: $color-success;
 }
 
 .text--warning {
-	color: getColor(text, warning);
+	color: $color-warning;
 }
 
 .text--alert {
-	color: getColor(text, alert);
+	color: $color-alert;
 }
 
 .text--truncate {

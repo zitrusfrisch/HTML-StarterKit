@@ -58,7 +58,7 @@ input[type=text], input[type=password], input[type=search], input[type=email], i
 	display: block;
 	width: 100%;
 	min-height: 2.75em;
-	border: 1px solid getColor(border);
+	border: 1px solid $color-grey-500;
 	margin: 0;
 	padding: $spacing--s;
 	border-radius: 0;
@@ -73,7 +73,6 @@ input[type=checkbox], input[type=radio] {
 
 input[type=file] {
 	background: transparent !important;
-// 	width: auto;
 	border: 0 none;
 	padding: 0;
 }

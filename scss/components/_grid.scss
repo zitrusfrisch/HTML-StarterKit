@@ -94,30 +94,35 @@
 	&--guttered {
 		margin-right: ($gutter / 2) * -1;
 		margin-left: ($gutter / 2) * -1;
+		margin-bottom: -$gutter;
 
 		& .grid__cell {
 			padding: 0 $gutter / 2;
+			margin-bottom: $gutter;
 		}
 
 		&--s {
 			margin-right: ($gutter--s / 2) * -1;
 			margin-left: ($gutter--s / 2) * -1;
+			margin-bottom: -$gutter--s;
 
 			& .grid__cell {
 				padding-right: $gutter--s / 2;
 				padding-left: $gutter--s / 2;
+				margin-bottom: $gutter--s;
 			}
 		}
 
 		&--l {
 			margin-right: ($gutter--l / 2) * -1;
 			margin-left: ($gutter--l / 2) * -1;
+			margin-bottom: -$gutter--l;
 
 			& .grid__cell {
 				padding-right: $gutter--l / 2;
 				padding-left: $gutter--l / 2;
+				margin-bottom: $gutter--l;
 			}
 		}
 	}
-
 }

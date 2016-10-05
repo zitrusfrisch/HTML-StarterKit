@@ -81,27 +81,27 @@
 
 .margin {
 	&--none {
-		margin-bottom: 0;
+		margin-bottom: 0 !important;
 	}
 	&--xs {
-		margin-bottom: $spacing--xs;
+		margin-bottom: $spacing--xs !important;
 	}
 	&--s {
-		margin-bottom: $spacing--s;
+		margin-bottom: $spacing--s !important;
 	}
 	&--m {
-		margin-bottom: $spacing--m;
+		margin-bottom: $spacing--m !important;
 	}
 	&--l {
-		margin-bottom: $spacing--l;
+		margin-bottom: $spacing--l !important;
 	}
 	&--xl {
-		margin-bottom: $spacing--xl;
+		margin-bottom: $spacing--xl !important;
 	}
 	&--xxl {
-		margin-bottom: $spacing--xxl;
+		margin-bottom: $spacing--xxl !important;
 	}
 	&--xxxl {
-		margin-bottom: $spacing--xxxl;
+		margin-bottom: $spacing--xxxl !important;
 	}
 }

@@ -1,5 +1,4 @@
 .masthead {
-	background: getColor(background, masthead);
 	text-align: center;
 	padding: $spacing--l 0;
 }
@@ -9,12 +8,12 @@ svg.logo {
 	height: auto;
 
 	& path {
-		fill: getColor(logo);
+		fill: $color-primary-500;
 		@include transitionOut();
 	}
 
 	&:hover path {
-		fill: getColor(logo, hover);
+		fill: $color-primary-700;
 		@include transitionIn();
 	}
 }

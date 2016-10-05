@@ -3,91 +3,38 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-// Grey
+// Primary colour and tints
 
-$color-primary:						#838587;
-$color-primary-xlight:				lighten($color-primary, 45%);
-$color-primary-light:				lighten($color-primary, 30%);
-$color-primary-dark:				darken($color-primary, 20%);
+$color-primary-100:				#bbdefb;
+$color-primary-300:				#64b5f6;
+$color-primary-500:				#2196f3;
+$color-primary-700:				#1976d2;
+$color-primary-900:				#0d47a1;
 
-// Blue
 
-$color-secondary:					#39a0e5;
-$color-secondary-light:				lighten($color-secondary, 30%);
-$color-secondary-dark:				darken($color-secondary, 15%);
+// Secondary colour and tints
 
-$color-success:						#6fae3f;
-$color-warning:						#f6ba04;
-$color-alert:						#e91a1a;
+$color-secondary-100:			#cbe6c9;
+$color-secondary-300:			#81c784;
+$color-secondary-500:			#4caf50;
+$color-secondary-700:			#388e3c;
+$color-secondary-900:			#1b5e20;
+
+
+// Grey colour and tints
+
+$color-grey-100:				#f5f5f5;
+$color-grey-300:				#e0e0e0;
+$color-grey-500:				#9e9e9e;
+$color-grey-700:				#616161;
+$color-grey-900:				#212121;
+
+
+// Special colours
+
+$color-success:					#6fae3f;
+$color-warning:					#f6ba04;
+$color-alert:					#e91a1a;
 
 
 // --------------------------------------------------------------------------------------------------------------------
-
-
-$colors: (
-
-// Background Colors
-
-	background: (
-		"base":						#fff,
-		"dark":						$color-primary-dark,
-		"light":					$color-primary-xlight,
-
-		"html":						#fff,
-		"body":						#fff,
-		"masthead":					#fff,
-		"footer":					$color-primary-dark
-	),
-
-// Text Colors
-
-	text: (
-		"base":						$color-primary-dark,
-		"light":					$color-primary,
-		"inverted":					#fff,
-
-		"link":						$color-secondary,
-		"link-hover":				$color-secondary-dark,
-		"link-inverted":			$color-primary,
-		"link-inverted-hover":		#fff,
-
-		"marked":					$color-secondary-light,
-
-		"success":					$color-success,
-		"warning":					$color-warning,
-		"alert":					$color-alert
-	),
-
-// Button Colors
-
-	button: (
-		"base":						$color-secondary,
-		"base-hover":				$color-secondary-dark,
-		"base-border":				$color-secondary,
-		"base-border-hover":		$color-secondary-dark,
-		"base-text":				#fff,
-		"base-text-hover":			#fff,
-
-		"secondary":				transparent,
-		"secondary-hover":			transparent,
-		"secondary-border":			$color-primary,
-		"secondary-border-hover":	$color-secondary,
-		"secondary-text":			$color-primary,
-		"secondary-text-hover":		$color-secondary
-	),
-
-// Border Colors
-
-	border: (
-		"base":						$color-primary-light,
-		"blockquote":				$color-secondary
-	),
-
-// Custom
-
-	logo: (
-		"base":						$color-secondary,
-		"hover":					$color-secondary-dark
-	)
-
-) !default;

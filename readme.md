@@ -1,5 +1,5 @@
-# HTML-StarterKit, version v3.4
-A simple, modular HTML5 template to kick off your responsive websites – now scss- and **BEM’ified**!
+# HTML-StarterKit, version v3.5
+A simple, modular HTML5 template to kick off your responsive websites – written in SCSS and based on the [BEM naming convention](http://getbem.com/)
 
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
 + **Demo:** [http://zitrusfrisch.de/html-starterkit/demo](http://zitrusfrisch.de/html-starterkit/demo)  
@@ -31,6 +31,11 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
   
 ## Version-Log  
 
+#### Version v3.5 (06.10.2016)  
++ Exchanged color map with a set of color variables
++ Cells within a guttered grid now have a bottom margin
++ Minor fixes and enhancements
+
 #### Version v3.4 (22.04.2016)  
 + **New grid system**! Control width of cols for each breakpoint with CSS classes
 + Added CSS classes add margin-bottom to elements  
@@ -51,7 +56,7 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
 
 #### Version v3.2 (17.01.2016)  
 + Now using the BEM methodology, a „highly useful, powerful and simple naming convention to make your front-end code easier to read and understand, easier to work with, easier to scale, more robust and explicit and a lot more strict.“ Read more at [getbem.com](http://getbem.com)
-+ color variables organized in a Sass map
++ Color variables organized in a Sass map
 + Changed grid naming from „flexrow“ to „grid“ and „col“ to „grid__cell“
 + Extended grid settings: You can now set various gutter widths by class name
 + Removed modules „Expandable“ and „Accordion“ since they are not necessarily needed in your project (You can still grab them on Codepen though: [Expandable](http://codepen.io/zitrusfrisch/pen/LGzBPM) and [Accordion](http://codepen.io/zitrusfrisch/pen/VeMdoN)). 

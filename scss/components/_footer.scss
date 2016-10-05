@@ -1,13 +1,13 @@
 footer[role=contentinfo] {
-	background: getColor(background, footer);
-	color: getColor(text, inverted);
+	background: $color-grey-700;
+	color: #fff;
 	padding: $spacing--xxl 0;
 
 	a {
-		color: getColor(text, link-inverted);
+		color: $color-primary-100;
 
 		&:hover {
-			color: getColor(text, link-inverted-hover);
+			color: $color-primary-300;
 
 		}
 	}

@@ -6,7 +6,7 @@ table {
 }
 
 colgroup {
-	border: 1px solid getColor(border);
+	border: 1px solid $color-grey-500;
 }
 
 th, td {
@@ -15,7 +15,7 @@ th, td {
 	color: inherit;
 	text-align: left;
 	vertical-align: top;
-	border-bottom: 1px solid getColor(border);
+	border-bottom: 1px solid $color-grey-500;
 	padding: $spacing--m;
 }
 

@@ -23,18 +23,18 @@ $button-box-shadow:				$global-box-shadow;
 .btn {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: getColor(button);
+	background: $color-primary-500;
 	font-family: $font-family-sans-serif;
 	font-size: $font-size-m;
 	line-height: 1;
-	color: getColor(button, base-text);
+	color: #fff;
 	text-align: center;
 	text-decoration: none !important;
 	vertical-align: baseline;
 	display: inline-block;
 	width: 100%;
 	height: $button-height;
-	border: $button-border solid getColor(button, base-border);
+	border: $button-border solid $color-primary-500;
 	border-radius: $button-radius;
 	box-shadow: none;
 	margin: 0;
@@ -42,34 +42,34 @@ $button-box-shadow:				$global-box-shadow;
 	@include transitionOut();
 
 	&:hover {
-		background: getColor(button, base-hover);
-		color: getColor(button, base-text-hover);
-		border-color: getColor(button, base-border-hover);
+		background: $color-primary-700;
+		color: #fff;
+		border-color: $color-primary-700;
 		@include transitionIn();
 	}
 
 	&:active {
-		background: getColor(button, base-hover);
-		color: getColor(button, base-text-hover);
-		border-color: getColor(button, base-border-hover);
+		background: $color-primary-700;
+		color: #fff;
+		border-color: $color-primary-700;
 	}
 
 	&--secondary {
-		background: getColor(button, secondary);
-		color: getColor(button, secondary-text);
-		border-color: getColor(button, secondary-border);
+		background: transparent;
+		color: $color-grey-700;
+		border-color: $color-grey-700;
 		box-shadow: none;
 
 		&:hover {
-			background: getColor(button, secondary-hover);
-			color: getColor(button, secondary-text-hover);
-			border-color: getColor(button, secondary-border-hover);
+			background: $color-grey-700;
+			color: #fff;
+			border-color: $color-grey-700;
 		}
 
 		&:active {
-			background: getColor(button, secondary-hover);
-			color: getColor(button, secondary-text-hover);
-			border-color: getColor(button, secondary-border-hover);
+			background: $color-grey-700;
+			color: #fff;
+			border-color: $color-grey-700;
 		}
 
 	}
@@ -82,18 +82,18 @@ $button-box-shadow:				$global-box-shadow;
 	&--link {
 		background: transparent !important;
 		font-size: $font-size-m;
-		color: getColor(text, link);
+		color: $color-primary-500;
 		text-align: left;
 		width: auto;
 		border: 0 none;
 		padding: 0;
 
 		&:hover {
-			color: getColor(text, link-hover);
+			color: $color-primary-700;
 		}
 
 		&:active {
-			color: getColor(text, link-hover);
+			color: $color-primary-700;
 		}
 	}
 

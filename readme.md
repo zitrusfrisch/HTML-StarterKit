@@ -32,12 +32,11 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
 ## Version-Log  
 
 #### Version v3.6 (07.09.2017)  
-+ Create highly dynamic grids with freshly integrated offset classes for grid cells! Following the same naming pattern as the grid cells' widths, it's super-easy now to offset cells individually. (Sorry, for the bloated grid.scss: There's probably smarter ways to do this – which I do not know. But, basic stuff tends to work best most of the times. ;-) 
++ Create highly dynamic grids with freshly integrated offset classes for grid cells! Following the same naming pattern as the grid cells' widths, it's super-easy now to offset cells individually. (Sorry, for the bloated grid.scss: There's probably smarter ways to do this, but basic stuff tends to work best anyways. ;-) 
 + Variables and class names for screenwidths now use display-types instead of s, m, l etc., e.g. ```grid__cell--huge-screen-1-6```
-+ Added more (bigger) spacing settings and classes 
++ Added more (bigger) spacing settings and classes
++ Removed ```--s``` and ```--l``` modifiers for grid and gutter (barely used them) 
 + Removed card component 
-+ Moved all colors specs to to settings 
-+ Removed s and l modifiers for grid and gutter (barely used them)
 + New font size function lets you set font-size and line-height individually 
 + Mediabox component can now be used with (embedded) videos
 + Minor fixes and enhancements 

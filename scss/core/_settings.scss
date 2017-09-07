@@ -3,46 +3,35 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
-$base-size:						16px;
-
-
-// Spacings
-
-$spacing--xxs:					$base-size / 8;		// 16px / 8   = 2px
-$spacing--xs:					$base-size / 4;		// 16px / 4   = 4px
-$spacing--s:					$base-size / 2;		// 16px / 2   = 8px
-$spacing--m:					$base-size;			// 16px * 1   = 16px
-$spacing--l:					$base-size * 1.5;	// 16px * 1.5 = 24px
-$spacing--xl:					$base-size * 2;		// 16px * 2   = 32px
-$spacing--xxl:					$base-size * 3;		// 16px * 2   = 48px
-$spacing--xxxl:					$base-size * 4;		// 16px * 2   = 64px
+$base-size:								16px;
 
 
 // Gutter Widths
 
-$gutter:						$spacing--m;
-$gutter--s:						$spacing--s;
-$gutter--l:						$spacing--l;
+$gutter:								$base-size * 1.5;
+
+
+// Spacings
+
+$spacing--xxs:							$base-size / 8;		// 16px / 8   = 2px
+$spacing--xs:							$base-size / 4;		// 16px / 4   = 4px
+$spacing--s:							$base-size / 2;		// 16px / 2   = 8px
+$spacing--m:							$base-size;			// 16px * 1   = 16px
+$spacing--l:							$base-size * 1.5;	// 16px * 1.5 = 24px
+$spacing--xl:							$base-size * 2;		// 16px * 2   = 32px
+$spacing--xxl:							$base-size * 3;		// 16px * 3   = 48px
+$spacing--xxxl:							$base-size * 4;		// 16px * 4   = 64px
+$spacing--4xl:							$base-size * 5;		// 16px * 5   = 80px
+$spacing--5xl:							$base-size * 6;		// 16px * 6   = 96px
 
 
 // Screenwidths
 
-$screenwidth--xs:				320px;				// Smartphone
-$screenwidth--s:				480px;				// Smartphone, landscape
-$screenwidth--m:				600px;				// Phablet
-$screenwidth--l:				768px;				// Tablet
-$screenwidth--xl:				992px;				// Laptop
-$screenwidth--xxl:				1280px;				// Screen
-$screenwidth--xxxl:				1600px;				// Big screen
-
-
-// Global Styles and Dimensions
-
-$global-border-radius:			3px;
-$global-box-shadow:				0 1px 1px rgba(0,0,0,.25);
-
-
-// Global Transistion Properties
-
-$transition-timing-default:		100ms;
-$transition-easing-default:		ease-in-out;
+$screenwidth--mobile:					320px;
+$screenwidth--mobile-l:					480px;
+$screenwidth--phablet:					600px;
+$screenwidth--tablet:					768px;
+$screenwidth--laptop:					992px;
+$screenwidth--screen:					1280px;
+$screenwidth--big-screen:				1440px;
+$screenwidth--huge-screen:				1600px;

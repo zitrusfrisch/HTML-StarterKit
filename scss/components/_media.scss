@@ -2,7 +2,7 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
-img, object, embed {
+img, object, embed, svg {
 	display: inline-block;
 	vertical-align: middle;
 	max-width: 100%;
@@ -16,16 +16,24 @@ figure, audio, video {
 }
 
 .mediabox {
+	overflow: hidden;
 	position: relative;
 	height: 0;
+	margin-bottom: $spacing--m;
 	padding-top: 100%;
 
-	img {
+	img, iframe, object, embed {
 		display: block;
 		position: absolute;
-		top: 0;
+		top: 50%;
 		left: 0;
 		z-index: 1;
+		transform: translateY(-50%);
+	}
+
+	iframe, object, embed {
+		width: 100%;
+		height: 100%;
 	}
 
 	&--4-3 {

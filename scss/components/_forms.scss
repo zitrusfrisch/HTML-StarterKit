@@ -15,7 +15,7 @@ fieldset > div {
 }
 
 fieldset > div > input, fieldset > div > select, fieldset > div > textarea {
-	@include fontsize(m);
+	@include fontsize();
 }
 
 label {
@@ -24,7 +24,7 @@ label {
 
 label, .label {
 	font-family: $font-family-sans-serif;
-	@include fontsize(m);
+	@include fontsize();
 
 	&--checkbox,
 	&--radio {
@@ -36,7 +36,7 @@ label, .label {
 	    margin-right: $gutter !important;
 	}
 
-	@include mq-l {
+	@include mq-phablet {
 		&--autowidth {
 			text-align: left !important;
 	    	width: auto !important;
@@ -58,7 +58,7 @@ input[type=text], input[type=password], input[type=search], input[type=email], i
 	display: block;
 	width: 100%;
 	min-height: 2.75em;
-	border: 1px solid $color-grey-500;
+	border: 1px solid $color-border;
 	margin: 0;
 	padding: $spacing--s;
 	border-radius: 0;
@@ -104,12 +104,12 @@ textarea {
 
 	& label, & .label {
 
-		@include mq-l {
+		@include mq-phablet {
 			display: inline-block;
 			width: 33.3334%;
 		}
 
-		@include mq-xl {
+		@include mq-tablet {
 			text-align: right;
 			padding-right: $gutter;
 		}
@@ -118,7 +118,7 @@ textarea {
 
 	& input[type=text], & input[type=password], & input[type=search], & input[type=email], & input[type=url], & input[type=tel], & input[type=date], & input[type=time], & input[type=number], & input[type=file], & textarea, & select {
 
-		@include mq-l {
+		@include mq-phablet {
 		    display: inline-block;
 			width: 66.6667%;
 		}
@@ -127,7 +127,7 @@ textarea {
 			display: inline-block;
 			margin-top: $spacing--xs;
 
-			@include mq-l {
+			@include mq-tablet {
 				margin-left: 33.3334%;
 			}
 		}
@@ -140,7 +140,7 @@ textarea {
 			display: block;
 		}
 
-		@include mq-l {
+		@include mq-phablet {
 		    display: inline-block;
 		    width: 66.6667%;
 		    vertical-align: top;
@@ -152,7 +152,7 @@ textarea {
 	}
 
 	& .btn {
-		@include mq-l {
+		@include mq-phablet {
 		    margin-left: 33.3334%;
 		   }
 	}

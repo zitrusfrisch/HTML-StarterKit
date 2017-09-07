@@ -6,7 +6,7 @@ table {
 }
 
 colgroup {
-	border: 1px solid $color-grey-500;
+
 }
 
 th, td {
@@ -15,16 +15,19 @@ th, td {
 	color: inherit;
 	text-align: left;
 	vertical-align: top;
-	border-bottom: 1px solid $color-grey-500;
-	padding: $spacing--m;
+	border-bottom: 1px solid $color-border;
+	padding: $spacing--m $spacing--s;
 }
 
 thead th {
 	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
 }
 
 tbody th {
 	font-weight: $font-weight-bold;
+	font-family: $font-family-sans-serif;
+	padding-left: 0;
 }
 
 tbody td {
@@ -37,7 +40,8 @@ tbody td[colspan] {
 tfoot td {
 }
 
-// Set table-layout to auto for ReCaptcha
+
+// ReCaptcha fix
 
 table#recaptcha_table, table.table-auto {
 	table-layout: auto;
@@ -55,7 +59,7 @@ table#recaptcha_table, table.table-auto {
 	background-image: linear-gradient(left,  #fff,  rgba(255, 255, 255, 0)),  linear-gradient(right,  #fff,  rgba(255, 255, 255, 0)),  linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
 	background-position: 0 0, 100% 0, 0 0, 100% 0;
 	background-repeat: no-repeat;
-	background-size: 5em 100%, 5em 100%, .5em 100%, .5em 100%;
+	background-size: 5em 100%, 5em 100%, .2em 100%, .2em 100%;
 	background-attachment: local, local, scroll, scroll;
 	margin: $spacing--m 0;
 }

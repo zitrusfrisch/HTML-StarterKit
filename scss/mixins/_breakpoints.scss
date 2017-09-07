@@ -1,29 +1,47 @@
-@mixin mq-s {
-	@media only screen and (min-width: $screenwidth--s) {
+@mixin mq-mobile {
+	@media only screen and (min-width: $screenwidth--mobile) {
 		@content;
 	}
 }
 
-@mixin mq-m {
-	@media only screen and (min-width: $screenwidth--m) {
+@mixin mq-mobile-l {
+	@media only screen and (min-width: $screenwidth--mobile-l) {
 		@content;
 	}
 }
 
-@mixin mq-l {
-	@media only screen and (min-width: $screenwidth--l) {
+@mixin mq-phablet {
+	@media only screen and (min-width: $screenwidth--phablet) {
 		@content;
 	}
 }
 
-@mixin mq-xl {
-	@media only screen and (min-width: $screenwidth--xl) {
+@mixin mq-tablet {
+	@media only screen and (min-width: $screenwidth--tablet) {
 		@content;
 	}
 }
 
-@mixin mq-xxl {
-	@media only screen and (min-width: $screenwidth--xxl) {
+@mixin mq-laptop {
+	@media only screen and (min-width: $screenwidth--laptop) {
+		@content;
+	}
+}
+
+@mixin mq-screen {
+	@media only screen and (min-width: $screenwidth--screen) {
+		@content;
+	}
+}
+
+@mixin mq-big-screen {
+	@media only screen and (min-width: $screenwidth--big-screen) {
+		@content;
+	}
+}
+
+@mixin mq-huge-screen {
+	@media only screen and (min-width: $screenwidth--huge-screen) {
 		@content;
 	}
 }

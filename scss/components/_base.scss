@@ -10,7 +10,7 @@
 }
 
 html {
-	background: #fff;
+	background: $color-html-bg;
 	height: 100%;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-	background: #fff;
+	background: $color-body-bg;
 	height: 100%;
 }
 
@@ -30,17 +30,6 @@ body {
 	&--guttered {
 		padding-right: $gutter;
 		padding-left: $gutter;
-
-		&--s {
-			padding-right: $gutter--s;
-			padding-left: $gutter--s;
-		}
-
-		&--l {
-			padding-right: $gutter--l;
-			padding-left: $gutter--l;
-		}
-
 	}
 
 }

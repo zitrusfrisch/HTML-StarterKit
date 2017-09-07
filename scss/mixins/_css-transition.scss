@@ -1,3 +1,9 @@
+// Global Transistion Properties
+
+$transition-timing-default:		50ms;
+$transition-easing-default:		ease-in-out;
+
+
 @mixin transitionIn($property:all, $speed:$transition-timing-default, $ease:$transition-easing-default) {
   -ms-transition: $property $speed $ease;
   -webkit-transition: $property $speed $ease;

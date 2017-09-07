@@ -2,32 +2,36 @@
 	margin-right: auto;
 	margin-left: auto;
 
-	&--xs {
-		max-width: $screenwidth--xs;
+	&--mobile {
+		max-width: $screenwidth--mobile;
 	}
 
-	&--s {
-		max-width: $screenwidth--s;
+	&--mobile-l {
+		max-width: $screenwidth--mobile-l;
 	}
 
-	&--m {
-		max-width: $screenwidth--m;
+	&--phablet {
+		max-width: $screenwidth--phablet;
 	}
 
-	&--l {
-		max-width: $screenwidth--l;
+	&--tablet {
+		max-width: $screenwidth--tablet;
 	}
 
-	&--xl {
-		max-width: $screenwidth--xl;
+	&--laptop {
+		max-width: $screenwidth--laptop;
 	}
 
-	&--xxl {
-		max-width: $screenwidth--xxl;
+	&--screen {
+		max-width: $screenwidth--screen;
 	}
 
-	&--xxxl {
-		max-width: $screenwidth--xxxl;
+	&--big-screen {
+		max-width: $screenwidth--big-screen;
+	}
+
+	&--huge-screen {
+		max-width: $screenwidth--huge-screen;
 	}
 }
 

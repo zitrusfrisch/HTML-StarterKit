@@ -16,29 +16,6 @@ $font-weight-normal:			400;
 $font-weight-bold:				700;
 
 
-// Sizes
-
-$font-size-xxs:					$base-size * .625;			// 10px
-$line-height-xxs:				$base-size * .875;			// 14px
-
-$font-size-xs:					$base-size * .75;			// 12px
-$line-height-xs:				$base-size * 1.125;			// 18px
-
-$font-size-s:					$base-size * .875;			// 14px
-$line-height-s:					$base-size * 1.25;			// 20px
-
-$font-size-m:					$base-size * 1;				// 16px
-$line-height-m:					$base-size * 1.5;			// 24px
-
-$font-size-l:					$base-size * 1.5;			// 24px
-$line-height-l:					$base-size * 2;				// 32px
-
-$font-size-xl:					$base-size * 2;				// 32px
-$line-height-xl:				$base-size * 2.5;			// 40px
-
-$font-size-xxl:					$base-size * 3;				// 48px
-$line-height-xxl:				$base-size * 3.5;			// 56px
-
 
 // --------------------------------------------------------------------------------------------------------------------
 
@@ -47,71 +24,128 @@ $line-height-xxl:				$base-size * 3.5;			// 56px
 html {
 	font-weight: $font-weight-normal;
 	font-family: $font-family-serif;
-	@include fontsize(m);
-	color: $color-grey-900;
+	@include fontsize();
 	text-align: left;
 }
 
 
 // Headings and paragraph
 
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin: $spacing--xl 0 $spacing--m;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+h1 + h2,
+h2 + h3 {
+	margin-top: 0;
+}
+
 h1, .h1 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(xxl);
-	margin: 0 0 $spacing--m;
+	@include fontsize(32,40);
+
+	@include mq-phablet {
+		@include fontsize(40,50);
+	}
+
+	@include mq-tablet {
+		@include fontsize(48,60);
+	}
+
+	@include mq-laptop {
+		@include fontsize(64,76);
+	}
 }
 
 h2, .h2 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(xl);
-	margin: 0 0 $spacing--m;
+	@include fontsize(24,30);
+
+	@include mq-phablet {
+		@include fontsize(32,40);
+	}
+
+	@include mq-tablet {
+		@include fontsize(40,50);
+	}
 }
 
 h3, .h3 {
-	font-weight: $font-weight-bold;
+	font-weight: $font-weight-normal;
 	font-family: $font-family-sans-serif;
-	@include fontsize(l);
-	margin: 0 0 $spacing--m;
+	@include fontsize(24,30);
+
+	@include mq-phablet {
+		@include fontsize(32,40);
+	}
 }
 
 h4, .h4 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(m);
-	margin: 0 0 $spacing--m;
+	@include fontsize(20,28);
+
+	@include mq-phablet {
+		@include fontsize(24,30);
+	}
 }
 
 h5, .h5 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(m);
-	margin: 0;
+	@include fontsize();
+
+	@include mq-phablet {
+		@include fontsize(20,28);
+	}
 }
 
 h6, .h6 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(m);
+	@include fontsize();
 	margin: 0;
 }
 
+p,
+ul,
+ol,
+dl,
+dd {
+	margin: $spacing--m 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
 p {
-	margin: 0 0 $spacing--m;
+	
 }
 
 
 // Links
 
 a {
-	color: $color-primary-500;
+	color: $color-link;
 	text-decoration: none;
 	outline: 0;
 	@include transitionOut(color);
 
 	&:hover, &:focus, &:active {
-		color: $color-primary-700;
+		color: $color-link-hover;
 		text-decoration: none;
 		@include transitionIn(color);
 	}
@@ -122,7 +156,6 @@ a {
 // Lists
 
 ul, ol {
-	margin: 0 0 $spacing--m;
 	padding-left: $spacing--l;
 
 	& & {
@@ -146,7 +179,7 @@ nav ul, nav ol {
 }
 
 dl {
-	margin: 0 0 $spacing--m;
+	
 }
 
 dt {
@@ -154,14 +187,14 @@ dt {
 }
 
 dd {
-	margin: 0 0 $spacing--m;
+	
 }
 
 
 // General text formatting
 
 small {
-	@include fontsize(s);
+	@include fontsize(12,18);
 	display: inline-block;
 }
 
@@ -179,7 +212,7 @@ del, s, strike {
 
 code, kbd, pre, samp {
 	font-family: $font-family-mono;
-	@include fontsize(s);
+	@include fontsize(12,18);
 	white-space: pre-line;
 	white-space: pre-wrap;
 }
@@ -197,15 +230,15 @@ adress {
 }
 
 mark {
-	background: $color-primary-100;
+	background: yellow;
 	border-radius: 2px;
 	padding: $spacing--xxs $spacing--xs;
 }
 
 blockquote {
 	font-style: italic;
-	border-left: 3px solid $color-primary-500;
-	margin: $spacing--m * 2 0;
+	border-left: 3px solid $color-primary;
+	margin: $spacing--xl 0;
 	padding: $gutter;
 
 	:last-child {
@@ -222,8 +255,16 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0 none;
-	border-top: 1px solid getColor(border);
-	margin: 0 0 $spacing--m;
+	border-top: 1px solid $color-border;
+	margin: $spacing--l 0;
+
+	@include mq-phablet {
+		margin: $spacing--xl 0;
+	}
+
+	@include mq-tablet {
+		margin: $spacing--xxl 0;
+	}
 }
 
 
@@ -234,12 +275,13 @@ hr {
 }
 
 .text--big {
-	@include fontsize(l);
-	display: inline-block;
+	@include mq-phablet {
+		@include fontsize(20,28);
+	}
 }
 
 .text--light {
-	color: $color-grey-700;
+	color: $color-text-light;
 }
 
 .text--spaced {

@@ -1,13 +1,13 @@
 footer[role=contentinfo] {
-	background: $color-grey-700;
-	color: #fff;
+	background: $color-footer-bg;
+	color: $color-footer-bg;
 	padding: $spacing--xxl 0;
 
 	a {
-		color: $color-primary-100;
+		color: $color-footer-link;
 
 		&:hover {
-			color: $color-primary-300;
+			color: $color-footer-link-hover;
 
 		}
 	}

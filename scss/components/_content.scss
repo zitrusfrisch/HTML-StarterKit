@@ -1,10 +1,12 @@
 .content {
-	background: $color-grey-100;
-	padding: $spacing--m 0;
+	padding: $spacing--4xl 0;
 
 	header {
-		margin-top: $spacing--xl;
-		margin-bottom: $spacing--xxl;
+		margin-bottom: $spacing--4xl;
+	}
+
+	&--alt {
+		background: rgba($color-primary,.1);
 	}
 
 }

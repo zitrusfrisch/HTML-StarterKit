@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v3.5
+# HTML-StarterKit, version v3.6
 A simple, modular HTML5 template to kick off your responsive websites – written in SCSS and based on the [BEM naming convention](http://getbem.com/)
 
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -31,9 +31,20 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
   
 ## Version-Log  
 
+#### Version v3.6 (07.09.2017)  
++ Create highly dynamic grids with freshly integrated offset classes for grid cells! Following the same naming pattern as the grid cells' widths, it's super-easy now to offset cells individually. (Sorry, for the bloated grid.scss: There's probably smarter ways to do this – which I do not know. But, basic stuff tends to work best most of the times. ;-) 
++ Variables and class names for screenwidths now use display-types instead of s, m, l etc., e.g. ```grid__cell--huge-screen-1-6```
++ Added more (bigger) spacing settings and classes 
++ Removed card component 
++ Moved all colors specs to to settings 
++ Removed s and l modifiers for grid and gutter (barely used them)
++ New font size function lets you set font-size and line-height individually 
++ Mediabox component can now be used with (embedded) videos
++ Minor fixes and enhancements 
+
 #### Version v3.5 (06.10.2016)  
 + Exchanged color map with a set of color variables
-+ Cells within a guttered grid now have a bottom margin
++ Cells within a guttered grid now have a bottom margin equal to the gutter
 + Minor fixes and enhancements
 
 #### Version v3.4 (22.04.2016)  

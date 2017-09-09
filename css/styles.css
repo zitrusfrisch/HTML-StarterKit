@@ -385,7 +385,8 @@ html {
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 24px;
-  text-align: left; }
+  text-align: left;
+  color: #345; }
 
 h1, .h1,
 h2, .h2,
@@ -1369,7 +1370,7 @@ figure, audio, video {
 
 footer[role=contentinfo] {
   background: #345;
-  color: #345;
+  color: #fff;
   padding: 48px 0; }
   footer[role=contentinfo] a {
     color: rgba(255, 255, 255, 0.75); }

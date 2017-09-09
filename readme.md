@@ -31,6 +31,9 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
   
 ## Version-Log  
 
+#### Version v3.6.1 (10.09.2017)  
++ Bugfixes
+
 #### Version v3.6 (07.09.2017)  
 + Create highly dynamic grids with freshly integrated offset classes for grid cells! Following the same naming pattern as the grid cells' widths, it's super-easy now to offset cells individually. (Sorry, for the bloated grid.scss: There's probably smarter ways to do this, but basic stuff tends to work best anyways. ;-) 
 + Variables and class names for screenwidths now use display-types instead of s, m, l etc., e.g. ```grid__cell--huge-screen-1-6```

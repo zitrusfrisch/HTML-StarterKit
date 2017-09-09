@@ -26,6 +26,7 @@ html {
 	font-family: $font-family-serif;
 	@include fontsize();
 	text-align: left;
+	color: $color-text;
 }
 
 

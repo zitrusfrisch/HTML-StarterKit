@@ -31,6 +31,10 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
   
 ## Version-Log  
 
+#### Version v3.6.2 (18.01.2017)  
++ Added ```css
+image-rendering: -webkit-optimize-contrast;``` fix to optimise  quality of scaled images in Chrome (see https://medium.freecodecamp.org/-898b38a6c0e1 fore more details on this)
+
 #### Version v3.6.1 (10.09.2017)  
 + Bugfixes
 

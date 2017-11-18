@@ -1,5 +1,6 @@
 img {
 	-ms-interpolation-mode: bicubic;
+	image-rendering: -webkit-optimize-contrast;
 }
 
 img, object, embed, svg {

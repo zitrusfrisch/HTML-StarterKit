@@ -862,7 +862,8 @@ table#recaptcha_table, table.table-auto {
   margin: 0; }
 
 img {
-  -ms-interpolation-mode: bicubic; }
+  -ms-interpolation-mode: bicubic;
+  image-rendering: -webkit-optimize-contrast; }
 
 img, object, embed, svg {
   display: inline-block;

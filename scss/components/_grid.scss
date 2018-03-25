@@ -1,3 +1,16 @@
+$cellConfig: 
+	'1-1' 100%,
+	'4-5' 80%,
+	'3-4' 75%,
+	'2-3' 66.6667%,
+	'3-5' 60%,
+	'1-2' 50%,
+	'2-5' 40%,
+	'1-3' 33.3334%,
+	'1-4' 25%,
+	'1-5' 20%,
+	'1-6' 16.66667%;
+
 .grid {
 	font-size: 0;
 	text-justify: distribute-all-lines;
@@ -8,227 +21,58 @@
 		width: 100%;
 		vertical-align: top;
 
-		&--mobile-1-1 { width: 100%; };
-		&--mobile-4-5 { width: 80%; };
-		&--mobile-3-4 { width: 75%; };
-		&--mobile-2-3 { width: 66.6667%; };
-		&--mobile-3-5 { width: 60%; };
-		&--mobile-1-2 { width: 50%; };
-		&--mobile-2-5 { width: 40%; };
-		&--mobile-1-3 { width: 33.3334%; };
-		&--mobile-1-4 { width: 25%; };
-		&--mobile-1-5 { width: 20%; };
-		&--mobile-1-6 { width: 16.66667%; };
+		@each $width in $cellConfig {
+			&--mobile-#{nth($width, 1)} { width: nth($width, 2) };
+			&-offset--mobile-#{nth($width, 1)} { margin-left: nth($width, 2) };
+		}
 
 		@include mq-mobile-l {
-			&--mobile-l-1-1 { width: 100%; };
-			&--mobile-l-4-5 { width: 80%; };
-			&--mobile-l-3-4 { width: 75%; };
-			&--mobile-l-2-3 { width: 66.6667%; };
-			&--mobile-l-3-5 { width: 60%; };
-			&--mobile-l-1-2 { width: 50%; };
-			&--mobile-l-2-5 { width: 40%; };
-			&--mobile-l-1-3 { width: 33.3334%; };
-			&--mobile-l-1-4 { width: 25%; };
-			&--mobile-l-1-5 { width: 20%; };
-			&--mobile-l-1-6 { width: 16.66667%; };
+			@each $width in $cellConfig {
+				&--mobile-l-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--mobile-l-#{nth($width, 1)} { margin-left: nth($width, 2) };
+			}
 		}
 
 		@include mq-phablet {
-			&--phablet-1-1 { width: 100%; };
-			&--phablet-4-5 { width: 80%; };
-			&--phablet-3-4 { width: 75%; };
-			&--phablet-2-3 { width: 66.6667%; };
-			&--phablet-3-5 { width: 60%; };
-			&--phablet-1-2 { width: 50%; };
-			&--phablet-2-5 { width: 40%; };
-			&--phablet-1-3 { width: 33.3334%; };
-			&--phablet-1-4 { width: 25%; };
-			&--phablet-1-5 { width: 20%; };
-			&--phablet-1-6 { width: 16.66667%; };
+			@each $width in $cellConfig {
+				&--phablet-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--phablet-#{nth($width, 1)} { margin-left: nth($width, 2) };
+			}
 		}
 
 		@include mq-tablet {
-			&--tablet-1-1 { width: 100%; };
-			&--tablet-4-5 { width: 80%; };
-			&--tablet-3-4 { width: 75%; };
-			&--tablet-2-3 { width: 66.6667%; };
-			&--tablet-3-5 { width: 60%; };
-			&--tablet-1-2 { width: 50%; };
-			&--tablet-2-5 { width: 40%; };
-			&--tablet-1-3 { width: 33.3334%; };
-			&--tablet-1-4 { width: 25%; };
-			&--tablet-1-5 { width: 20%; };
-			&--tablet-1-6 { width: 16.66667%; };
+			@each $width in $cellConfig {
+				&--tablet-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--tablet-#{nth($width, 1)} { margin-left: nth($width, 2) };
+			}
 		}
 
 		@include mq-laptop {
-			&--laptop-1-1 { width: 100%; };
-			&--laptop-4-5 { width: 80%; };
-			&--laptop-3-4 { width: 75%; };
-			&--laptop-2-3 { width: 66.6667%; };
-			&--laptop-3-5 { width: 60%; };
-			&--laptop-1-2 { width: 50%; };
-			&--laptop-2-5 { width: 40%; };
-			&--laptop-1-3 { width: 33.3334%; };
-			&--laptop-1-4 { width: 25%; };
-			&--laptop-1-5 { width: 20%; };
-			&--laptop-1-6 { width: 16.66667%; };
+			@each $width in $cellConfig {
+				&--laptop-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--laptop-#{nth($width, 1)} { margin-left: nth($width, 2) };
+			}
 		}
 
 		@include mq-screen {
-			&--screen-1-1 { width: 100%; };
-			&--screen-4-5 { width: 80%; };
-			&--screen-3-4 { width: 75%; };
-			&--screen-2-3 { width: 66.6667%; };
-			&--screen-3-5 { width: 60%; };
-			&--screen-1-2 { width: 50%; };
-			&--screen-2-5 { width: 40%; };
-			&--screen-1-3 { width: 33.3334%; };
-			&--screen-1-4 { width: 25%; };
-			&--screen-1-5 { width: 20%; };
-			&--screen-1-6 { width: 16.66667%; };
+			@each $width in $cellConfig {
+				&--screen-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--screen-#{nth($width, 1)} { margin-left: nth($width, 2) };
+			}
 		}
 
 		@include mq-big-screen {
-			&--big-screen-1-1 { width: 100%; };
-			&--big-screen-4-5 { width: 80%; };
-			&--big-screen-3-4 { width: 75%; };
-			&--big-screen-2-3 { width: 66.6667%; };
-			&--big-screen-3-5 { width: 60%; };
-			&--big-screen-1-2 { width: 50%; };
-			&--big-screen-2-5 { width: 40%; };
-			&--big-screen-1-3 { width: 33.3334%; };
-			&--big-screen-1-4 { width: 25%; };
-			&--big-screen-1-5 { width: 20%; };
-			&--big-screen-1-6 { width: 16.66667%; };
+			@each $width in $cellConfig {
+				&--big-screen-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--big-screen-#{nth($width, 1)} { margin-left: nth($width, 2) };
+			}
 		}
 
 		@include mq-huge-screen {
-			&--huge-screen-1-1 { width: 100%; };
-			&--huge-screen-4-5 { width: 80%; };
-			&--huge-screen-3-4 { width: 75%; };
-			&--huge-screen-2-3 { width: 66.6667%; };
-			&--huge-screen-3-5 { width: 60%; };
-			&--huge-screen-1-2 { width: 50%; };
-			&--huge-screen-2-5 { width: 40%; };
-			&--huge-screen-1-3 { width: 33.3334%; };
-			&--huge-screen-1-4 { width: 25%; };
-			&--huge-screen-1-5 { width: 20%; };
-			&--huge-screen-1-6 { width: 16.66667%; };
-		}
-	}
-
-	&__cell-offset {
-
-		&--mobile-4-5 { margin-left: 80%; };
-		&--mobile-3-4 { margin-left: 75%; };
-		&--mobile-2-3 { margin-left: 66.6667%; };
-		&--mobile-3-5 { margin-left: 60%; };
-		&--mobile-1-2 { margin-left: 50%; };
-		&--mobile-2-5 { margin-left: 40%; };
-		&--mobile-1-3 { margin-left: 33.3334%; };
-		&--mobile-1-4 { margin-left: 25%; };
-		&--mobile-1-5 { margin-left: 20%; };
-		&--mobile-1-6 { margin-left: 16.66667%; };
-		&--mobile-0 { margin-left: 0; };
-
-		@include mq-mobile-l {
-			&--mobile-l-4-5 { margin-left: 80%; };
-			&--mobile-l-3-4 { margin-left: 75%; };
-			&--mobile-l-2-3 { margin-left: 66.6667%; };
-			&--mobile-l-3-5 { margin-left: 60%; };
-			&--mobile-l-1-2 { margin-left: 50%; };
-			&--mobile-l-2-5 { margin-left: 40%; };
-			&--mobile-l-1-3 { margin-left: 33.3334%; };
-			&--mobile-l-1-4 { margin-left: 25%; };
-			&--mobile-l-1-5 { margin-left: 20%; };
-			&--mobile-l-1-6 { margin-left: 16.66667%; };
-			&--mobile-l-0 { margin-left: 0; };
-		}
-
-		@include mq-phablet {
-			&--phablet-4-5 { margin-left: 80%; };
-			&--phablet-3-4 { margin-left: 75%; };
-			&--phablet-2-3 { margin-left: 66.6667%; };
-			&--phablet-3-5 { margin-left: 60%; };
-			&--phablet-1-2 { margin-left: 50%; };
-			&--phablet-2-5 { margin-left: 40%; };
-			&--phablet-1-3 { margin-left: 33.3334%; };
-			&--phablet-1-4 { margin-left: 25%; };
-			&--phablet-1-5 { margin-left: 20%; };
-			&--phablet-1-6 { margin-left: 16.66667%; };
-			&--phablet-0 { margin-left: 0; };
-		}
-
-		@include mq-tablet {
-			&--tablet-4-5 { margin-left: 80%; };
-			&--tablet-3-4 { margin-left: 75%; };
-			&--tablet-2-3 { margin-left: 66.6667%; };
-			&--tablet-3-5 { margin-left: 60%; };
-			&--tablet-1-2 { margin-left: 50%; };
-			&--tablet-2-5 { margin-left: 40%; };
-			&--tablet-1-3 { margin-left: 33.3334%; };
-			&--tablet-1-4 { margin-left: 25%; };
-			&--tablet-1-5 { margin-left: 20%; };
-			&--tablet-1-6 { margin-left: 16.66667%; };
-			&--tablet-0 { margin-left: 0; };
-		}
-
-		@include mq-laptop {
-			&--laptop-4-5 { margin-left: 80%; };
-			&--laptop-3-4 { margin-left: 75%; };
-			&--laptop-2-3 { margin-left: 66.6667%; };
-			&--laptop-3-5 { margin-left: 60%; };
-			&--laptop-1-2 { margin-left: 50%; };
-			&--laptop-2-5 { margin-left: 40%; };
-			&--laptop-1-3 { margin-left: 33.3334%; };
-			&--laptop-1-4 { margin-left: 25%; };
-			&--laptop-1-5 { margin-left: 20%; };
-			&--laptop-1-6 { margin-left: 16.66667%; };
-			&--laptop-0 { margin-left: 0; };
-		}
-
-		@include mq-screen {
-			&--screen-4-5 { margin-left: 80%; };
-			&--screen-3-4 { margin-left: 75%; };
-			&--screen-2-3 { margin-left: 66.6667%; };
-			&--screen-3-5 { margin-left: 60%; };
-			&--screen-1-2 { margin-left: 50%; };
-			&--screen-2-5 { margin-left: 40%; };
-			&--screen-1-3 { margin-left: 33.3334%; };
-			&--screen-1-4 { margin-left: 25%; };
-			&--screen-1-5 { margin-left: 20%; };
-			&--screen-1-6 { margin-left: 16.66667%; };
-			&--screen-0 { margin-left: 0; };
-		}
-
-		@include mq-big-screen {
-			&--big-screen-4-5 { margin-left: 80%; };
-			&--big-screen-3-4 { margin-left: 75%; };
-			&--big-screen-2-3 { margin-left: 66.6667%; };
-			&--big-screen-3-5 { margin-left: 60%; };
-			&--big-screen-1-2 { margin-left: 50%; };
-			&--big-screen-2-5 { margin-left: 40%; };
-			&--big-screen-1-3 { margin-left: 33.3334%; };
-			&--big-screen-1-4 { margin-left: 25%; };
-			&--big-screen-1-5 { margin-left: 20%; };
-			&--big-screen-1-6 { margin-left: 16.66667%; };
-			&--big-screen-0 { margin-left: 0; };
-		}
-
-		@include mq-huge-screen {
-			&--huge-screen-4-5 { margin-left: 80%; };
-			&--huge-screen-3-4 { margin-left: 75%; };
-			&--huge-screen-2-3 { margin-left: 66.6667%; };
-			&--huge-screen-3-5 { margin-left: 60%; };
-			&--huge-screen-1-2 { margin-left: 50%; };
-			&--huge-screen-2-5 { margin-left: 40%; };
-			&--huge-screen-1-3 { margin-left: 33.3334%; };
-			&--huge-screen-1-4 { margin-left: 25%; };
-			&--huge-screen-1-5 { margin-left: 20%; };
-			&--huge-screen-1-6 { margin-left: 16.66667%; };
-			&--huge-screen-0 { margin-left: 0; };
+			@each $width in $cellConfig {
+				&--huge-screen-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--huge-screen-#{nth($width, 1)} { margin-left: nth($width, 2) };
+			}
 		}
 	}
 

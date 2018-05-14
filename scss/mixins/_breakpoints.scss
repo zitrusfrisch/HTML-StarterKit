@@ -1,53 +1,47 @@
-@mixin mq-mobile {
-	@media only screen and (min-width: $screenwidth--mobile) {
+@mixin mq-xxs {
+	@media only screen and (min-width: $screenwidth--xxs) {
 		@content;
 	}
 }
 
-@mixin mq-mobile-l {
-	@media only screen and (min-width: $screenwidth--mobile-l) {
+@mixin mq-xs {
+	@media only screen and (min-width: $screenwidth--xs) {
 		@content;
 	}
 }
 
-@mixin mq-phablet {
-	@media only screen and (min-width: $screenwidth--phablet) {
+@mixin mq-s {
+	@media only screen and (min-width: $screenwidth--s) {
 		@content;
 	}
 }
 
-@mixin mq-tablet {
-	@media only screen and (min-width: $screenwidth--tablet) {
+@mixin mq-m {
+	@media only screen and (min-width: $screenwidth--m) {
 		@content;
 	}
 }
 
-@mixin mq-laptop {
-	@media only screen and (min-width: $screenwidth--laptop) {
+@mixin mq-l {
+	@media only screen and (min-width: $screenwidth--l) {
 		@content;
 	}
 }
 
-@mixin mq-screen {
-	@media only screen and (min-width: $screenwidth--screen) {
+@mixin mq-xl {
+	@media only screen and (min-width: $screenwidth--xl) {
 		@content;
 	}
 }
 
-@mixin mq-big-screen {
-	@media only screen and (min-width: $screenwidth--big-screen) {
+@mixin mq-xxl {
+	@media only screen and (min-width: $screenwidth--xxl) {
 		@content;
 	}
 }
 
-@mixin mq-huge-screen {
-	@media only screen and (min-width: $screenwidth--huge-screen) {
-		@content;
-	}
-}
-
-@mixin mq-hires {
-	@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+@mixin mq-xxxl {
+	@media only screen and (min-width: $screenwidth--xxxl) {
 		@content;
 	}
 }

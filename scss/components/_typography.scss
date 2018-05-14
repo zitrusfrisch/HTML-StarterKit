@@ -46,25 +46,20 @@ h6, .h6 {
 	}
 }
 
-h1 + h2,
-h2 + h3 {
-	margin-top: 0;
-}
-
 h1, .h1 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
 	@include fontsize(32,40);
 
-	@include mq-phablet {
+	@include mq-s {
 		@include fontsize(40,50);
 	}
 
-	@include mq-tablet {
+	@include mq-m {
 		@include fontsize(48,60);
 	}
 
-	@include mq-laptop {
+	@include mq-l {
 		@include fontsize(64,76);
 	}
 }
@@ -74,21 +69,21 @@ h2, .h2 {
 	font-family: $font-family-sans-serif;
 	@include fontsize(24,30);
 
-	@include mq-phablet {
+	@include mq-s {
 		@include fontsize(32,40);
 	}
 
-	@include mq-tablet {
+	@include mq-m {
 		@include fontsize(40,50);
 	}
 }
 
 h3, .h3 {
-	font-weight: $font-weight-normal;
+	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
 	@include fontsize(24,30);
 
-	@include mq-phablet {
+	@include mq-s {
 		@include fontsize(32,40);
 	}
 }
@@ -98,7 +93,7 @@ h4, .h4 {
 	font-family: $font-family-sans-serif;
 	@include fontsize(20,28);
 
-	@include mq-phablet {
+	@include mq-s {
 		@include fontsize(24,30);
 	}
 }
@@ -108,7 +103,7 @@ h5, .h5 {
 	font-family: $font-family-sans-serif;
 	@include fontsize();
 
-	@include mq-phablet {
+	@include mq-s {
 		@include fontsize(20,28);
 	}
 }
@@ -117,7 +112,6 @@ h6, .h6 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
 	@include fontsize();
-	margin: 0;
 }
 
 p,
@@ -159,7 +153,7 @@ a {
 ul, ol {
 	padding-left: $spacing--l;
 
-	& & {
+	& &:first-child {
 		margin: $spacing--m 0;
 	}
 
@@ -242,6 +236,10 @@ blockquote {
 	margin: $spacing--xl 0;
 	padding: $gutter;
 
+	&:first-child {
+		margin-top: 0;
+	}
+
 	:last-child {
 		margin-bottom: 0;
 	}
@@ -259,11 +257,11 @@ hr {
 	border-top: 1px solid $color-border;
 	margin: $spacing--l 0;
 
-	@include mq-phablet {
+	@include mq-s {
 		margin: $spacing--xl 0;
 	}
 
-	@include mq-tablet {
+	@include mq-m {
 		margin: $spacing--xxl 0;
 	}
 }
@@ -276,13 +274,21 @@ hr {
 }
 
 .text--big {
-	@include mq-phablet {
+	@include mq-s {
 		@include fontsize(20,28);
 	}
 }
 
 .text--light {
 	color: $color-text-light;
+}
+
+.text--regular {
+	font-weight: $font-weight-normal;
+}
+
+.text--bold {
+	font-weight: $font-weight-bold;
 }
 
 .text--spaced {

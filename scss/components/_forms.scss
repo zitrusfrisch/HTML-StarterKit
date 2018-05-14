@@ -36,7 +36,7 @@ label, .label {
 	    margin-right: $gutter !important;
 	}
 
-	@include mq-phablet {
+	@include mq-s {
 		&--autowidth {
 			text-align: left !important;
 	    	width: auto !important;
@@ -104,12 +104,12 @@ textarea {
 
 	& label, & .label {
 
-		@include mq-phablet {
+		@include mq-s {
 			display: inline-block;
 			width: 33.3334%;
 		}
 
-		@include mq-tablet {
+		@include mq-m {
 			text-align: right;
 			padding-right: $gutter;
 		}
@@ -118,7 +118,7 @@ textarea {
 
 	& input[type=text], & input[type=password], & input[type=search], & input[type=email], & input[type=url], & input[type=tel], & input[type=date], & input[type=time], & input[type=number], & input[type=file], & textarea, & select {
 
-		@include mq-phablet {
+		@include mq-s {
 		    display: inline-block;
 			width: 66.6667%;
 		}
@@ -127,7 +127,7 @@ textarea {
 			display: inline-block;
 			margin-top: $spacing--xs;
 
-			@include mq-tablet {
+			@include mq-m {
 				margin-left: 33.3334%;
 			}
 		}
@@ -140,7 +140,7 @@ textarea {
 			display: block;
 		}
 
-		@include mq-phablet {
+		@include mq-s {
 		    display: inline-block;
 		    width: 66.6667%;
 		    vertical-align: top;
@@ -152,7 +152,7 @@ textarea {
 	}
 
 	& .btn {
-		@include mq-phablet {
+		@include mq-s {
 		    margin-left: 33.3334%;
 		   }
 	}

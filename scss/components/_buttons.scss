@@ -107,7 +107,7 @@ $button-border-radius:			2px;
 		padding: 0 $spacing--l;
 	}
 
-	@include mq-mobile-l {
+	@include mq-xs {
 		width: auto;
 	}
 

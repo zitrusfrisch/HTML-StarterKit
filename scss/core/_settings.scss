@@ -27,11 +27,11 @@ $spacing--5xl:							$base-size * 6;		// 16px * 6   = 96px
 
 // Screenwidths
 
-$screenwidth--mobile:					320px;
-$screenwidth--mobile-l:					480px;
-$screenwidth--phablet:					600px;
-$screenwidth--tablet:					768px;
-$screenwidth--laptop:					992px;
-$screenwidth--screen:					1280px;
-$screenwidth--big-screen:				1440px;
-$screenwidth--huge-screen:				1600px;
+$screenwidth--xxs:						320px;
+$screenwidth--xs:						480px;
+$screenwidth--s:						600px;
+$screenwidth--m:						768px;
+$screenwidth--l:						992px;
+$screenwidth--xl:						1280px;
+$screenwidth--xxl:						1440px;
+$screenwidth--xxxl:						1600px;

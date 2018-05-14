@@ -1,5 +1,6 @@
 $cellConfig: 
 	'1-1' 100%,
+	'5-6' 83.3334%,
 	'4-5' 80%,
 	'3-4' 75%,
 	'2-3' 66.6667%,
@@ -21,57 +22,59 @@ $cellConfig:
 		width: 100%;
 		vertical-align: top;
 
-		@each $width in $cellConfig {
-			&--mobile-#{nth($width, 1)} { width: nth($width, 2) };
-			&-offset--mobile-#{nth($width, 1)} { margin-left: nth($width, 2) };
-		}
-
-		@include mq-mobile-l {
+		@include mq-xxs {
 			@each $width in $cellConfig {
-				&--mobile-l-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--mobile-l-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xxs-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--xxs-#{nth($width, 1)} { margin-left: nth($width, 2) };
 			}
 		}
 
-		@include mq-phablet {
+		@include mq-xs {
 			@each $width in $cellConfig {
-				&--phablet-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--phablet-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xs-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--xs-#{nth($width, 1)} { margin-left: nth($width, 2) };
 			}
 		}
 
-		@include mq-tablet {
+		@include mq-s {
 			@each $width in $cellConfig {
-				&--tablet-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--tablet-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--s-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--s-#{nth($width, 1)} { margin-left: nth($width, 2) };
 			}
 		}
 
-		@include mq-laptop {
+		@include mq-m {
 			@each $width in $cellConfig {
-				&--laptop-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--laptop-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--m-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--m-#{nth($width, 1)} { margin-left: nth($width, 2) };
 			}
 		}
 
-		@include mq-screen {
+		@include mq-l {
 			@each $width in $cellConfig {
-				&--screen-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--screen-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--l-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--l-#{nth($width, 1)} { margin-left: nth($width, 2) };
 			}
 		}
 
-		@include mq-big-screen {
+		@include mq-xl {
 			@each $width in $cellConfig {
-				&--big-screen-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--big-screen-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xl-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--xl-#{nth($width, 1)} { margin-left: nth($width, 2) };
 			}
 		}
 
-		@include mq-huge-screen {
+		@include mq-xxl {
 			@each $width in $cellConfig {
-				&--huge-screen-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--huge-screen-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xxl-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--xxl-#{nth($width, 1)} { margin-left: nth($width, 2) };
+			}
+		}
+
+		@include mq-xxxl {
+			@each $width in $cellConfig {
+				&--xxxl-#{nth($width, 1)} { width: nth($width, 2) };
+				&-offset--xxxl-#{nth($width, 1)} { margin-left: nth($width, 2) };
 			}
 		}
 	}
@@ -80,6 +83,10 @@ $cellConfig:
 		margin-right: ($gutter / 2) * -1;
 		margin-left: ($gutter / 2) * -1;
 		margin-bottom: -$gutter;
+
+		& + .grid {
+			margin-top: $gutter;
+		}
 
 		& .grid__cell {
 			padding: 0 $gutter / 2;

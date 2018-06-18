@@ -958,6 +958,8 @@ figure, audio, video {
     padding-top: 56.25%; }
   .mediabox--2-1 {
     padding-top: 50%; }
+  .mediabox--3-1 {
+    padding-top: 33.3334%; }
 
 #map_canvas img, #map_canvas embed, #map_canvas object, .map_canvas img, .map_canvas embed, .map_canvas object, .mqa-display img, .mqa-display embed, .mqa-display object {
   max-width: none !important; }

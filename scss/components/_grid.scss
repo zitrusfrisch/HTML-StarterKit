@@ -17,7 +17,7 @@ $cellConfig:
 	text-justify: distribute-all-lines;
 
 	&__cell {
-		@include fontsize();
+		@include fontsize(m);
 		display: inline-block;
 		width: 100%;
 		vertical-align: top;

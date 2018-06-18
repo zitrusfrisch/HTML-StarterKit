@@ -10,6 +10,39 @@ $font-family-serif:				Georgia, Cambria, "Times New Roman", Times, serif !defaul
 $font-family-mono:				Consolas, "Liberation Mono", Courier, monospace !default;
 
 
+// Sizes
+
+$font-size-xxs:					$base-size * .625;			// 10px
+$line-height-xxs:				$base-size * .875;			// 14px
+
+$font-size-xs:					$base-size * .75;			// 12px
+$line-height-xs:				$base-size * 1.125;			// 18px
+
+$font-size-s:					$base-size * .875;			// 14px
+$line-height-s:					$base-size * 1.25;			// 20px
+
+$font-size-m:					$base-size * 1;				// 16px
+$line-height-m:					$base-size * 1.5;			// 24px
+
+$font-size-l:					$base-size * 1.25;			// 20px
+$line-height-l:					$base-size * 1.75;			// 28px
+
+$font-size-xl:					$base-size * 1.5;			// 24px
+$line-height-xl:				$base-size * 2;				// 32px
+
+$font-size-xxl:					$base-size * 2;				// 32px
+$line-height-xxl:				$base-size * 2.5;			// 40px
+
+$font-size-xxxl:				$base-size * 3;				// 48px
+$line-height-xxxl:				$base-size * 3.375;			// 56px
+
+$font-size-4xl:					$base-size * 4;				// 64px
+$line-height-4xl:				$base-size * 4.5;			// 72px
+
+$font-size-5xl:					$base-size * 5;				// 80px
+$line-height-5xl:				$base-size * 5.625;			// 90px
+
+
 // Weights
 
 $font-weight-normal:			400;
@@ -24,7 +57,7 @@ $font-weight-bold:				700;
 html {
 	font-weight: $font-weight-normal;
 	font-family: $font-family-serif;
-	@include fontsize();
+	@include fontsize(m);
 	text-align: left;
 	color: $color-text;
 }
@@ -49,76 +82,99 @@ h6, .h6 {
 h1, .h1 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(32,40);
+	@include fontsize(xxl);
 
 	@include mq-s {
-		@include fontsize(40,50);
+		@include fontsize(xxxl);
 	}
 
 	@include mq-m {
-		@include fontsize(48,60);
+		@include fontsize(4xl);
 	}
 
 	@include mq-l {
-		@include fontsize(64,76);
+		@include fontsize(5xl);
 	}
 }
 
 h2, .h2 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(24,30);
+	@include fontsize(xl);
 
 	@include mq-s {
-		@include fontsize(32,40);
+		@include fontsize(xxl);
 	}
 
 	@include mq-m {
-		@include fontsize(40,50);
+		@include fontsize(xxxl);
+	}
+
+	@include mq-l {
+		@include fontsize(4xl);
 	}
 }
 
 h3, .h3 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(24,30);
+	@include fontsize(l);
 
 	@include mq-s {
-		@include fontsize(32,40);
+		@include fontsize(xl);
+	}
+
+	@include mq-m {
+		@include fontsize(xxl);
+	}
+
+	@include mq-l {
+		@include fontsize(xxxl);
 	}
 }
 
 h4, .h4 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize(20,28);
+	@include fontsize(m);
 
 	@include mq-s {
-		@include fontsize(24,30);
+		@include fontsize(l);
+	}
+
+	@include mq-m {
+		@include fontsize(xl);
+	}
+
+	@include mq-l {
+		@include fontsize(xxl);
 	}
 }
 
 h5, .h5 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize();
+	@include fontsize(m);
 
-	@include mq-s {
-		@include fontsize(20,28);
+	@include mq-m {
+		@include fontsize(l);
+	}
+
+	@include mq-l {
+		@include fontsize(xl);
 	}
 }
 
 h6, .h6 {
 	font-weight: $font-weight-bold;
 	font-family: $font-family-sans-serif;
-	@include fontsize();
+	@include fontsize(m);
 }
 
 p,
 ul,
 ol,
-dl,
-dd {
+dl {
 	margin: $spacing--m 0;
 
 	&:first-child {
@@ -189,8 +245,7 @@ dd {
 // General text formatting
 
 small {
-	@include fontsize(12,18);
-	display: inline-block;
+	@include fontsize(xs);
 }
 
 b, strong {
@@ -207,7 +262,7 @@ del, s, strike {
 
 code, kbd, pre, samp {
 	font-family: $font-family-mono;
-	@include fontsize(12,18);
+	@include fontsize(xs);
 	white-space: pre-line;
 	white-space: pre-wrap;
 }
@@ -275,7 +330,7 @@ hr {
 
 .text--big {
 	@include mq-s {
-		@include fontsize(20,28);
+		@include fontsize(xl);
 	}
 }
 

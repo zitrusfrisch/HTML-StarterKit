@@ -26,7 +26,7 @@ $button-border-radius:			2px;
 	font-family: $font-family-sans-serif;
 	font-size: $base-size;
 	font-weight: $font-weight-bold;
-	line-height: 1;
+	line-height: $button-height - 6px;
 	color: $color-button-text-primary;
 	text-align: center;
 	text-decoration: none !important;
@@ -97,12 +97,14 @@ $button-border-radius:			2px;
 
 	&--s {
 		font-size: 12px;
+		line-height: $button-s-height - 4px;
 		height: $button-s-height;
 		padding: 0 $spacing--s;
 	}
 
 	&--l {
 		font-size: 20px;
+		line-height: $button-l-height - 8px;
 		height: $button-l-height;
 		padding: 0 $spacing--l;
 	}

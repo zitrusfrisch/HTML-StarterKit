@@ -109,3 +109,33 @@
 		margin-bottom: $spacing--xxxl !important;
 	}
 }
+
+.opacity {
+	&--100 {
+		opacity: 1;
+	}
+	&--87_5 {
+		opacity: .875;
+	}
+	&--75 {
+		opacity: .75;
+	}
+	&--62_5 {
+		opacity: .625;
+	}
+	&--50 {
+		opacity: .5;
+	}
+	&--37_5 {
+		opacity: .375;
+	}
+	&--25 {
+		opacity: .25;
+	}
+	&--12_5 {
+		opacity: .125;
+	}
+	&--0 {
+		opacity: 0;
+	}
+}

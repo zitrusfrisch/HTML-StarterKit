@@ -15,7 +15,7 @@ fieldset > div {
 }
 
 fieldset > div > input, fieldset > div > select, fieldset > div > textarea {
-	@include fontsize();
+	@include fontsize(m);
 }
 
 label {
@@ -24,7 +24,7 @@ label {
 
 label, .label {
 	font-family: $font-family-sans-serif;
-	@include fontsize();
+	@include fontsize(m);
 
 	&--checkbox,
 	&--radio {

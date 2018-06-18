@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v3.8
+# HTML-StarterKit, version v3.9
 A simple, modular HTML5 template to kick off your responsive websites – written in SCSS and based on the [BEM naming convention](http://getbem.com/)
 
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -31,9 +31,15 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
   
 ## Version-Log  
 
+#### Version v3.9 (18.06.2018)  
++ Back to S, M, L system for font-size and line-height variables 
++ Moved utilities.scss from components to core 
++ Updated normalize.css to version 8.0.0  
++ Bugfixes  
+
 #### Version v3.8 (15.05.2018)  
 + Back to S, M, L system for width and spacing variables 
-+ Bugfixes
++ Bugfixes 
 
 #### Version v3.7 (25.03.2018)  
 + Improved grid scss structure and new CSS classes to offset grid-cells individually  

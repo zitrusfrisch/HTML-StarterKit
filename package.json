@@ -1,0 +1,28 @@
+{
+  "name": "html-starterkit",
+  "version": "3.9.0",
+  "description": "A simple, modular HTML5 template to kick off your responsive websites – written in SCSS and based on the BEM naming convention",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zitrusfrisch/HTML-StarterKit.git"
+  },
+  "authors": [
+    "Daniel Riemer <post@zitrusfrisch.de> (https://www.zitrusfrisch.de)",
+    "Niklas Köhler <kontakt@niklaskoehler.de> (https://www.niklaskoehler.de)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zitrusfrisch/HTML-StarterKit/issues"
+  },
+  "homepage": "https://github.com/zitrusfrisch/HTML-StarterKit#readme",
+  "dependencies": {
+    "node-sass": "4.9.2"
+  },
+  "devDependencies": {
+    "chalk": "2.4.1"
+  }
+}

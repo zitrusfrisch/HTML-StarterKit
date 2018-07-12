@@ -28,6 +28,18 @@ Use functions.js for your personal scripts and functions.
 
 #### SCSS  
 The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used UI elements as well as media query settings for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins and functions ready to use.  
+
+## Build Styles
+
+For default, compiled css-files are placed in the `css`-directory. If you want to rebuild your styles do following steps:
+
+### Install depencendies
+
+`$ npm install`
+
+### Compile Styles
+
+`$ npm run build`
   
 ## Version-Log  
 

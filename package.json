@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/zitrusfrisch/HTML-StarterKit#readme",
   "dependencies": {
-    "node-sass": "4.9.2"
+    "node-sass": "^4.11.0"
   },
   "devDependencies": {
     "chalk": "2.4.1"

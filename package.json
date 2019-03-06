@@ -19,10 +19,8 @@
     "url": "https://github.com/zitrusfrisch/HTML-StarterKit/issues"
   },
   "homepage": "https://github.com/zitrusfrisch/HTML-StarterKit#readme",
-  "dependencies": {
-    "node-sass": "^4.11.0"
-  },
   "devDependencies": {
-    "chalk": "2.4.1"
+    "chalk": "2.4.1",
+    "node-sass": "^4.11.0"
   }
 }

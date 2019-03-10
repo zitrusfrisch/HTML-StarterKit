@@ -1,37 +1,112 @@
 // --------------------------------------------------------------------------------------------------------------------
-// Global Variables
+//
+//   G L O B A L   S E T T E I N G S   A N D   S T Y L E S
+//
 // --------------------------------------------------------------------------------------------------------------------
 
 
-$base-size:								16px;
+
+// B A S E   F O N T - S I Z E   --------------------------------------------------------------------------------------
 
 
-// Gutter Widths
-
-$gutter:								$base-size * 1.5;
+$base-size:						16px;
 
 
-// Spacings
 
-$spacing--xxs:							$base-size / 8;		// 16px / 8   = 2px
-$spacing--xs:							$base-size / 4;		// 16px / 4   = 4px
-$spacing--s:							$base-size / 2;		// 16px / 2   = 8px
-$spacing--m:							$base-size;			// 16px * 1   = 16px
-$spacing--l:							$base-size * 1.5;	// 16px * 1.5 = 24px
-$spacing--xl:							$base-size * 2;		// 16px * 2   = 32px
-$spacing--xxl:							$base-size * 3;		// 16px * 3   = 48px
-$spacing--xxxl:							$base-size * 4;		// 16px * 4   = 64px
-$spacing--4xl:							$base-size * 5;		// 16px * 5   = 80px
-$spacing--5xl:							$base-size * 6;		// 16px * 6   = 96px
+// G U T T E R S   A N D   S P A C I N G S   --------------------------------------------------------------------------
 
 
-// Screenwidths
+$gutter:						$base-size * 1.5;
+$gutter--s:						$base-size * .75;
+$gutter--l:						$base-size * 3;
 
-$screenwidth--xxs:						320px;
-$screenwidth--xs:						480px;
-$screenwidth--s:						600px;
-$screenwidth--m:						768px;
-$screenwidth--l:						992px;
-$screenwidth--xl:						1280px;
-$screenwidth--xxl:						1440px;
-$screenwidth--xxxl:						1600px;
+
+$spacing--xxs:					$base-size / 8;			// 16px / 8    => 2px
+$spacing--xs:					$base-size / 4;			// 16px / 4    => 4px
+$spacing--s:					$base-size / 2;			// 16px / 2    => 8px
+$spacing--m:					$base-size;				// 16px * 1    => 16px
+$spacing--l:					$base-size * 1.5;		// 16px * 1.5  => 24px
+$spacing--xl:					$base-size * 2;			// 16px * 2    => 32px
+$spacing--xxl:					$base-size * 3;			// 16px * 3    => 48px
+$spacing--xxxl:					$base-size * 4;			// 16px * 4    => 64px
+$spacing--4xl:					$base-size * 5;			// 16px * 5    => 80px
+$spacing--5xl:					$base-size * 6;			// 16px * 6    => 96px
+
+
+
+// B R E A K P O I N T S   --------------------------------------------------------------------------------------------
+
+
+$screenwidth--xxs:				320px;
+$screenwidth--xs:				480px;
+$screenwidth--s:				600px;
+$screenwidth--m:				768px;
+$screenwidth--l:				992px;
+$screenwidth--xl:				1280px;
+$screenwidth--xxl:				1440px;
+$screenwidth--xxxl:				1600px;
+
+
+
+// T Y P O G R P H Y   ------------------------------------------------------------------------------------------------
+
+
+// Font stacks
+
+$font-family-sans-serif:		"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family-serif:				Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family-mono:				Consolas, "Liberation Mono", Courier, monospace !default;
+
+
+// Weights
+
+$font-weight-normal:			400;
+$font-weight-semibold:			600;
+$font-weight-bold:				700;
+
+
+// Sizes
+
+$font-size-xxs:					$base-size * .625;			// 10px
+$line-height-xxs:				$base-size * .875;			// 14px
+
+$font-size-xs:					$base-size * .75;			// 12px
+$line-height-xs:				$base-size * 1.125;			// 18px
+
+$font-size-s:					$base-size * .875;			// 14px
+$line-height-s:					$base-size * 1.3125;		// 21px
+
+$font-size-m:					$base-size * 1;				// 16px
+$line-height-m:					$base-size * 1.5;			// 24px
+
+$font-size-l:					$base-size * 1.25;			// 20px
+$line-height-l:					$base-size * 1.75;			// 28px
+
+$font-size-xl:					$base-size * 1.5;			// 24px
+$line-height-xl:				$base-size * 2.125;			// 34px
+
+$font-size-xxl:					$base-size * 2;				// 32px
+$line-height-xxl:				$base-size * 2.5;			// 40px
+
+$font-size-xxxl:				$base-size * 3;				// 48px
+$line-height-xxxl:				$base-size * 3.375;			// 56px
+
+$font-size-4xl:					$base-size * 4;				// 64px
+$line-height-4xl:				$base-size * 4.5;			// 72px
+
+$font-size-5xl:					$base-size * 5;				// 80px
+$line-height-5xl:				$base-size * 5.625;			// 90px
+
+
+
+// G L O B A L   S T Y L E S   ----------------------------------------------------------------------------------------
+
+
+// Colours
+
+$color-primary:					#345;
+
+$color-text:					$color-primary;
+$color-link:					#00c;
+$color-border:					rgba($color-primary, .25);
+

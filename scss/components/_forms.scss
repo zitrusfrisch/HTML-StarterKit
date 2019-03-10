@@ -100,6 +100,10 @@ textarea {
 	color: getColor(text, light);
 }
 
+:focus:not(:focus-visible) {
+	outline: none;
+}
+
 .flexform {
 
 	& label, & .label {

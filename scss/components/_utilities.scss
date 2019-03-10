@@ -1,0 +1,175 @@
+.maxwidth {
+	margin-right: auto;
+	margin-left: auto;
+}
+.maxwidth--xxs {
+	@extend .maxwidth;
+	max-width: $screenwidth--xxs;
+}
+
+.maxwidth--xs {
+	@extend .maxwidth;
+	max-width: $screenwidth--xs;
+}
+
+.maxwidth--s {
+	@extend .maxwidth;
+	max-width: $screenwidth--s;
+}
+
+.maxwidth--m {
+	@extend .maxwidth;
+	max-width: $screenwidth--m;
+}
+
+.maxwidth--l {
+	@extend .maxwidth;
+	max-width: $screenwidth--l;
+}
+
+.maxwidth--xl {
+	@extend .maxwidth;
+	max-width: $screenwidth--xl;
+}
+
+.maxwidth--xxl {
+	@extend .maxwidth;
+	max-width: $screenwidth--xxl;
+}
+
+.maxwidth--xxxl {
+	@extend .maxwidth;
+	max-width: $screenwidth--xxxl;
+}
+
+.align {
+	&--left {
+		text-align: left;
+	}
+	&--right {
+		text-align: right;
+	}
+	&--center {
+		text-align: center;
+	}
+	&--justify {
+		text-align: justify;
+	}
+}
+
+.float {
+	&--left {
+		float: left;
+	}
+	&--right {
+		float: right;
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+.block {
+	display: block;
+}
+
+.mt {
+	&--0 {
+		margin-top: 0;
+	}
+	&--xs {
+		margin-top: $spacing--xs;
+	}
+	&--s {
+		margin-top: $spacing--s;
+	}
+	&--m {
+		margin-top: $spacing--m;
+	}
+	&--l {
+		margin-top: $spacing--l;
+	}
+	&--xl {
+		margin-top: $spacing--xl;
+	}
+	&--xxl {
+		margin-top: $spacing--xxl;
+	}
+	&--xxxl {
+		margin-top: $spacing--xxxl;
+	}
+}
+
+.mb {
+	&--0 {
+		margin-bottom: 0;
+	}
+	&--xs {
+		margin-bottom: $spacing--xs;
+	}
+	&--s {
+		margin-bottom: $spacing--s;
+	}
+	&--m {
+		margin-bottom: $spacing--m;
+	}
+	&--l {
+		margin-bottom: $spacing--l;
+	}
+	&--xl {
+		margin-bottom: $spacing--xl;
+	}
+	&--xxl {
+		margin-bottom: $spacing--xxl;
+	}
+	&--xxxl {
+		margin-bottom: $spacing--xxxl;
+	}
+}
+
+.opacity {
+	&--100 {
+		opacity: 1;
+	}
+	&--87_5 {
+		opacity: .875;
+	}
+	&--75 {
+		opacity: .75;
+	}
+	&--62_5 {
+		opacity: .625;
+	}
+	&--50 {
+		opacity: .5;
+	}
+	&--37_5 {
+		opacity: .375;
+	}
+	&--25 {
+		opacity: .25;
+	}
+	&--12_5 {
+		opacity: .125;
+	}
+	&--0 {
+		opacity: 0;
+	}
+}

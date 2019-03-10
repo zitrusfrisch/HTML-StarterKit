@@ -1,12 +1,28 @@
 .content {
 	padding: $spacing--xxl 0;
+	
+	@include mq-l {
+		padding: 6vw 0;
+	}	
 
 	header {
-		margin-bottom: $spacing--xxl;
+		overflow: hidden;
 	}
 
 	&--alt {
 		background: rgba($color-primary,.1);
 	}
 
+}
+
+/* DEMO */
+
+.grid__cell__content {
+	background: rgba($color-primary,.1);
+	padding: 32px 0;
+
+	p {
+		text-align: center;
+		margin: 0;		
+	}
 }

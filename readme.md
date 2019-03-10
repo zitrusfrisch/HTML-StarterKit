@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v3.9
+# HTML-StarterKit, version v4.0
 A simple, modular HTML5 template to kick off your responsive websites – written in SCSS and based on the [BEM naming convention](http://getbem.com/)
 
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -30,6 +30,13 @@ Use functions.js for your personal scripts and functions.
 The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used UI elements as well as media query settings for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins and functions ready to use.  
   
 ## Version-Log  
+
+#### Version v4.0 (18.03.2019)  
++ Fully revamped grid-system based on flexbox
++ Node Build script (hat-tip to @niklaskoehler!), solves Issue #4
++ New spacing classes mt--x (margin-top, specify with s, m, l, etc.) and mb--x (margin-bottom)
++ Gathered all settings for global styles and components in settings.scss 
++ Other minor optimisations and bug fixes
 
 #### Version v3.9 (18.06.2018)  
 + Back to S, M, L system for font-size and line-height variables 

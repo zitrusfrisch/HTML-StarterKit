@@ -1,59 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// Typography Variables
-// --------------------------------------------------------------------------------------------------------------------
-
-
-// Font stacks
-
-$font-family-sans-serif:		"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
-$font-family-serif:				Georgia, Cambria, "Times New Roman", Times, serif !default;
-$font-family-mono:				Consolas, "Liberation Mono", Courier, monospace !default;
-
-
-// Sizes
-
-$font-size-xxs:					$base-size * .625;			// 10px
-$line-height-xxs:				$base-size * .875;			// 14px
-
-$font-size-xs:					$base-size * .75;			// 12px
-$line-height-xs:				$base-size * 1.125;			// 18px
-
-$font-size-s:					$base-size * .875;			// 14px
-$line-height-s:					$base-size * 1.25;			// 20px
-
-$font-size-m:					$base-size * 1;				// 16px
-$line-height-m:					$base-size * 1.5;			// 24px
-
-$font-size-l:					$base-size * 1.25;			// 20px
-$line-height-l:					$base-size * 1.75;			// 28px
-
-$font-size-xl:					$base-size * 1.5;			// 24px
-$line-height-xl:				$base-size * 2;				// 32px
-
-$font-size-xxl:					$base-size * 2;				// 32px
-$line-height-xxl:				$base-size * 2.5;			// 40px
-
-$font-size-xxxl:				$base-size * 3;				// 48px
-$line-height-xxxl:				$base-size * 3.375;			// 56px
-
-$font-size-4xl:					$base-size * 4;				// 64px
-$line-height-4xl:				$base-size * 4.5;			// 72px
-
-$font-size-5xl:					$base-size * 5;				// 80px
-$line-height-5xl:				$base-size * 5.625;			// 90px
-
-
-// Weights
-
-$font-weight-normal:			400;
-$font-weight-bold:				700;
-
-
-
-// --------------------------------------------------------------------------------------------------------------------
-
-
-
 html {
 	font-weight: $font-weight-normal;
 	font-family: $font-family-serif;
@@ -64,7 +8,6 @@ html {
 
 
 // Headings and paragraph
-
 
 h1, .h1,
 h2, .h2,
@@ -191,16 +134,12 @@ p {
 
 a {
 	color: $color-link;
-	text-decoration: none;
-	outline: 0;
-	@include transitionOut(color);
+	text-decoration: underline;
 
 	&:hover, &:focus, &:active {
-		color: $color-link-hover;
-		text-decoration: none;
-		@include transitionIn(color);
+		color: darken($color-link, 20%);
+		text-decoration: underline;
 	}
-
 }
 
 
@@ -235,17 +174,18 @@ dl {
 
 dt {
 	font-weight: $font-weight-bold;
+	margin: 0;
 }
 
 dd {
-	
+	margin: 0 0 $spacing--m;
 }
 
 
 // General text formatting
 
 small {
-	@include fontsize(xs);
+	@include fontsize(s);
 }
 
 b, strong {
@@ -287,7 +227,7 @@ mark {
 
 blockquote {
 	font-style: italic;
-	border-left: 3px solid $color-primary;
+	border-left: 3px solid $color-border;
 	margin: $spacing--xl 0;
 	padding: $gutter;
 
@@ -335,7 +275,7 @@ hr {
 }
 
 .text--light {
-	color: $color-text-light;
+	color: rgba($color-text, .5);
 }
 
 .text--regular {
@@ -352,18 +292,6 @@ hr {
 
 .text--caps {
 	text-transform: uppercase;
-}
-
-.text--success {
-	color: $color-success;
-}
-
-.text--warning {
-	color: $color-warning;
-}
-
-.text--alert {
-	color: $color-alert;
 }
 
 .text--truncate {

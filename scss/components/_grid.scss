@@ -1,80 +1,130 @@
-$cellConfig: 
-	'1-1' 100%,
-	'5-6' 83.3334%,
-	'4-5' 80%,
-	'3-4' 75%,
-	'2-3' 66.6667%,
-	'3-5' 60%,
-	'1-2' 50%,
-	'2-5' 40%,
-	'1-3' 33.3334%,
-	'1-4' 25%,
-	'1-5' 20%,
-	'1-6' 16.66667%;
+$cellConfig:
+
+	'12' 	100%,
+	'11' 	91.6667%,
+	'10'	83.3334%,
+	 '9' 	75%,
+	 '8' 	66.6667%,
+	 '7' 	58.3334%,
+	 '6' 	50%,
+	 '5' 	41.6667%,
+	 '4' 	33.3334%,
+	 '3' 	25%,
+	 '2' 	16.6667%,
+	 '1' 	8.3334%;
+
 
 .grid {
-	font-size: 0;
-	text-justify: distribute-all-lines;
+	display: flex;
+    flex-wrap: wrap;
+	flex: 0 1 auto;
+    flex-direction: row;
 
-	&__cell {
-		@include fontsize(m);
-		display: inline-block;
+	.grid__cell {
 		width: 100%;
-		vertical-align: top;
+		flex: 0 0 auto;
 
 		@include mq-xxs {
 			@each $width in $cellConfig {
-				&--xxs-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--xxs-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xxs-#{nth($width, 1)} {
+					flex-basis: nth($width, 2);
+					max-width: nth($width, 2);
+				};
+
+				&--offset--xxs-#{nth($width, 1)} {
+					margin-left: nth($width, 2);
+				};
 			}
 		}
 
 		@include mq-xs {
 			@each $width in $cellConfig {
-				&--xs-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--xs-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xs-#{nth($width, 1)} {
+					flex-basis: nth($width, 2);
+					max-width: nth($width, 2);
+				};
+
+				&--offset--xs-#{nth($width, 1)} {
+					margin-left: nth($width, 2);
+				};
 			}
 		}
 
 		@include mq-s {
 			@each $width in $cellConfig {
-				&--s-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--s-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--s-#{nth($width, 1)} {
+					flex-basis: nth($width, 2);
+					max-width: nth($width, 2);
+				};
+
+				&--offset--s-#{nth($width, 1)} {
+					margin-left: nth($width, 2);
+				};
 			}
 		}
 
 		@include mq-m {
 			@each $width in $cellConfig {
-				&--m-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--m-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--m-#{nth($width, 1)} {
+					flex-basis: nth($width, 2);
+					max-width: nth($width, 2);
+				};
+
+				&--offset--m-#{nth($width, 1)} {
+					margin-left: nth($width, 2);
+				};
 			}
 		}
 
 		@include mq-l {
 			@each $width in $cellConfig {
-				&--l-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--l-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--l-#{nth($width, 1)} {
+					flex-basis: nth($width, 2);
+					max-width: nth($width, 2);
+				};
+
+				&--offset--l-#{nth($width, 1)} {
+					margin-left: nth($width, 2);
+				};
 			}
 		}
 
 		@include mq-xl {
 			@each $width in $cellConfig {
-				&--xl-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--xl-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xl-#{nth($width, 1)} {
+					flex-basis: nth($width, 2);
+					max-width: nth($width, 2);
+				};
+
+				&--offset--xl-#{nth($width, 1)} {
+					margin-left: nth($width, 2);
+				};
 			}
 		}
 
 		@include mq-xxl {
 			@each $width in $cellConfig {
-				&--xxl-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--xxl-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xxl-#{nth($width, 1)} {
+					flex-basis: nth($width, 2);
+					max-width: nth($width, 2);
+				};
+
+				&--offset--xxl-#{nth($width, 1)} {
+					margin-left: nth($width, 2);
+				};
 			}
 		}
 
 		@include mq-xxxl {
 			@each $width in $cellConfig {
-				&--xxxl-#{nth($width, 1)} { width: nth($width, 2) };
-				&-offset--xxxl-#{nth($width, 1)} { margin-left: nth($width, 2) };
+				&--xxxl-#{nth($width, 1)} {
+					flex-basis: nth($width, 2);
+					max-width: nth($width, 2);
+				};
+
+				&--offset--xxxl-#{nth($width, 1)} {
+					margin-left: nth($width, 2);
+				};
 			}
 		}
 	}
@@ -84,13 +134,45 @@ $cellConfig:
 		margin-left: ($gutter / 2) * -1;
 		margin-bottom: -$gutter;
 
-		& + .grid {
-			margin-top: $gutter;
-		}
-
 		& .grid__cell {
 			padding: 0 $gutter / 2;
 			margin-bottom: $gutter;
 		}
+
+		& + .grid {
+			margin-top: $gutter;
+		}
+	}
+
+	.grid--guttered--s {
+		margin-right: ($gutter--s / 2) * -1;
+		margin-left: ($gutter--s / 2) * -1;
+		margin-bottom: -$gutter--s;
+
+		& .grid__cell {
+			padding: 0 $gutter--s / 2;
+			margin-bottom: $gutter--s;
+		}
+
+		& + .grid {
+			margin-top: $gutter--s;
+		}
+
+	}
+
+	.grid--guttered--l {
+		margin-right: ($gutter--l / 2) * -1;
+		margin-left: ($gutter--l / 2) * -1;
+		margin-bottom: -$gutter--l;
+
+		& .grid__cell {
+			padding: 0 $gutter--l / 2;
+			margin-bottom: $gutter--l;
+		}
+
+		& + .grid {
+			margin-top: $gutter--l;
+		}
+
 	}
 }

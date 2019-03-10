@@ -3,20 +3,19 @@
 @import 'vendors/_normalize';
 
 @import 'core/_settings';
-@import 'core/_colors';
 @import 'core/_mixins';
 @import 'core/_functions';
-@import 'core/_utilities';
 
 // Core
 
 @import 'components/_base';
 @import 'components/_typography';
+@import 'components/_grid';
+@import 'components/_media';
 @import 'components/_forms';
 @import 'components/_buttons';
 @import 'components/_tables';
-@import 'components/_media';
-@import 'components/_grid';
+@import 'components/_utilities';
 
 // Components
 

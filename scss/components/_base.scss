@@ -1,14 +1,12 @@
 * {
 	box-sizing:border-box;
-
 	&:before,&:after {
 		box-sizing: inherit;
 	}
-
 }
 
 html {
-	background: $color-html-bg;
+	background: #fff;
 	height: 100%;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
@@ -17,17 +15,29 @@ html {
 }
 
 body {
-	background: $color-body-bg;
+	background: #fff;
 	height: 100%;
 }
 
 .wrap {
 	position: relative;
 	width: 100%;
+}
 
-	&--guttered {
-		padding-right: $gutter;
-		padding-left: $gutter;
-	}
+.wrap--guttered {
+	@extend .wrap;
+	padding-right: $gutter;
+	padding-left: $gutter;
+}
 
+.wrap--guttered--s {
+	@extend .wrap;
+	padding-right: $gutter--s;
+	padding-left: $gutter--s;
+}
+
+.wrap--guttered--l {
+	@extend .wrap;
+	padding-right: $gutter--l;
+	padding-left: $gutter--l;
 }

@@ -33,7 +33,7 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
 
 #### Version v4.0 (18.03.2019)  
 + Fully revamped grid-system based on flexbox
-+ Node Build script (hat-tip to @niklaskoehler!), solves Issue #4
++ ~~Node Build script (hat-tip to @niklaskoehler!), solves Issue #4~~ Leak! Comes in v4.01 ;-)
 + New spacing classes mt--x (margin-top, specify with s, m, l, etc.) and mb--x (margin-bottom)
 + Gathered all settings for global styles and components in settings.scss 
 + Other minor optimisations and bug fixes

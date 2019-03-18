@@ -264,14 +264,66 @@ hr {
 
 // Text Styles
 
+
+.font-size--xxs {
+	@include fontsize(xxs);
+}
+
+.font-size--xs {
+	@include fontsize(xs);
+}
+
+.font-size--s {
+	@include fontsize(s);
+}
+
+.font-size--m {
+	@include fontsize(m);
+}
+
+.font-size--l {
+	@include fontsize(l);
+}
+
+.font-size--xl {
+	@include fontsize(xl);
+}
+
+.font-size--xxl {
+	@include fontsize(xxl);
+}
+
+.font-size--xxxl {
+	@include fontsize(xxxl);
+}
+
+.font-size--4xl {
+	@include fontsize(4xl);
+}
+
+.font-size--5xl {
+	@include fontsize(5xl);
+}
+
 .text--small {
 	@extend small;
 }
 
 .text--big {
 	@include mq-s {
+		@include fontsize(l);
+	}
+	@include mq-m {
 		@include fontsize(xl);
 	}
+}
+
+.text--serif {
+	font-family: $font-family-serif;
+}
+
+.text--sans-serif {
+	font-family: $font-family-sans-serif;
 }
 
 .text--light {

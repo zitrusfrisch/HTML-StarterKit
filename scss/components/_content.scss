@@ -2,7 +2,7 @@
 	padding: $spacing--xxl 0;
 	
 	@include mq-l {
-		padding: 6vw 0;
+		padding: 4.8vw 0;
 	}	
 
 	header {
@@ -17,12 +17,16 @@
 
 /* DEMO */
 
-.grid__cell__content {
-	background: rgba($color-primary,.1);
-	padding: 32px 0;
+.grid--demo .grid__cell__content {
+	background: #fff;
+	padding: 32px 2px;
 
 	p {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 		text-align: center;
-		margin: 0;		
+		margin: 0;
+		padding: 0;
 	}
 }

@@ -490,7 +490,8 @@ small, .text--small {
   font-size: 14px;
   line-height: 21px; }
 
-b, strong {
+b,
+strong {
   font-weight: 700; }
 
 em, i {
@@ -591,6 +592,7 @@ hr {
   .text--big {
     font-size: 20px;
     line-height: 28px; } }
+
 @media only screen and (min-width: 768px) {
   .text--big {
     font-size: 24px;
@@ -1282,20 +1284,24 @@ textarea {
   .flexform label, .flexform .label {
     display: inline-block;
     width: 33.3334%; } }
+
 @media only screen and (min-width: 768px) {
   .flexform label, .flexform .label {
     text-align: right;
     padding-right: 24px; } }
+
 @media only screen and (min-width: 600px) {
   .flexform input[type=text], .flexform input[type=password], .flexform input[type=search], .flexform input[type=email], .flexform input[type=url], .flexform input[type=tel], .flexform input[type=date], .flexform input[type=time], .flexform input[type=number], .flexform input[type=file], .flexform textarea, .flexform select {
     display: inline-block;
     width: 66.6667%; } }
+
 .flexform input[type=text] + span, .flexform input[type=password] + span, .flexform input[type=search] + span, .flexform input[type=email] + span, .flexform input[type=url] + span, .flexform input[type=tel] + span, .flexform input[type=date] + span, .flexform input[type=time] + span, .flexform input[type=number] + span, .flexform input[type=file] + span, .flexform textarea + span, .flexform select + span {
   display: inline-block;
   margin-top: 4px; }
   @media only screen and (min-width: 768px) {
     .flexform input[type=text] + span, .flexform input[type=password] + span, .flexform input[type=search] + span, .flexform input[type=email] + span, .flexform input[type=url] + span, .flexform input[type=tel] + span, .flexform input[type=date] + span, .flexform input[type=time] + span, .flexform input[type=number] + span, .flexform input[type=file] + span, .flexform textarea + span, .flexform select + span {
       margin-left: 33.3334%; } }
+
 .flexform .inputs {
   width: 100%; }
   .flexform .inputs span {
@@ -1307,6 +1313,7 @@ textarea {
       vertical-align: top; }
       .flexform .inputs span {
         margin-left: 0; } }
+
 @media only screen and (min-width: 600px) {
   .flexform .btn {
     margin-left: 33.3334%; } }
@@ -1483,15 +1490,19 @@ table#recaptcha_table, table.table-auto {
 
 .align--left {
   text-align: left; }
+
 .align--right {
   text-align: right; }
+
 .align--center {
   text-align: center; }
+
 .align--justify {
   text-align: justify; }
 
 .float--left {
   float: left; }
+
 .float--right {
   float: right; }
 
@@ -1517,54 +1528,76 @@ table#recaptcha_table, table.table-auto {
 
 .mt--0 {
   margin-top: 0; }
+
 .mt--xs {
   margin-top: 4px !important; }
+
 .mt--s {
   margin-top: 8px !important; }
+
 .mt--m {
   margin-top: 16px !important; }
+
 .mt--l {
   margin-top: 24px !important; }
+
 .mt--xl {
   margin-top: 32px !important; }
+
 .mt--xxl {
   margin-top: 48px !important; }
+
 .mt--xxxl {
   margin-top: 64px !important; }
 
 .mb--0 {
   margin-bottom: 0; }
+
 .mb--xs {
   margin-bottom: 4px !important; }
+
 .mb--s {
   margin-bottom: 8px !important; }
+
 .mb--m {
   margin-bottom: 16px !important; }
+
 .mb--l {
   margin-bottom: 24px !important; }
+
 .mb--xl {
   margin-bottom: 32px !important; }
+
 .mb--xxl {
   margin-bottom: 48px !important; }
+
 .mb--xxxl {
   margin-bottom: 64px !important; }
 
 .opacity--100 {
   opacity: 1; }
+
 .opacity--87_5 {
   opacity: .875; }
+
 .opacity--75 {
   opacity: .75; }
+
 .opacity--62_5 {
   opacity: .625; }
+
 .opacity--50 {
   opacity: .5; }
+
 .opacity--37_5 {
   opacity: .375; }
+
 .opacity--25 {
   opacity: .25; }
+
 .opacity--12_5 {
   opacity: .125; }
+
 .opacity--0 {
   opacity: 0; }
 
@@ -1611,29 +1644,27 @@ footer[role=contentinfo] {
     opacity: 1 !important;
     filter: none !important;
     -ms-filter: none !important; }
-
   @page {
     margin: 2cm; }
-  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
     page-break-after: avoid; }
-
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
     orphans: 3;
     widows: 3; }
-
   a {
     color: #000 !important;
     text-decoration: underline; }
-
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   thead {
     display: table-header-group; }
-
   tr, img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; } }

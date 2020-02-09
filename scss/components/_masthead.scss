@@ -1,3 +1,15 @@
 .masthead {
+	background: #fff;
 	padding: $spacing--l 0;
+
+	&--sticky {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 9999;
+	}
+}
+
+.logo {
+	fill: $color--primary;
 }

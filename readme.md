@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v4.1
+# HTML-StarterKit, version v4.2
 A simple, modular HTML5 template to kick off your responsive websites – written in SCSS and based on the [BEM naming convention](http://getbem.com/)
 
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -31,6 +31,15 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
   
 ## Version-Log  
 
+#### Version v4.2 (09.02.2020) 
++ Updated form components, including custom style select dropdowns, checkboxes and radio buttons 
++ Extended `.grid__cell—offset` to `.grid__cell—offset-l` and  `.grid__cell—offset-r` to add grid-based margins before and after the cell 
++ Optional sticky masthead 
++ Applied proper BEM structure to font weight and family variable names 
++ Removed `meta name="description"` from HTML head 
++ Updated `normalize.css` to version 8.0.1 
++ Minor fixes and enhancements 
+
 #### Version v4.1 (19.03.2019)  
 + Added CSS classes for font-sizes and font-families for more styling flexibility 
 + Minor fixes and enhancements 
@@ -40,7 +49,7 @@ The scss folder contains all styles, including Normalize CSS-Reset, basic styles
 + ~~Node Build script (hat-tip to @niklaskoehler!), solves Issue #4~~ Leak! :-) Comes in future version.
 + New spacing classes mt--x (margin-top, specify with s, m, l, etc.) and mb--x (margin-bottom)
 + Gathered all settings for global styles and components in settings.scss 
-+ Other minor optimisations and bug fixes 
++ Other minor optimizations and bug fixes 
 
 #### Version v3.9 (18.06.2018)  
 + Back to S, M, L system for font-size and line-height variables 

@@ -1,9 +1,9 @@
 html {
-	font-weight: $font-weight-normal;
-	font-family: $font-family-serif;
+	font-weight: $font-weight--normal;
+	font-family: $font-family--serif;
 	@include fontsize(m);
 	text-align: left;
-	color: $color-text;
+	color: $color--text;
 }
 
 
@@ -23,8 +23,8 @@ h6, .h6 {
 }
 
 h1, .h1 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
+	font-weight: $font-weight--bold;
+	font-family: $font-family--sans-serif;
 	@include fontsize(xxl);
 
 	@include mq-s {
@@ -41,8 +41,8 @@ h1, .h1 {
 }
 
 h2, .h2 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
+	font-weight: $font-weight--bold;
+	font-family: $font-family--sans-serif;
 	@include fontsize(xl);
 
 	@include mq-s {
@@ -59,8 +59,8 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
+	font-weight: $font-weight--bold;
+	font-family: $font-family--sans-serif;
 	@include fontsize(l);
 
 	@include mq-s {
@@ -77,8 +77,8 @@ h3, .h3 {
 }
 
 h4, .h4 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
+	font-weight: $font-weight--bold;
+	font-family: $font-family--sans-serif;
 	@include fontsize(m);
 
 	@include mq-s {
@@ -95,8 +95,8 @@ h4, .h4 {
 }
 
 h5, .h5 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
+	font-weight: $font-weight--bold;
+	font-family: $font-family--sans-serif;
 	@include fontsize(m);
 
 	@include mq-m {
@@ -109,8 +109,8 @@ h5, .h5 {
 }
 
 h6, .h6 {
-	font-weight: $font-weight-bold;
-	font-family: $font-family-sans-serif;
+	font-weight: $font-weight--bold;
+	font-family: $font-family--sans-serif;
 	@include fontsize(m);
 }
 
@@ -133,11 +133,11 @@ p {
 // Links
 
 a {
-	color: $color-link;
+	color: $color--link;
 	text-decoration: underline;
 
 	&:hover, &:focus, &:active {
-		color: darken($color-link, 20%);
+		color: darken($color--link, 20%);
 		text-decoration: underline;
 	}
 }
@@ -173,7 +173,7 @@ dl {
 }
 
 dt {
-	font-weight: $font-weight-bold;
+	font-weight: $font-weight--bold;
 	margin: 0;
 }
 
@@ -189,7 +189,7 @@ small {
 }
 
 b, strong {
-	font-weight: $font-weight-bold;
+	font-weight: $font-weight--bold;
 }
 
 em, i {
@@ -201,7 +201,7 @@ del, s, strike {
 }
 
 code, kbd, pre, samp {
-	font-family: $font-family-mono;
+	font-family: $font-family--mono;
 	@include fontsize(xs);
 	white-space: pre-line;
 	white-space: pre-wrap;
@@ -227,7 +227,7 @@ mark {
 
 blockquote {
 	font-style: italic;
-	border-left: 3px solid $color-border;
+	border-left: 3px solid $color--border;
 	margin: $spacing--xl 0;
 	padding: $gutter;
 
@@ -249,7 +249,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0 none;
-	border-top: 1px solid $color-border;
+	border-top: 1px solid $color--border;
 	margin: $spacing--l 0;
 
 	@include mq-s {
@@ -319,23 +319,23 @@ hr {
 }
 
 .text--serif {
-	font-family: $font-family-serif;
+	font-family: $font-family--serif;
 }
 
 .text--sans-serif {
-	font-family: $font-family-sans-serif;
+	font-family: $font-family--sans-serif;
 }
 
 .text--light {
-	color: rgba($color-text, .5);
+	color: rgba($color--text, .5);
 }
 
 .text--regular {
-	font-weight: $font-weight-normal;
+	font-weight: $font-weight--normal;
 }
 
 .text--bold {
-	font-weight: $font-weight-bold;
+	font-weight: $font-weight--bold;
 }
 
 .text--spaced {
@@ -350,4 +350,12 @@ hr {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.text--tag {
+	margin-left: $spacing--xs;
+	padding: $spacing--xxs $spacing--xs;
+	border: 2px $color--primary solid;
+	border-radius: $spacing--xs;
+	position: relative;
 }

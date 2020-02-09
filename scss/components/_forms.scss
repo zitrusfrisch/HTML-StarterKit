@@ -14,7 +14,9 @@ fieldset > div {
 	margin: 0 0 $spacing--m;
 }
 
-fieldset > div > input, fieldset > div > select, fieldset > div > textarea {
+fieldset > div > input,
+fieldset > div > select,
+fieldset > div > textarea {
 	@include fontsize(m);
 }
 
@@ -22,13 +24,14 @@ label {
 	cursor: pointer;
 }
 
-label, .label {
-	font-family: $font-family-sans-serif;
+label,
+.label {
+	font-family: $font-family--sans-serif;
 	@include fontsize(m);
 
 	&--checkbox,
 	&--radio {
-		font-weight: $font-weight-normal;
+		font-weight: $font-weight--normal;
 		text-indent: -23px;
 		display: inline-block;
 		margin: 0;
@@ -45,7 +48,9 @@ label, .label {
 	}
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
 	font-weight: inherit;
 	font-size: inherit;
 	font-family: inherit;
@@ -53,87 +58,224 @@ input, select, textarea {
 	vertical-align: baseline;
 }
 
-input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=tel], input[type=date], input[type=time], input[type=number], input[type=file], textarea {
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=url],
+input[type=tel],
+input[type=date],
+input[type=time],
+input[type=number],
+input[type=file],
+textarea,
+select {
 	background: #fff;
 	display: block;
 	width: 100%;
-	min-height: 2.75em;
-	border: 1px solid $color-border;
+	min-height: 42px;
+	border: 1px solid $color--border;
 	margin: 0;
-	padding: $spacing--s;
-	border-radius: 0;
+	padding: $spacing--s ($spacing--s * 1.25);
+	border-radius: $border-radius--small;
 	-webkit-appearance: none;
 }
-
-input[type=checkbox], input[type=radio] {
-	position: relative;
-	top: -1px;
-	margin-right: $spacing--xs;
-}
-
 input[type=file] {
 	background: transparent !important;
 	border: 0 none;
 	padding: 0;
 }
-
-select {
-	width: 100%;
-	cursor: pointer;
-}
-
 textarea {
 	height: auto;
 	min-height: 100px;
 	vertical-align: top;
 }
 
+select,
+.select {
+	padding-right: $spacing--xxl;
+
+	&__wrapper {
+		@include fontsize(m);
+		position: relative;
+
+		@include mq-s {
+			display: inline-block;
+		}
+
+		&:after {
+			content: "";
+			border: red;
+			position: absolute;
+			right: 14px;
+			top: 14px;
+			z-index: 1;
+			width: 10px;
+			height: 10px;
+			pointer-events: none;	
+			border: 3px solid $color--border;
+			border-width: 0 0 3px 3px;
+			border-radius: $border-radius--small;
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+select::-ms-expand {
+	display: none;
+}
+select:hover {
+	border-color: $color--border;
+}
+select option {
+	font-weight: $font-weight--normal;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	position: relative;
+	top: -1px;
+	margin-right: $spacing--xs;
+}
+
+@supports(-webkit-appearance: none) {
+
+	input[type="checkbox"],
+	input[type=radio] {
+		-webkit-appearance: none;
+		background: #fff;
+		position: relative;
+		top: 2px;
+		width: $spacing--m;
+		height: $spacing--m;
+		border: 2px solid $color--border;
+		border-radius: $border-radius--small;
+		transition: .125s;
+	}
+	input[type=radio] {
+		border-radius: 50%;
+	}
+	input[type="checkbox"]:focus,
+	input[type="radio"]:focus {
+		border-color: $color--border;
+	}
+ 	input[type="checkbox"]:checked,
+ 	input[type="radio"]:checked {
+		position: relative;
+		background: $color--text;
+		border-color: $color--text;
+	}
+	input[type="checkbox"]:checked::after,
+	input[type="radio"]:checked::after {
+		content: "";
+		position: absolute;
+		border: 3px solid $color--border;
+		border-radius: $border-radius--small;
+	}
+	input[type="checkbox"]:checked::after {
+		border-color: #fff;
+		border-right: none;
+		border-top: none;
+		width: 10px;
+		height: 6px;
+		top: 2px; 
+		left: 1px;
+		transform: rotate(-45deg);
+	}
+	input[type="radio"]:checked::after {
+		border-radius: 50%;
+		border-color: #fff;
+		width: $spacing--xs;
+		height: $spacing--xs;
+		top: 3px; 
+		left: 3px;
+	}
+
+}
+
+:disabled,
+[aria-disabled=true] {
+	opacity: .375;
+}
+
 ::-webkit-input-placeholder {
-	color: getColor(text, light);
+	color: inherit;
 }
 
 ::-moz-placeholder {
-	color: getColor(text, light);
+	color: inherit;
 }
 
 :-ms-input-placeholder {
-	color: getColor(text, light);
+	color: inherit;
 }
 
 :focus:not(:focus-visible) {
 	outline: none;
 }
 
+/* Normalize Fix */
+
+input[type=search] {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* WebKit Fix */
+
+[placeholder]:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+
 .flexform {
 
-	& label, & .label {
-
+	& label,
+	& .label {
 		@include mq-s {
 			display: inline-block;
 			width: 33.3334%;
 		}
-
 		@include mq-m {
 			text-align: right;
 			padding-right: $gutter;
 		}
-
 	}
 
-	& input[type=text], & input[type=password], & input[type=search], & input[type=email], & input[type=url], & input[type=tel], & input[type=date], & input[type=time], & input[type=number], & input[type=file], & textarea, & select {
-
+	& input[type=text],
+	& input[type=password],
+	& input[type=search],
+	& input[type=email],
+	& input[type=url],
+	& input[type=tel],
+	& input[type=date],
+	& input[type=time],
+	& input[type=number],
+	& input[type=file],
+	& textarea,
+	& select {
 		@include mq-s {
 		    display: inline-block;
 			width: 66.6667%;
 		}
-
 		& + span {
 			display: inline-block;
 			margin-top: $spacing--xs;
+			padding: $spacing--xs ($spacing--s * 1.5); 
 
 			@include mq-m {
 				margin-left: 33.3334%;
 			}
+		}
+	}
+	& textarea {
+		resize: vertical;
+	}
+
+	& select {
+		@include mq-s {
+			width: auto;
 		}
 	}
 
@@ -155,24 +297,14 @@ textarea {
 		}
 	}
 
-	& .btn {
-		@include mq-s {
-		    margin-left: 33.3334%;
-		   }
+	& span + .inputs {
+		margin-left: 0;
 	}
 
-}
+	& .btn {
+		@include mq-s {
+			margin-left: 33.3334%;
+		}
+	}
 
-/* Normalize Fix */
-
-input[type=search] {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-/* WebKit Fix */
-
-[placeholder]:focus::-webkit-input-placeholder {
-	color: transparent;
 }

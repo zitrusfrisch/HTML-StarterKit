@@ -1,57 +1,66 @@
 .btn {
+
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: $color-primary;
-	font-family: $font-family-sans-serif;
+
+	background: $color--primary;
+
+	font-family: $font-family--sans-serif;
 	font-size: $base-size;
-	font-weight: $font-weight-bold;
-	line-height: 1;
+	font-weight: $font-weight--bold;
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
-	white-space: nowrap;
-	text-overflow: ellipsis;
 	vertical-align: baseline;
+
 	display: inline-block;
 	width: 100%;
-	height: 44px;
-	border: 2px solid $color-primary;
-	border-radius: 2px;
-	padding: 0 $spacing--m;
+	height: 48px;
+
+	border: 2px solid $color--primary;
+	border-radius: 32px;
+
+	padding: 0 $spacing--l;
+
 	-ms-touch-action: manipulation;
 	touch-action: manipulation;
+
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
 
+	@include mq-xs {
+		width: auto;
+	}
+
 	&:hover {
-		background: darken($color-primary, 5%);
+		background: darken($color--primary, 5%);
 		color: #fff;
-		border-color: darken($color-primary, 5%);
+		border-color: darken($color--primary, 5%);
 	}
 
 	&:active {
-		background: darken($color-primary, 5%);
+		background: darken($color--primary, 5%);
 		color: #fff;
-		border-color:  darken($color-primary, 5%);
+		border-color:  darken($color--primary, 5%);
 	}
 
 	&--secondary {
 		background: transparent;
-		color: $color-primary;
-		border-color: $color-primary;
+		color: $color--primary;
+		border-color: $color--primary;
 
 		&:hover {
-			background: $color-primary;
+			background: $color--primary;
 			color: #fff;
-			border-color: $color-primary;
+			border-color: $color--primary;
 		}
 
 		&:active {
-			background: $color-primary;
+			background: $color--primary;
 			color: #fff;
-			border-color: $color-primary;
+			border-color: $color--primary;
 		}
 
 	}
@@ -63,9 +72,9 @@
 
 	&--link {
 		background: transparent;
-		color: $color-link;
+		color: $color--link;
 		@include fontsize(m);
-		font-weight: $font-weight-normal;
+		font-weight: $font-weight--normal;
 		text-align: left;
 		text-decoration: none;
 		width: auto;
@@ -74,7 +83,7 @@
 		padding: 0;
 
 		&:hover, &:active {
-			color: $color-link;
+			color: $color--link;
 			text-decoration: underline;
 			background: transparent;
 			cursor: pointer;
@@ -83,18 +92,14 @@
 
 	&--s {
 		font-size: 12px;
-		height: 28px;
-		padding: 0 $spacing--s;
+		height: 32px;
+		padding: 0 $spacing--m;
 	}
 
 	&--l {
 		font-size: 20px;
-		height: 60px;
-		padding: 0 $spacing--l;
-	}
-
-	@include mq-xs {
-		width: auto;
+		height: 64px;
+		padding: 0 $spacing--xl;
 	}
 
 }

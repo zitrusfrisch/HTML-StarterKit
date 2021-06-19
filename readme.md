@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v4.2
+# HTML-StarterKit, version v4.3
 A simple, modular HTML5 template to kick off your responsive websites – written in SCSS and based on the [BEM naming convention](http://getbem.com/)
 
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 
@@ -30,6 +30,9 @@ Use functions.js for your personal scripts and functions.
 The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used UI elements as well as media query settings for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins and functions ready to use.  
   
 ## Version-Log  
+
+#### Version v4.3 (18.06.2021) 
+It's been a long time. Couple of minor updates. Nothing big.
 
 #### Version v4.2 (09.02.2020) 
 + Updated form components, including custom style select dropdowns, checkboxes and radio buttons 

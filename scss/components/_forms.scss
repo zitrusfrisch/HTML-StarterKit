@@ -77,7 +77,7 @@ select {
 	border: 1px solid $color--border;
 	margin: 0;
 	padding: $spacing--s ($spacing--s * 1.25);
-	border-radius: $border-radius--small;
+	border-radius: $border-radius--input;
 	-webkit-appearance: none;
 }
 input[type=file] {
@@ -115,7 +115,7 @@ select,
 			pointer-events: none;	
 			border: 3px solid $color--border;
 			border-width: 0 0 3px 3px;
-			border-radius: $border-radius--small;
+			border-radius: $border-radius--input;
 			transform: rotate(-45deg);
 		}
 	}
@@ -149,7 +149,7 @@ input[type=radio] {
 		width: $spacing--m;
 		height: $spacing--m;
 		border: 2px solid $color--border;
-		border-radius: $border-radius--small;
+		border-radius: $border-radius--input;
 		transition: .125s;
 	}
 	input[type=radio] {
@@ -170,7 +170,7 @@ input[type=radio] {
 		content: "";
 		position: absolute;
 		border: 3px solid $color--border;
-		border-radius: $border-radius--small;
+		border-radius: $border-radius--input;
 	}
 	input[type="checkbox"]:checked::after {
 		border-color: #fff;

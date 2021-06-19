@@ -18,7 +18,7 @@
 	height: 48px;
 
 	border: 2px solid $color--primary;
-	border-radius: 32px;
+	border-radius: $border-radius--button;
 
 	padding: 0 $spacing--l;
 
@@ -104,6 +104,11 @@
 
 }
 
+/* Make taps 300ms faster with 1 line of CSS -> https://twitter.com/argyleink/status/1405881231695302659 */
+
+a, button {
+	touch-action: manipulation;
+}
 
 /* Firefox Fix */
 

@@ -229,7 +229,7 @@ blockquote {
 	font-style: italic;
 	border-left: 3px solid $color--border;
 	margin: $spacing--xl 0;
-	padding: $gutter;
+	padding: $gutter--m;
 
 	&:first-child {
 		margin-top: 0;

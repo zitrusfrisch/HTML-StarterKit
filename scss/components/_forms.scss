@@ -36,7 +36,7 @@ label,
 		display: inline-block;
 		margin: 0;
 		padding-left: 24px;
-	    margin-right: $gutter !important;
+	    margin-right: $gutter--m !important;
 	}
 
 	@include mq-s {
@@ -228,6 +228,9 @@ input[type=search] {
 	color: transparent;
 }
 
+input::-webkit-date-and-time-value {
+	text-align: left;
+}
 
 .flexform {
 
@@ -239,7 +242,7 @@ input[type=search] {
 		}
 		@include mq-m {
 			text-align: right;
-			padding-right: $gutter;
+			padding-right: $gutter--m;
 		}
 	}
 

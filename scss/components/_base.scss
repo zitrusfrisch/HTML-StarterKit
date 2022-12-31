@@ -29,16 +29,25 @@ body {
 .wrap {
 	position: relative;
 	width: 100%;
+
 	&--guttered {
-		padding-right: $gutter;
-		padding-left: $gutter;
-	}
-	&--guttered--s {
 		padding-right: $gutter--s;
 		padding-left: $gutter--s;
+		
+		@include mq-m {
+			padding-right: $gutter--m;
+			padding-left: $gutter--m;
+		}
+		
+		@include mq-l {
+			padding-right: $gutter--l;
+			padding-left: $gutter--l;
+		}
+		
+		@include mq-xl {
+			padding-right: $gutter--xl;
+			padding-left: $gutter--xl;
+		}
 	}
-	&--guttered--l {
-		padding-right: $gutter--l;
-		padding-left: $gutter--l;
-	}
+
 }

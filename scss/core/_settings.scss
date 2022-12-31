@@ -16,9 +16,10 @@ $base-size:						1rem;
 // G U T T E R S   A N D   S P A C I N G S   --------------------------------------------------------------------------
 
 
-$gutter:						$base-size * 1.5;
-$gutter--s:						$base-size * .75;
-$gutter--l:						$base-size * 3;
+$gutter--s:						$base-size;				// Viewport Mobile
+$gutter--m:						$base-size * 2;		// Viewport Tablet
+$gutter--l:						$base-size * 3;			// Viewport Desktop
+$gutter--xl:					$base-size * 4;			// Viewport Desktop Wide
 
 
 $spacing--xxs:					$base-size / 8;			// 16px / 8    => 2px

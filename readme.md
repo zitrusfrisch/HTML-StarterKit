@@ -1,4 +1,4 @@
-# HTML-StarterKit, version v4.3
+# HTML-StarterKit, version v4.4
 A simple, modular HTML5 template to kick off your responsive websites – written in SCSS and based on the [BEM naming convention](http://getbem.com/)
 
 + **Website:** [http://zitrusfrisch.de/html-starterkit](http://zitrusfrisch.de/html-starterkit) 

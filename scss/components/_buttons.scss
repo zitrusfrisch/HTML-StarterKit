@@ -1,4 +1,4 @@
-.btn {
+.btn  {
 
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -101,8 +101,13 @@
 		height: 64px;
 		padding: 0 $spacing--xl;
 	}
-
 }
+
+::file-selector-button {
+	@extend .btn, .btn--secondary;
+	margin: 0 $spacing--m 0 0 !important;
+}
+
 
 /* Make taps 300ms faster with 1 line of CSS -> https://twitter.com/argyleink/status/1405881231695302659 */
 

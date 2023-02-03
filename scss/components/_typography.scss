@@ -202,7 +202,7 @@ del, s, strike {
 
 code, kbd, pre, samp {
 	font-family: $font-family--mono;
-	@include fontsize(xs);
+	// @include fontsize(xs);
 	white-space: pre-line;
 	white-space: pre-wrap;
 }

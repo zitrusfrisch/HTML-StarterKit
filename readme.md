@@ -29,7 +29,21 @@ Use functions.js for your personal scripts and functions.
 #### SCSS  
 The scss folder contains all styles, including Normalize CSS-Reset, basic styles and placeholders for frequently used UI elements as well as media query settings for common viewports. Following a modular approach each section and module has its own scss file. HTML-StarterKit comes with a set of handsome mixins and functions ready to use.  
   
-## Version-Log  
+## The grid
+
+The grid allows you to easily divide a page or container into 12 equal vertical columns using CSS classes. With the use of these classes, you can create flexible and responsive layouts that adjust to different screen sizes.
+
++ Wrap the columns in a container with the class "grid".
++ Define each column with the primary CSS class "grid__cell".
++ Specify the width of columns at different breakpoints using classes like "grid__cell--xxs-2" (where "xxs" is the breakpoint and "2" is the number of columns the element should span).
++ To add a margin/offset to the left or right of a column, use classes like "grid__cell-offset-left--xxs-2" or "grid__cell-offset-right--xxs-2".
++ Breakpoints range from "xxs" to "xxxl".
++ Column spans can range from 1 (default) to 12 (full width).
+  
+## Version-Log 
+
+#### Version v4.4 (03.02.2023) 
+Minor fixes and updates. Added description how to use the grid.
 
 #### Version v4.3 (18.06.2021) 
 It's been a long time. Couple of minor updates. Nothing big.

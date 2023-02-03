@@ -82,6 +82,7 @@ select {
 }
 input[type=file] {
 	background: transparent !important;
+	// width: auto !important;
 	border: 0 none;
 	padding: 0;
 }
@@ -228,6 +229,10 @@ input[type=search] {
 	color: transparent;
 }
 
+input[type=file]::-webkit-input-placeholder {
+	font-family: $font-family--sans-serif;
+}
+
 input::-webkit-date-and-time-value {
 	text-align: left;
 }
@@ -272,6 +277,7 @@ input::-webkit-date-and-time-value {
 			}
 		}
 	}
+
 	& textarea {
 		resize: vertical;
 	}

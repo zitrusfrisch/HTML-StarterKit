@@ -16,7 +16,7 @@
 
 <!-- CSS -->
 
-<link rel="stylesheet" href="css/styles.min.css">
+<link rel="stylesheet" href="css/styles.min.css?t=4">
 
 </head>
 
@@ -48,7 +48,7 @@
 
 		<header class="wrap wrap--guttered maxwidth--l">
 			<h2 class="mb--0">Flexible Grid</h2>
-			<p class="text--light text--big">A simple 12-column flexbox grid to get your content in shape.</p>
+			<p class="text--big">A simple 12-column flexbox grid to get your content in shape.</p>
 			<hr>
 		</header>
 
@@ -285,7 +285,21 @@
 
 
 			<div class="grid grid--guttered">
-
+				
+				<article class="grid__cell">
+					<div class="grid__cell__content">
+						<p class="font-size--xs text--sans-serif text--bold">.font-size--5xl / @include fontsize(5xl)</p>
+						<p class="font-size--5xl"> Argentina is a country located mostly in the southern half of South America.</p>
+					</div>
+				</article>
+				
+				<article class="grid__cell">
+					<div class="grid__cell__content">
+						<p class="font-size--xs text--sans-serif text--bold">.font-size--4xl / @include fontsize(4xl)</p>
+						<p class="font-size--4xl"> Argentina is a country located mostly in the southern half of South America.</p>
+					</div>
+				</article>
+				
 				<article class="grid__cell grid__cell--xs-6 grid__cell--m-8">
 					<div class="grid__cell__content">
 						<p class="font-size--xs text--sans-serif text--bold">.font-size--xxxl / @include fontsize(xxxl)</p>
@@ -514,7 +528,7 @@
 
 			<form class="flexform" action="_______________INSERT_SCRIPT_HERE_______________" method="post">
 
-				<fieldset>
+				<fieldset class=" mb--l">
 
 					<div>
 						<label>Input type "Text"</label>

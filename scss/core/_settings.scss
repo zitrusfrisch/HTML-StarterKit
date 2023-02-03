@@ -5,22 +5,21 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 
+// B A S E - S I Z E
 
-// B A S E - S I Z E   --------------------------------------------------------------------------------------
-
-
-$base-size:						1rem;
+$base-size:						1rem;					// 16px
 
 
+// G U T T E R S   A N D   S P A C I N G S
 
-// G U T T E R S   A N D   S P A C I N G S   --------------------------------------------------------------------------
-
+// Gutter Variants
 
 $gutter--s:						$base-size;				// Viewport Mobile
-$gutter--m:						$base-size * 2;		// Viewport Tablet
+$gutter--m:						$base-size * 2;			// Viewport Tablet
 $gutter--l:						$base-size * 3;			// Viewport Desktop
 $gutter--xl:					$base-size * 4;			// Viewport Desktop Wide
 
+// Spacings
 
 $spacing--xxs:					$base-size / 8;			// 16px / 8    => 2px
 $spacing--xs:					$base-size / 4;			// 16px / 4    => 4px
@@ -34,9 +33,7 @@ $spacing--4xl:					$base-size * 5;			// 16px * 5    => 80px
 $spacing--5xl:					$base-size * 6;			// 16px * 6    => 96px
 
 
-
-// B R E A K P O I N T S   --------------------------------------------------------------------------------------------
-
+// B R E A K P O I N T S
 
 $screenwidth--xxs:				320px;
 $screenwidth--xs:				480px;
@@ -48,9 +45,7 @@ $screenwidth--xxl:				1440px;
 $screenwidth--xxxl:				1600px;
 
 
-
-// G L O B A L   S T Y L E S   ----------------------------------------------------------------------------------------
-
+// G L O B A L   S T Y L E S
 
 // Colours
 
@@ -60,16 +55,13 @@ $color--text:					$color--primary;
 $color--link:					#00c;
 $color--border:					hsla(195,25%,75%,1);
 
-
 // Border-Radius
 
 $border-radius--input:			2px;
 $border-radius--button:			2px;
 
 
-
-// T Y P O G R P H Y   ------------------------------------------------------------------------------------------------
-
+// T Y P O G R A P H Y
 
 // Font stacks
 
@@ -77,12 +69,10 @@ $font-family--sans-serif:		"Inter", "Helvetica Neue", Helvetica, Roboto, Arial, 
 $font-family--serif:			"IBM Plex Serif", Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-family--mono:				"IBM Plex Mono", Consolas, "Liberation Mono", Courier, monospace !default;
 
-
 // Weights
 
 $font-weight--normal:			400;
 $font-weight--bold:				700;
-
 
 // Sizes
 

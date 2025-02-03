@@ -7,30 +7,24 @@
 
 // B A S E - S I Z E
 
-$base-size:						1rem;					// 16px
+$base-size:						1rem;						// 16px
 
 
-// G U T T E R S   A N D   S P A C I N G S
-
-// Gutter Variants
-
-$gutter--s:						$base-size;				// Viewport Mobile
-$gutter--m:						$base-size * 2;			// Viewport Tablet
-$gutter--l:						$base-size * 3;			// Viewport Desktop
-$gutter--xl:					$base-size * 4;			// Viewport Desktop Wide
+// S P A C I N G S   A N D   G U T T E R S
 
 // Spacings
 
-$spacing--xxs:					$base-size / 8;			// 16px / 8    => 2px
-$spacing--xs:					$base-size / 4;			// 16px / 4    => 4px
-$spacing--s:					$base-size / 2;			// 16px / 2    => 8px
-$spacing--m:					$base-size;				// 16px * 1    => 16px
-$spacing--l:					$base-size * 1.5;		// 16px * 1.5  => 24px
-$spacing--xl:					$base-size * 2;			// 16px * 2    => 32px
-$spacing--xxl:					$base-size * 3;			// 16px * 3    => 48px
-$spacing--xxxl:					$base-size * 4;			// 16px * 4    => 64px
-$spacing--4xl:					$base-size * 5;			// 16px * 5    => 80px
-$spacing--5xl:					$base-size * 6;			// 16px * 6    => 96px
+$spacing--xxxs:					calc($base-size * 0.125);	// 16px / 8    		=> 2px
+$spacing--xxs:					calc($base-size * 0.25);	// 16px / 4    		=> 4px
+$spacing--xs:					calc($base-size * 0.5);		// 16px / 2    		=> 8px
+$spacing--s:					calc($base-size * 0.75);	// 16px * 0.75	    => 12px
+$spacing--m:					$base-size;					// 16px * 1    		=> 16px
+$spacing--l:					calc($base-size * 1.5);		// 16px * 1.5  		=> 24px
+$spacing--xl:					calc($base-size * 2);		// 16px * 2    		=> 32px
+$spacing--xxl:					calc($base-size * 3);		// 16px * 3    		=> 48px
+$spacing--xxxl:					calc($base-size * 4);		// 16px * 4    		=> 64px
+$spacing--4xl:					calc($base-size * 5);		// 16px * 5    		=> 80px
+$spacing--5xl:					calc($base-size * 6);		// 16px * 6    		=> 96px
 
 
 // B R E A K P O I N T S
@@ -40,9 +34,8 @@ $screenwidth--xs:				480px;
 $screenwidth--s:				600px;
 $screenwidth--m:				768px;
 $screenwidth--l:				992px;
-$screenwidth--xl:				1280px;
-$screenwidth--xxl:				1440px;
-$screenwidth--xxxl:				1600px;
+$screenwidth--xl:				1366px;
+$screenwidth--xxl:				1600px;
 
 
 // G L O B A L   S T Y L E S
@@ -50,22 +43,48 @@ $screenwidth--xxxl:				1600px;
 // Colours
 
 $color--primary:				hsl(195,50%,25%);
+$color--secondary:				hsl(195,25%,75%);
+$color--tertiary:				rgba($color--primary, 0.1);
 
 $color--text:					$color--primary;
-$color--link:					#00c;
-$color--border:					hsla(195,25%,75%,1);
+$color--text-inverted:			#fff;
+$color--text-light:				rgba($color--text, 0.5);
+$color--text-light-inverted:	rgba(#fff, 0.5);
 
-// Border-Radius
+$color--link:					#00c;
+$color--link-inverted:			#fff;
+
+$color--border:					$color--text;
+$color--border-inverted:		#fff;
+
+// Border-Styles
+
+$border-width--default:			1px;
+$border-width--input:			1px;
+$border-width--control:			2px;
+$border-width--button:			2px;
 
 $border-radius--input:			2px;
-$border-radius--button:			2px;
+$border-radius--button:			4px;
+$border-radius--card:			8px;
+
+// Box Shadows
+
+$box-shadow--level-01:			0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+$box-shadow--level-02:			0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+$box-shadow--level-03:			0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+
+//  T R A N S I T I O N S
+
+$transition-style--default:		ease-in-out;
+$transition-duration--default:	.125s;
 
 
 // T Y P O G R A P H Y
 
 // Font stacks
 
-$font-family--sans-serif:		"Inter", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family--sans-serif:		"IBM Plex Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
 $font-family--serif:			"IBM Plex Serif", Georgia, Cambria, "Times New Roman", Times, serif !default;
 $font-family--mono:				"IBM Plex Mono", Consolas, "Liberation Mono", Courier, monospace !default;
 
@@ -92,7 +111,7 @@ $font-size--l:					$base-size * 1.25;			// 20px
 $line-height--l:				$base-size * 1.75;			// 28px
 
 $font-size--xl:					$base-size * 1.5;			// 24px
-$line-height--xl:				$base-size * 2;				// 32px
+$line-height--xl:				$base-size * 2.125;			// 34px
 
 $font-size--xxl:				$base-size * 2;				// 32px
 $line-height--xxl:				$base-size * 2.5;			// 40px

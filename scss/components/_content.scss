@@ -1,8 +1,20 @@
 .content {
-	padding: $spacing--xxl 0;
+	padding: $spacing--xl 0;
+	
+	@include mq-s {
+		padding: $spacing--xxl 0;
+	}
+	
+	@include mq-m {
+		padding: $spacing--xxxl 0;
+	}
 	
 	@include mq-l {
-		padding: 4.8vw 0;
+		padding: $spacing--4xl 0;
+	}
+	
+	@include mq-xl {
+		padding: $spacing--5xl 0;
 	}	
 
 	header {
@@ -13,6 +25,11 @@
 		background: rgba($color--primary,.1);
 	}
 
+}
+
+.card {
+	background: #fff;
+	padding: $spacing--m;
 }
 
 /* DEMO */

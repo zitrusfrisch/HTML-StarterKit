@@ -37,11 +37,6 @@
 	max-width: $screenwidth--xxl;
 }
 
-.maxwidth--xxxl {
-	@extend .maxwidth;
-	max-width: $screenwidth--xxxl;
-}
-
 .align {
 	&--left {
 		text-align: left;

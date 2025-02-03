@@ -30,23 +30,33 @@ body {
 	position: relative;
 	width: 100%;
 
-	&--guttered {
-		padding-right: $gutter--s;
-		padding-left: $gutter--s;
+	&--with-gutter {
+		padding-right: $spacing--m;
+		padding-left: $spacing--m;
+		
+		@include mq-s {
+			padding-right: $spacing--l;
+			padding-left: $spacing--l;
+		}
 		
 		@include mq-m {
-			padding-right: $gutter--m;
-			padding-left: $gutter--m;
+			padding-right: $spacing--xl;
+			padding-left: $spacing--xl;
 		}
 		
 		@include mq-l {
-			padding-right: $gutter--l;
-			padding-left: $gutter--l;
+			padding-right: $spacing--xxl;
+			padding-left: $spacing--xxl;
 		}
 		
 		@include mq-xl {
-			padding-right: $gutter--xl;
-			padding-left: $gutter--xl;
+			padding-right: $spacing--xxxl;
+			padding-left: $spacing--xxxl;
+		}
+		
+		@include mq-xxl {
+			padding-right: $spacing--4xl;
+			padding-left: $spacing--4xl;
 		}
 	}
 

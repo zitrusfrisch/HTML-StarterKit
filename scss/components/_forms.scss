@@ -5,7 +5,7 @@ form {
 fieldset {
 	min-width: 0;
 	border: 0 none;
-	margin: 0;
+	margin: 0 0 $spacing--m;
 	padding: 0;
 }
 
@@ -32,11 +32,11 @@ label,
 	&--checkbox,
 	&--radio {
 		font-weight: $font-weight--normal;
-		text-indent: -23px;
+		text-indent: -29px;
 		display: inline-block;
 		margin: 0;
-		padding-left: 24px;
-	    margin-right: $gutter--m !important;
+		padding-left: 29px;
+	    margin-right: $spacing--m !important;
 	}
 
 	@include mq-s {
@@ -74,18 +74,23 @@ select {
 	display: block;
 	width: 100%;
 	min-height: 42px;
-	border: 1px solid $color--border;
+	border: $border-width--input $color--border solid;
 	margin: 0;
 	padding: $spacing--s ($spacing--s * 1.25);
 	border-radius: $border-radius--input;
 	-webkit-appearance: none;
+
+	&:focus {
+		border: $border-width--input $color--border solid;
+	}
 }
+
 input[type=file] {
 	background: transparent !important;
-	// width: auto !important;
 	border: 0 none;
 	padding: 0;
 }
+
 textarea {
 	height: auto;
 	min-height: 100px;
@@ -109,13 +114,13 @@ select,
 			border: red;
 			position: absolute;
 			right: 14px;
-			top: 14px;
+			top: 16px;
 			z-index: 1;
 			width: 10px;
 			height: 10px;
 			pointer-events: none;	
-			border: 3px solid $color--border;
-			border-width: 0 0 3px 3px;
+			border: 2px solid $color--border;
+			border-width: 0 0 2px 2px;
 			border-radius: $border-radius--input;
 			transform: rotate(-45deg);
 		}
@@ -125,9 +130,11 @@ select,
 select::-ms-expand {
 	display: none;
 }
+
 select:hover {
 	border-color: $color--border;
 }
+
 select option {
 	font-weight: $font-weight--normal;
 }
@@ -136,7 +143,7 @@ input[type=checkbox],
 input[type=radio] {
 	position: relative;
 	top: -1px;
-	margin-right: $spacing--xs;
+	margin-right: 4px;
 }
 
 @supports(-webkit-appearance: none) {
@@ -146,10 +153,10 @@ input[type=radio] {
 		-webkit-appearance: none;
 		background: #fff;
 		position: relative;
-		top: 2px;
-		width: $spacing--m;
-		height: $spacing--m;
-		border: 2px solid $color--border;
+		top: 4px;
+		width: 20px;
+		height: 20px;
+		border: $border-width--control $color--border solid;
 		border-radius: $border-radius--input;
 		transition: .125s;
 	}
@@ -179,19 +186,19 @@ input[type=radio] {
 		border-top: none;
 		width: 10px;
 		height: 6px;
-		top: 2px; 
-		left: 1px;
+		top: 4px; 
+		left: 3px;
 		transform: rotate(-45deg);
 	}
 	input[type="radio"]:checked::after {
+		background: #fff;
 		border-radius: 50%;
 		border-color: #fff;
-		width: $spacing--xs;
-		height: $spacing--xs;
-		top: 3px; 
-		left: 3px;
+		width: 8px;
+		height: 8px;
+		top: 4px; 
+		left: 4px;
 	}
-
 }
 
 :disabled,
@@ -211,7 +218,7 @@ input[type=radio] {
 	color: inherit;
 }
 
-:focus:not(:focus-visible) {
+:focus:not(:focus-visible), :focus-visible {
 	outline: none;
 }
 
@@ -221,6 +228,7 @@ input[type=search] {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	outline-offset: 0;
 }
 
 /* WebKit Fix */
@@ -247,7 +255,7 @@ input::-webkit-date-and-time-value {
 		}
 		@include mq-m {
 			text-align: right;
-			padding-right: $gutter--m;
+			padding-right: $spacing--m;
 		}
 	}
 

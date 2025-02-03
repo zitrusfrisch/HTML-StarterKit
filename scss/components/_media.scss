@@ -36,9 +36,33 @@ figure, audio, video {
 		width: 100%;
 		height: 100%;
 	}
-
+	
+	&--3-4 {
+		padding-top: 133.3334%;
+	}
+	
+	&--4-5 {
+		padding-top: 125%;
+	}
+	
+	&--5-6 {
+		padding-top: 120%;
+	}
+	
+	&--1-1 {
+		padding-top: 100%;
+	}
+	
+	&--6-5 {
+		padding-top: 83.3334%;
+	}
+	
 	&--4-3 {
 		padding-top: 75%;
+	}
+	
+	&--7-5 {
+		padding-top: 71.4286%;
 	}
 
 	&--3-2 {

@@ -14,7 +14,8 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6 {
+h6, .h6,
+.heading--overline {
 	margin: $spacing--xl 0 $spacing--m;
 
 	&:first-child {
@@ -112,6 +113,19 @@ h6, .h6 {
 	font-weight: $font-weight--bold;
 	font-family: $font-family--sans-serif;
 	@include fontsize(m);
+}
+
+.heading--overline {
+	font-family: $font-family--sans-serif;
+	@include fontsize(s);
+	font-weight: $font-weight--bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: $spacing--xxs;
+
+	& + * {
+		margin-top: 0;
+	}
 }
 
 p,
@@ -220,16 +234,15 @@ adress {
 }
 
 mark {
-	background: yellow;
-	border-radius: 2px;
-	padding: $spacing--xxs $spacing--xs;
+	background: $color--secondary;
+	padding: 0 $spacing--xxxs;
 }
 
 blockquote {
 	font-style: italic;
 	border-left: 3px solid $color--border;
 	margin: $spacing--xl 0;
-	padding: $gutter--m;
+	padding: $spacing--m;
 
 	&:first-child {
 		margin-top: 0;
@@ -249,7 +262,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0 none;
-	border-top: 1px solid $color--border;
+	border-top: $border-width--default solid $color--border;
 	margin: $spacing--l 0;
 
 	@include mq-s {
@@ -310,10 +323,9 @@ hr {
 }
 
 .text--big {
-	@include mq-s {
-		@include fontsize(l);
-	}
-	@include mq-m {
+	@include fontsize(l);
+
+	@include mq-l {
 		@include fontsize(xl);
 	}
 }
@@ -327,7 +339,7 @@ hr {
 }
 
 .text--light {
-	color: rgba($color--text, .5);
+	color: $color--text-light;
 }
 
 .text--regular {
@@ -354,8 +366,8 @@ hr {
 
 .text--tag {
 	margin-left: $spacing--xs;
-	padding: $spacing--xxs $spacing--xs;
-	border: 2px $color--primary solid;
-	border-radius: $spacing--xs;
+	padding: $spacing--xxxs $spacing--xxs;
+	border: $border-width--button $color--primary solid;
+	border-radius: $border-radius--button;
 	position: relative;
 }

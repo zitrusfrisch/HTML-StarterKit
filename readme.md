@@ -36,7 +36,7 @@ The grid allows you to easily divide a page or container into 12 equal vertical 
 + Wrap the columns in a container with the class "grid".
 + Define each column with the primary CSS class "grid__cell".
 + Specify the width of columns at different breakpoints using classes like "grid__cell--xxs-2" (where "xxs" is the breakpoint and "2" is the number of columns the element should span).
-+ To add a margin/offset to the left or right of a column, use classes like "grid__cell-offset-left--xxs-2" or "grid__cell-offset-right--xxs-2".
++ To add a margin/offset to the left or right of a column, use classes like "grid__cell-offset-left--320-2" or "grid__cell-offset-right--320-2".
 + Breakpoints range from "xxs" to "xxxl".
 + Column spans can range from 1 (default) to 12 (full width).
   

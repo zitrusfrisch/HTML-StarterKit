@@ -1,5 +1,5 @@
 .masthead {
-	background: #fff;
+	background: $color--white;
 	padding: $spacing--l 0;
 
 	&--sticky {
@@ -11,5 +11,5 @@
 }
 
 .logo {
-	fill: $color--secondary;
+	fill: $color--primary;
 }

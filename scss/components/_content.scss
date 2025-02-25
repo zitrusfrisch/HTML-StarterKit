@@ -1,4 +1,5 @@
 .content {
+	background-color: $background-color-content--default;
 	padding: $spacing--xl 0;
 	
 	@include mq-s {
@@ -15,27 +16,78 @@
 	
 	@include mq-xl {
 		padding: $spacing--5xl 0;
-	}	
+	}
+	
+	@include mq-xxl {
+		padding: $spacing--6xl 0;
+	}
 
 	header {
 		overflow: hidden;
 	}
 
 	&--alt {
-		background: rgba($color--primary,.1);
+		background-color: $background-color-content--alt;
 	}
 
 }
 
 .card {
-	background: #fff;
+	background: $background-color-cards--default;
+	overflow: hidden;
+	border: $border-width--card $border-color--card solid;
+	border-radius: $border-radius--card;
+	// box-shadow: $box-shadow--level-03;
 	padding: $spacing--m;
+	
+	@include mq-s {
+		padding: $spacing--m;
+	}
+	
+	@include mq-m {
+		padding: $spacing--l;
+	}
+	
+	@include mq-l {
+		padding: $spacing--xl;
+	}
+
+	&--with-image {
+		padding-top: 0;
+		padding-right: 0;
+		padding-left: 0;
+
+		figure ~ * {
+			margin-right: $spacing--m;
+			margin-left: $spacing--m;
+			
+			@include mq-s {
+				margin-right: $spacing--m;
+				margin-left: $spacing--m;
+			}
+			
+			@include mq-m {
+				margin-right: $spacing--l;
+				margin-left: $spacing--l;
+			}
+			
+			@include mq-l {
+				margin-right: $spacing--xl;
+				margin-left: $spacing--xl;
+			}
+		}
+
+	}
+
+
+
+
 }
 
 /* DEMO */
 
 .grid--demo .grid__cell__content {
-	background: #fff;
+	background: $color--white;
 	padding: 32px 2px;
 
 	p {

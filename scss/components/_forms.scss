@@ -70,18 +70,18 @@ input[type=number],
 input[type=file],
 textarea,
 select {
-	background: #fff;
+	background: $color--white;
 	display: block;
 	width: 100%;
 	min-height: 42px;
-	border: $border-width--input $color--border solid;
+	border: $border-width--input $border-color--input solid;
 	margin: 0;
 	padding: $spacing--s ($spacing--s * 1.25);
 	border-radius: $border-radius--input;
 	-webkit-appearance: none;
 
 	&:focus {
-		border: $border-width--input $color--border solid;
+		border: $border-width--input $border-color--input solid;
 	}
 }
 
@@ -119,7 +119,7 @@ select,
 			width: 10px;
 			height: 10px;
 			pointer-events: none;	
-			border: 2px solid $color--border;
+			border: 2px solid $border-color--input;
 			border-width: 0 0 2px 2px;
 			border-radius: $border-radius--input;
 			transform: rotate(-45deg);
@@ -132,7 +132,7 @@ select::-ms-expand {
 }
 
 select:hover {
-	border-color: $color--border;
+	border-color: $border-color--input;
 }
 
 select option {
@@ -151,37 +151,36 @@ input[type=radio] {
 	input[type="checkbox"],
 	input[type=radio] {
 		-webkit-appearance: none;
-		background: #fff;
+		background: $color--white;
 		position: relative;
 		top: 4px;
 		width: 20px;
 		height: 20px;
-		border: $border-width--control $color--border solid;
+		border: $border-width--control $border-color--control solid;
 		border-radius: $border-radius--input;
-		transition: .125s;
 	}
 	input[type=radio] {
 		border-radius: 50%;
 	}
 	input[type="checkbox"]:focus,
 	input[type="radio"]:focus {
-		border-color: $color--border;
+		border-color: $border-color--control;
 	}
  	input[type="checkbox"]:checked,
  	input[type="radio"]:checked {
 		position: relative;
-		background: $color--text;
-		border-color: $color--text;
+		background: $text-color--default;
+		border-color: $text-color--default;
 	}
 	input[type="checkbox"]:checked::after,
 	input[type="radio"]:checked::after {
 		content: "";
 		position: absolute;
-		border: 3px solid $color--border;
+		border: 3px solid $border-color--control;
 		border-radius: $border-radius--input;
 	}
 	input[type="checkbox"]:checked::after {
-		border-color: #fff;
+		border-color: $color--white;
 		border-right: none;
 		border-top: none;
 		width: 10px;
@@ -191,9 +190,9 @@ input[type=radio] {
 		transform: rotate(-45deg);
 	}
 	input[type="radio"]:checked::after {
-		background: #fff;
+		background: $color--white;
 		border-radius: 50%;
-		border-color: #fff;
+		border-color: $color--white;
 		width: 8px;
 		height: 8px;
 		top: 4px; 

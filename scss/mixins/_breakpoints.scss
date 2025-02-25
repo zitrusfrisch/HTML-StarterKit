@@ -39,9 +39,3 @@
 		@content;
 	}
 }
-
-@mixin mq-xxxl {
-	@media only screen and (min-width: $screenwidth--xxxl) {
-		@content;
-	}
-}

@@ -3,7 +3,7 @@ html {
 	font-family: $font-family--serif;
 	@include fontsize(m);
 	text-align: left;
-	color: $color--text;
+	color: $text-color--default;
 }
 
 
@@ -26,6 +26,24 @@ h6, .h6,
 h1, .h1 {
 	font-weight: $font-weight--bold;
 	font-family: $font-family--sans-serif;
+	@include fontsize(xxxl);
+
+	@include mq-s {
+		@include fontsize(4xl);
+	}
+
+	@include mq-m {
+		@include fontsize(5xl);
+	}
+
+	@include mq-l {
+		@include fontsize(6xl);
+	}
+}
+
+h2, .h2 {
+	font-weight: $font-weight--bold;
+	font-family: $font-family--sans-serif;
 	@include fontsize(xxl);
 
 	@include mq-s {
@@ -41,7 +59,7 @@ h1, .h1 {
 	}
 }
 
-h2, .h2 {
+h3, .h3 {
 	font-weight: $font-weight--bold;
 	font-family: $font-family--sans-serif;
 	@include fontsize(xl);
@@ -59,7 +77,7 @@ h2, .h2 {
 	}
 }
 
-h3, .h3 {
+h4, .h4 {
 	font-weight: $font-weight--bold;
 	font-family: $font-family--sans-serif;
 	@include fontsize(l);
@@ -74,24 +92,6 @@ h3, .h3 {
 
 	@include mq-l {
 		@include fontsize(xxxl);
-	}
-}
-
-h4, .h4 {
-	font-weight: $font-weight--bold;
-	font-family: $font-family--sans-serif;
-	@include fontsize(m);
-
-	@include mq-s {
-		@include fontsize(l);
-	}
-
-	@include mq-m {
-		@include fontsize(xl);
-	}
-
-	@include mq-l {
-		@include fontsize(xxl);
 	}
 }
 
@@ -120,7 +120,7 @@ h6, .h6 {
 	@include fontsize(s);
 	font-weight: $font-weight--bold;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: .5px;
 	margin-bottom: $spacing--xxs;
 
 	& + * {
@@ -137,6 +137,10 @@ dl {
 	&:first-child {
 		margin-top: 0;
 	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 p {
@@ -147,11 +151,11 @@ p {
 // Links
 
 a {
-	color: $color--link;
+	color: $text-color--link;
 	text-decoration: underline;
 
 	&:hover, &:focus, &:active {
-		color: darken($color--link, 20%);
+		color: darken($text-color--link, 20%);
 		text-decoration: underline;
 	}
 }
@@ -161,7 +165,7 @@ a {
 
 ul, ol {
 	padding-left: $spacing--l;
-
+	
 	& &:first-child {
 		margin: $spacing--m 0;
 	}
@@ -176,6 +180,46 @@ ol {
 	list-style: decimal outside;
 }
 
+ol.ol--custom {
+	counter-reset: ol--custom-counter;
+	list-style: none;
+	margin-top: $spacing--s;
+	padding-left: 40px;
+
+	li {
+		counter-increment: ol--custom-counter;
+		position: relative;
+		margin: 0 0 $spacing--l;
+
+		&::before {
+			content: counter(ol--custom-counter);
+
+			background: $color--primary;
+
+			// font-family: $font-family--sans-serif;
+			font-weight: $font-weight--bold;
+			// font-size: $font-size--xl;
+			line-height: 23px;
+			color: $text-color--inverted;
+			text-align: center;
+
+			width: 28px;
+			height: 28px;
+
+			position: absolute;
+			left: -40px;
+			top: -2px;
+
+			border: 2px solid $border-color--default;
+			border-radius: 50%;
+		}
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
 nav ul, nav ol {
 	list-style: none;
 	margin: 0;
@@ -183,16 +227,26 @@ nav ul, nav ol {
 }
 
 dl {
+
+	dt {
+		font-weight: $font-weight--normal;
+		// color: $text-color--light;
+		margin: 0;
+	}
+
+	dd {
+		font-weight: $font-weight--bold;
+		margin: 0;
+	}
 	
-}
+	&.dl--l {
+		
+		dd {
+			@include fontsize(4xl);
+		}
+		
+	}
 
-dt {
-	font-weight: $font-weight--bold;
-	margin: 0;
-}
-
-dd {
-	margin: 0 0 $spacing--m;
 }
 
 
@@ -240,7 +294,7 @@ mark {
 
 blockquote {
 	font-style: italic;
-	border-left: 3px solid $color--border;
+	border-left: 3px solid $border-color--default;
 	margin: $spacing--xl 0;
 	padding: $spacing--m;
 
@@ -262,7 +316,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0 none;
-	border-top: $border-width--default solid $color--border;
+	border-top: $border-width--default solid $border-color--default;
 	margin: $spacing--l 0;
 
 	@include mq-s {
@@ -278,44 +332,48 @@ hr {
 // Text Styles
 
 
-.font-size--xxs {
+.font-size--10 {
 	@include fontsize(xxs);
 }
 
-.font-size--xs {
+.font-size--12 {
 	@include fontsize(xs);
 }
 
-.font-size--s {
+.font-size--14 {
 	@include fontsize(s);
 }
 
-.font-size--m {
+.font-size--16 {
 	@include fontsize(m);
 }
 
-.font-size--l {
+.font-size--20 {
 	@include fontsize(l);
 }
 
-.font-size--xl {
+.font-size--24 {
 	@include fontsize(xl);
 }
 
-.font-size--xxl {
+.font-size--32 {
 	@include fontsize(xxl);
 }
 
-.font-size--xxxl {
+.font-size--40 {
 	@include fontsize(xxxl);
 }
 
-.font-size--4xl {
+.font-size--48 {
 	@include fontsize(4xl);
 }
 
-.font-size--5xl {
+.font-size--64 {
 	@include fontsize(5xl);
+}
+
+.font-size--80 {
+	@include fontsize(6xl);
 }
 
 .text--small {
@@ -339,7 +397,7 @@ hr {
 }
 
 .text--light {
-	color: $color--text-light;
+	color: $text-color--light;
 }
 
 .text--regular {
@@ -365,9 +423,11 @@ hr {
 }
 
 .text--tag {
+	font-weight: $font-weight--bold;
+	font-size: $font-size--s;
 	margin-left: $spacing--xs;
-	padding: $spacing--xxxs $spacing--xxs;
+	padding: $spacing--xxxs $spacing--xs;
 	border: $border-width--button $color--primary solid;
-	border-radius: $border-radius--button;
+	border-radius: 20px;
 	position: relative;
 }

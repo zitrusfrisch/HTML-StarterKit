@@ -2,41 +2,56 @@
 	@if ($font-size == xxs) {
 		font-size: $font-size--xxs;
 		line-height: $line-height--xxs;
+		letter-spacing: $letter-spacing-for--xxs;
 	}
 	@if ($font-size == xs) {
 		font-size: $font-size--xs;
 		line-height: $line-height--xs;
+		letter-spacing: $letter-spacing-for--xs;
 	}
 	@if ($font-size == s) {
 		font-size: $font-size--s;
 		line-height: $line-height--s;
+		letter-spacing: $letter-spacing-for--s;
 	}
 	@if ($font-size == m) {
 		font-size: $font-size--m;
 		line-height: $line-height--m;
+		letter-spacing: $letter-spacing-for--m;
 	}
 	@if ($font-size == l) {
 		font-size: $font-size--l;
 		line-height: $line-height--l;
+		letter-spacing: $letter-spacing-for--l;
 	}
 	@if ($font-size == xl) {
 		font-size: $font-size--xl;
 		line-height: $line-height--xl;
+		letter-spacing: $letter-spacing-for--xl;
 	}
 	@if ($font-size == xxl) {
 		font-size: $font-size--xxl;
 		line-height: $line-height--xxl;
+		letter-spacing: $letter-spacing-for--xxl;
 	}
 	@if ($font-size == xxxl) {
 		font-size: $font-size--xxxl;
 		line-height: $line-height--xxxl;
+		letter-spacing: $letter-spacing-for--xxxl;
 	}
 	@if ($font-size == 4xl) {
 		font-size: $font-size--4xl;
 		line-height: $line-height--4xl;
+		letter-spacing: $letter-spacing-for--4xl;
 	}
 	@if ($font-size == 5xl) {
 		font-size: $font-size--5xl;
 		line-height: $line-height--5xl;
+		letter-spacing: $letter-spacing-for--5xl;
+	}
+	@if ($font-size == 6xl) {
+		font-size: $font-size--6xl;
+		line-height: $line-height--6xl;
+		letter-spacing: $letter-spacing-for--6xl;
 	}
 }

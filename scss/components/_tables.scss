@@ -16,7 +16,7 @@ th, td {
 	color: inherit;
 	text-align: left;
 	vertical-align: top;
-	border-bottom: 1px solid $color--border;
+	border-bottom: 1px solid $border-color--default;
 	padding: $spacing--m $spacing--s;
 }
 
@@ -54,11 +54,11 @@ table#recaptcha_table, table.table-auto {
 
 .flex-table {
 	overflow-x: auto;
-	background-color: #fff;
-	background-image: -webkit-linear-gradient(left,  #fff,  rgba(255, 255, 255, 0)),  -webkit-linear-gradient(right,  #fff,  rgba(255, 255, 255, 0)),  -webkit-linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  -webkit-linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
-	background-image: -moz-linear-gradient(left,  #fff,  rgba(255, 255, 255, 0)),  -moz-linear-gradient(right,  #fff,  rgba(255, 255, 255, 0)),  -moz-linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  -moz-linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
-	background-image: -o-linear-gradient(left,  #fff,  rgba(255, 255, 255, 0)),  -o-linear-gradient(right,  #fff,  rgba(255, 255, 255, 0)),  -o-linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  -o-linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
-	background-image: linear-gradient(left,  #fff,  rgba(255, 255, 255, 0)),  linear-gradient(right,  #fff,  rgba(255, 255, 255, 0)),  linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
+	background-color: $color--white;
+	background-image: -webkit-linear-gradient(left,  $color--white,  rgba(255, 255, 255, 0)),  -webkit-linear-gradient(right,  $color--white,  rgba(255, 255, 255, 0)),  -webkit-linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  -webkit-linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
+	background-image: -moz-linear-gradient(left,  $color--white,  rgba(255, 255, 255, 0)),  -moz-linear-gradient(right,  $color--white,  rgba(255, 255, 255, 0)),  -moz-linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  -moz-linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
+	background-image: -o-linear-gradient(left,  $color--white,  rgba(255, 255, 255, 0)),  -o-linear-gradient(right,  $color--white,  rgba(255, 255, 255, 0)),  -o-linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  -o-linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
+	background-image: linear-gradient(left,  $color--white,  rgba(255, 255, 255, 0)),  linear-gradient(right,  $color--white,  rgba(255, 255, 255, 0)),  linear-gradient(left,  #c3c3c3,  rgba(195, 195, 195, 0)),  linear-gradient(right,  #c3c3c3,  rgba(195, 195, 195, 0));
 	background-position: 0 0, 100% 0, 0 0, 100% 0;
 	background-repeat: no-repeat;
 	background-size: 5em 100%, 5em 100%, .2em 100%, .2em 100%;

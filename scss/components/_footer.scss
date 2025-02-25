@@ -1,13 +1,13 @@
 footer[role=contentinfo] {
 	background: $color--primary;
-	color: #fff;
+	color: $color--white;
 	padding: $spacing--xxl 0;
 
 	a {
-		color: #fff;
+		color: $color--white;
 
 		&:hover {
-			color: rgba(#fff, .75);
+			color: rgba($color--white, .75);
 
 		}
 	}

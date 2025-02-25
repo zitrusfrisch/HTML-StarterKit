@@ -7,120 +7,169 @@
 
 // B A S E - S I Z E
 
-$base-size:						1rem;						// 16px
+$base-size:							1rem;						// 16px
 
 
 // S P A C I N G S   A N D   G U T T E R S
 
 // Spacings
 
-$spacing--xxxs:					calc($base-size * 0.125);	// 16px / 8    		=> 2px
-$spacing--xxs:					calc($base-size * 0.25);	// 16px / 4    		=> 4px
-$spacing--xs:					calc($base-size * 0.5);		// 16px / 2    		=> 8px
-$spacing--s:					calc($base-size * 0.75);	// 16px * 0.75	    => 12px
-$spacing--m:					$base-size;					// 16px * 1    		=> 16px
-$spacing--l:					calc($base-size * 1.5);		// 16px * 1.5  		=> 24px
-$spacing--xl:					calc($base-size * 2);		// 16px * 2    		=> 32px
-$spacing--xxl:					calc($base-size * 3);		// 16px * 3    		=> 48px
-$spacing--xxxl:					calc($base-size * 4);		// 16px * 4    		=> 64px
-$spacing--4xl:					calc($base-size * 5);		// 16px * 5    		=> 80px
-$spacing--5xl:					calc($base-size * 6);		// 16px * 6    		=> 96px
+$spacing--xxxs:						calc($base-size * 0.125);	// 16px / 8		=> 2px
+$spacing--xxs:						calc($base-size * 0.25);	// 16px / 4		=> 4px
+$spacing--xs:						calc($base-size * 0.5);		// 16px / 2		=> 8px
+$spacing--s:						calc($base-size * 0.75);	// 16px * 0.75	=> 12px
+$spacing--m:						$base-size;					// 16px * 1		=> 16px
+$spacing--l:						calc($base-size * 1.5);		// 16px * 1.5	=> 24px
+$spacing--xl:						calc($base-size * 2);		// 16px * 2		=> 32px
+$spacing--xxl:						calc($base-size * 3);		// 16px * 3		=> 48px
+$spacing--xxxl:						calc($base-size * 4);		// 16px * 4		=> 64px
+$spacing--4xl:						calc($base-size * 5);		// 16px * 5		=> 80px
+$spacing--5xl:						calc($base-size * 6);		// 16px * 6		=> 96px
+$spacing--6xl:						calc($base-size * 8);		// 16px * 8		=> 128px
 
 
 // B R E A K P O I N T S
 
-$screenwidth--xxs:				320px;
-$screenwidth--xs:				480px;
-$screenwidth--s:				600px;
-$screenwidth--m:				768px;
-$screenwidth--l:				992px;
-$screenwidth--xl:				1366px;
-$screenwidth--xxl:				1600px;
+$screenwidth--xxs:					320px;
+$screenwidth--xs:					480px;
+$screenwidth--s:					600px;
+$screenwidth--m:					768px;
+$screenwidth--l:					992px;
+$screenwidth--xl:					1366px;
+$screenwidth--xxl:					1600px;
 
 
 // G L O B A L   S T Y L E S
 
 // Colours
 
-$color--primary:				hsl(195,50%,25%);
-$color--secondary:				hsl(195,25%,75%);
-$color--tertiary:				rgba($color--primary, 0.1);
+$color--primary:					hsl(195,50%,25%);
+$color--secondary:					hsl(195,25%,75%);
+$color--tertiary:					rgba($color--primary, 0.1);
 
-$color--text:					$color--primary;
-$color--text-inverted:			#fff;
-$color--text-light:				rgba($color--text, 0.5);
-$color--text-light-inverted:	rgba(#fff, 0.5);
+$color--gray-100:					hsl(195,3%,0%);
+$color--gray-80:					hsl(195,3%,20%);
+$color--gray-60:					hsl(195,3%,40%);
+$color--gray-40:					hsl(195,3%,60%);
+$color--gray-20:					hsl(195,3%,80%);
+$color--gray-10:					hsl(195,3%,90%);
+$color--gray-5:						hsl(195,3%,95%);
 
-$color--link:					#00c;
-$color--link-inverted:			#fff;
+$color--white:						#fff;
 
-$color--border:					$color--text;
-$color--border-inverted:		#fff;
+// Border
 
-// Border-Styles
+$border-width--default:				1px;
+$border-width--input:				1px;
+$border-width--control:				2px;
+$border-width--button:				2px;
+$border-width--card:				1px;
 
-$border-width--default:			1px;
-$border-width--input:			1px;
-$border-width--control:			2px;
-$border-width--button:			2px;
+$border-radius--input:				2px;
+$border-radius--button:				4px;
+$border-radius--card:				8px;
 
-$border-radius--input:			2px;
-$border-radius--button:			4px;
-$border-radius--card:			8px;
+$border-color--default:				$color--primary;
+$border-color--inverted:			$color--white;
+$border-color--input:				$border-color--default;
+$border-color--input-inverted:		$border-color--inverted;
+$border-color--control:				$border-color--default;
+$border-color--control-inverted:	$border-color--inverted;
+$border-color--button:				$border-color--default;
+$border-color--button-inverted:		$border-color--inverted;
+$border-color--card:				transparent;
+$border-color--card-inverted:		$border-color--inverted;
 
-// Box Shadows
+// Background
 
-$box-shadow--level-01:			0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-$box-shadow--level-02:			0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
-$box-shadow--level-03:			0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+$background-color--default:			$color--white;
+$background-color--html:			$color--white;
+$background-color--body:			$color--white;
+
+$background-color-content--default:	$color--white;
+$background-color-content--alt:		rgba($color--primary,.1);
+
+$background-color-cards--default:	$color--gray-5;
+$background-color-cards--inverted:	$color--white;
+
+// Shadows
+
+$box-shadow--level-01:				0px 2px 1px -1px rgba(0,0,0,0.1),0px 1px 1px 0px rgba(0,0,0,0.07),0px 1px 3px 0px rgba(0,0,0,0.06);
+$box-shadow--level-02:				0px 3px 1px -2px rgba(0,0,0,0.1),0px 2px 2px 0px rgba(0,0,0,0.07),0px 1px 5px 0px rgba(0,0,0,0.06);
+$box-shadow--level-03:				0px 3px 3px -2px rgba(0,0,0,0.1),0px 3px 4px 0px rgba(0,0,0,0.07),0px 1px 8px 0px rgba(0,0,0,0.06);
+
 
 //  T R A N S I T I O N S
 
-$transition-style--default:		ease-in-out;
-$transition-duration--default:	.125s;
+$transition-easing--default:		ease-in-out;
+$transition-timing--default:		.125s;
 
 
 // T Y P O G R A P H Y
 
 // Font stacks
 
-$font-family--sans-serif:		"IBM Plex Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
-$font-family--serif:			"IBM Plex Serif", Georgia, Cambria, "Times New Roman", Times, serif !default;
-$font-family--mono:				"IBM Plex Mono", Consolas, "Liberation Mono", Courier, monospace !default;
+$font-family--sans-serif:			"IBM Plex Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !default;
+$font-family--serif:				"IBM Plex Serif", Georgia, Cambria, "Times New Roman", Times, serif !default;
+$font-family--mono:					"IBM Plex Mono", Consolas, "Liberation Mono", Courier, monospace !default;
 
 // Weights
 
-$font-weight--normal:			400;
-$font-weight--bold:				700;
+$font-weight--normal:				400;
+$font-weight--bold:					700;
+
+// Colors
+
+$text-color--default:				$color--primary;
+$text-color--inverted:				$color--white;
+$text-color--light:					rgba($text-color--default, 0.5);
+$text-color--light-inverted:		rgba($color--white, 0.5);
+
+$text-color--link:					#00c;
+$text-color--link-inverted:			$color--white;
 
 // Sizes
 
-$font-size--xxs:				$base-size * .625;			// 10px
-$line-height--xxs:				$base-size * .875;			// 14px
+$font-size--xxs:					$base-size * .625;			// 10px
+$line-height--xxs:					$base-size * .875;			// 14px
+$letter-spacing-for--xxs:			0.25px;
 
-$font-size--xs:					$base-size * .75;			// 12px
-$line-height--xs:				$base-size * 1.125;			// 18px
+$font-size--xs:						$base-size * .75;			// 12px
+$line-height--xs:					$base-size * 1.125;			// 18px
+$letter-spacing-for--xs:			0.125px;
 
-$font-size--s:					$base-size * .875;			// 14px
-$line-height--s:				$base-size * 1.25;			// 20px
+$font-size--s:						$base-size * .875;			// 14px
+$line-height--s:					$base-size * 1.25;			// 20px
+$letter-spacing-for--s:				0.125px;
 
-$font-size--m:					$base-size * 1;				// 16px
-$line-height--m:				$base-size * 1.5;			// 24px
+$font-size--m:						$base-size * 1;				// 16px
+$line-height--m:					$base-size * 1.5;			// 24px
+$letter-spacing-for--m:				0;
 
-$font-size--l:					$base-size * 1.25;			// 20px
-$line-height--l:				$base-size * 1.75;			// 28px
+$font-size--l:						$base-size * 1.25;			// 20px
+$line-height--l:					$base-size * 1.75;			// 28px
+$letter-spacing-for--l:				-0.125px;
 
-$font-size--xl:					$base-size * 1.5;			// 24px
-$line-height--xl:				$base-size * 2.125;			// 34px
+$font-size--xl:						$base-size * 1.5;			// 24px
+$line-height--xl:					$base-size * 2.125;			// 34px
+$letter-spacing-for--xl:			-0.25px;
 
-$font-size--xxl:				$base-size * 2;				// 32px
-$line-height--xxl:				$base-size * 2.5;			// 40px
+$font-size--xxl:					$base-size * 2;				// 32px
+$line-height--xxl:					$base-size * 2.5;			// 40px
+$letter-spacing-for--xxl:			-0.5px;
 
-$font-size--xxxl:				$base-size * 2.5;			// 40px
-$line-height--xxxl:				$base-size * 3;				// 48px
+$font-size--xxxl:					$base-size * 2.5;			// 40px
+$line-height--xxxl:					$base-size * 3;				// 48px
+$letter-spacing-for--xxxl:			-1px;
 
-$font-size--4xl:				$base-size * 3;				// 48px
-$line-height--4xl:				$base-size * 3.375;			// 56px
+$font-size--4xl:					$base-size * 3;				// 48px
+$line-height--4xl:					$base-size * 3.375;			// 56px
+$letter-spacing-for--4xl:			-1.5px;
 
-$font-size--5xl:				$base-size * 4;				// 64px
-$line-height--5xl:				$base-size * 4.5;			// 72px
+$font-size--5xl:					$base-size * 4;				// 64px
+$line-height--5xl:					$base-size * 4.5;			// 72px
+$letter-spacing-for--5xl:			-2px;
+
+$font-size--6xl:					$base-size * 5;				// 80px
+$line-height--6xl:					$base-size * 5.5;			// 88px
+$letter-spacing-for--6xl:			-2.5px;

@@ -6,7 +6,7 @@
 }
 
 html {
-	background-color: white;
+	background-color: $background-color--html;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
@@ -15,13 +15,14 @@ html {
 }
 
 body {
-	background: #fff;
+	background: $background-color--body;
 	height: 100%;
 	font-weight: $font-weight--normal;
 	font-family: $font-family--serif;
 	@include fontsize(m);
 	text-align: left;
-	color: $color--text;
+	text-align: optical left;
+	color: $text-color--default;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
